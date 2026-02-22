@@ -1,0 +1,202 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PRÁTICA ESTATÍSTICA II",
+    "section": "",
+    "text": "Bem-vind@ à disciplina de Prática Estatística II!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**CAPA**</span>"
+    ]
+  },
+  {
+    "objectID": "Introducao.html",
+    "href": "Introducao.html",
+    "title": "2  INTRODUÇÃO",
+    "section": "",
+    "text": "2.1 A ESTATÍSTICA COMO FERRAMENTA SOCIAL\nA disciplina Prática Estatística II é um espaço de integração entre:\nMais do que aprender técnicas, o estudante é convidado a compreender o papel da estatística na sociedade contemporânea.\nVivemos em uma sociedade orientada por dados. Indicadores, gráficos e relatórios influenciam decisões em áreas como:\nEntretanto, a simples existência de dados não garante qualidade informacional.\nÉ preciso saber interpretar, questionar e comunicar resultados com responsabilidade.\nNesta disciplina, a estatística é tratada como uma ferramenta social — não apenas como um conjunto de técnicas matemáticas.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**INTRODUÇÃO**</span>"
+    ]
+  },
+  {
+    "objectID": "Introducao.html#a-estatística-como-ferramenta-social",
+    "href": "Introducao.html#a-estatística-como-ferramenta-social",
+    "title": "2  INTRODUÇÃO",
+    "section": "",
+    "text": "saúde\n\neducação\n\neconomia\n\nmeio ambiente\n\npolíticas públicas\n\ntecnologia",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**INTRODUÇÃO**</span>"
+    ]
+  },
+  {
+    "objectID": "Introducao.html#o-viés-extensionista-da-disciplina",
+    "href": "Introducao.html#o-viés-extensionista-da-disciplina",
+    "title": "2  INTRODUÇÃO",
+    "section": "2.2 O VIÉS EXTENSIONISTA DA DISCIPLINA",
+    "text": "2.2 O VIÉS EXTENSIONISTA DA DISCIPLINA\nA Prática Estatística II possui um caráter extensionista. Isso significa que o conhecimento produzido não deve permanecer restrito à sala de aula.\nOs trabalhos desenvolvidos buscarão:\n\nrelevância social;\n\ninteresse público;\n\nclareza informacional;\n\nimpacto positivo.\n\nO estudante será incentivado a produzir análises que possam dialogar com públicos reais, simulando a atuação profissional do estatístico em contextos acadêmicos e institucionais.\n\nA disciplina funciona, portanto, como um laboratório acadêmico de prática profissional.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**INTRODUÇÃO**</span>"
+    ]
+  },
+  {
+    "objectID": "Introducao.html#objetivos-da-disciplina",
+    "href": "Introducao.html#objetivos-da-disciplina",
+    "title": "2  INTRODUÇÃO",
+    "section": "2.3 OBJETIVOS DA DISCIPLINA",
+    "text": "2.3 OBJETIVOS DA DISCIPLINA\nAo longo do semestre, espera-se desenvolver:\n\nAplicação de testes estatísticos em dados reais;\n\nConsolidação do uso do R como ferramenta analítica;\n\nConstrução de relatórios dinâmicos e reprodutíveis;\n\nEscrita técnica e científica;\n\nComunicação responsável de resultados;\n\nPostura ética e crítica diante dos dados.\n\n\nAo final do curso, o estudante deverá ser capaz de: Conduzir uma análise estatística completa — da formulação do problema à comunicação pública dos resultados.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**INTRODUÇÃO**</span>"
+    ]
+  },
+  {
+    "objectID": "Introducao.html#conteúdos-centrais",
+    "href": "Introducao.html#conteúdos-centrais",
+    "title": "2  INTRODUÇÃO",
+    "section": "2.4 CONTEÚDOS CENTRAIS",
+    "text": "2.4 CONTEÚDOS CENTRAIS\nA disciplina está estruturada em três grandes eixos.\n\n2.4.1 TESTES DE HIPÓTESES\nSerão estudados e aplicados:\n\nTestes de independência.\nTestes de aderência;\n\nTestes de homogeneidade;\nTestes para duas ou mais populações.\n\nMais do que executar comandos no R, o foco será compreender:\n\nhipóteses envolvidas;\n\ncondições de aplicação;\n\nlimitações metodológicas.\n\n\n\n\n2.4.2 RELATÓRIOS DINÂMICOS\nA disciplina enfatiza a produção de documentos que integrem:\n\ntexto\n\ncódigo\n\nresultados\n\ngráficos\n\ntabelas\n\nEssa abordagem garante:\n\nreprodutibilidade;\n\ntransparência;\n\norganização;\n\nfacilidade de atualização.\n\nAssim serão explorados os seguintes: - Relatórios completos - Apresentação em slides - Dashboards\n\n\n2.4.3 DIVULGAÇÃO E COMUNICAÇÃO\nProduzir uma análise estatística não é suficiente.\nÉ necessário saber comunicá-la.\nOs estudantes serão estimulados a:\n\nadaptar linguagem ao público;\n\nresponder questionamentos;\n\nrevisar argumentos;\n\nreceber críticas;\n\naprimorar a clareza expositiva.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**INTRODUÇÃO**</span>"
+    ]
+  },
+  {
+    "objectID": "Introducao.html#metodologia-de-trabalho",
+    "href": "Introducao.html#metodologia-de-trabalho",
+    "title": "2  INTRODUÇÃO",
+    "section": "2.5 METODOLOGIA DE TRABALHO",
+    "text": "2.5 METODOLOGIA DE TRABALHO\nO desenvolvimento da disciplina ocorrerá por meio de:\n\naulas teóricas;\naulas práticas;\n\nprojetos aplicados;\n\nrelatórios periódicos;\n\ndiscussões coletivas;\n\ninteração com usuários e leitores.\n\nGrande parte do aprendizado acontecerá na resolução de problemas reais, com acompanhamento contínuo.\nO erro, a revisão e a reinterpretação fazem parte natural do processo formativo.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**INTRODUÇÃO**</span>"
+    ]
+  },
+  {
+    "objectID": "CronogramaOrganizacao.html",
+    "href": "CronogramaOrganizacao.html",
+    "title": "3  ORGANIZAÇÃO E CRONOGRAMA DA DISCIPLINA",
+    "section": "",
+    "text": "Segue o cronograma da disciplina de Prática Estatística II do primeiro semestre de 2026:\n\n\n\nData\nConteúdo\n\n\n\n\n09/03\nIntrodução da disciplina. Testes de Independência (parte I).\n\n\n11/03\nTreinamento 1: Construindo Apresentações em Slides com o quarto\n\n\n16/03\nTestes de Independência (parte II).\n\n\n18/03\nTreinamento 2: Testes de Independência no R\n\n\n23/03\nAtividade avaliativa 1: Testes de Independência na Literatura\n\n\n25/03\nTreinamento 3: O Pacote gtsummary (Parte I)\n\n\n30/03\nAtividade Avaliativa 2: Aplicando o Pacote gtsummary (Parte I)\n\n\n01/04\nRevisão de Testes de Hipótese para 2 ou mais populações\n\n\n06/04\nAtividade Avaliativa 3: Testes de Hipótese para 2 ou mais Populações na Literatura\n\n\n08/04\nTreinamento 4: O pacote gtsummary (Parte II)\n\n\n13/04\nAtividade avaliativa 4: Aplicando o pacote gtsummary (Parte II)\n\n\n15/04\nTreinamento 5: Construindo relatórios com o quarto\n\n\n20/04\nNão Haverá Aula (Recesso Tiradentes)\n\n\n22/04\nTreinamento 6: Construindo nuvens de palavras no R\n\n\n27/04\nOrientações sobre o Projeto I (Atividades Avaliativas 6, 7 e 8)\n\n\n29/04\nExecução Projeto I\n\n\n04/05\nTestes de Aderência e Homogeneidade\n\n\n06/05\nTreinamento 7: Testes de Aderência e Homogeneidade no R. Execução Projeto I\n\n\n11/05\nProjeto I\n\n\n13/05\nProjeto I\n\n\n18/05\nAtividade avaliativa 9: Testes de Aderência e Homogeneidade na Literatura\n\n\n20/05\nTreinamento 7: Construindo Mapas Coropléticos com o quarto\n\n\n25/05\nAtividade avaliativa 10: Mapas Coropléticos\n\n\n27/05\nTreinamento 8: Construindo Dashboards com o quarto\n\n\n01/06\nOrientações sobre o Projeto II (Atividades Avaliativas 11, 12 e 13)\n\n\n03/06\nExecução Projeto II\n\n\n08/06\nRepositório GitHub\n\n\n10/06\nTreinamento 9: Repositório GitHub. Execução Projeto II\n\n\n15/06\nProjeto II\n\n\n17/06\nProjeto II\n\n\n22/06\nConclusão da disciplina\n\n\n24/06\nNão Haverá Aula (Feriado Municipal)\n\n\n29/06 - 01/07 - 06/07 - 08/07\nNão Haverá Aula (Congressos ISBA e IBC)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>**ORGANIZAÇÃO E CRONOGRAMA DA DISCIPLINA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html",
+    "href": "Cap1.html",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "",
+    "text": "4.1 O PROBLEMA FUNDAMENTAL\nGrande parte das investigações científicas envolve variáveis qualitativas, que podem ter duas ou mais categorias.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#o-problema-fundamental",
+    "href": "Cap1.html#o-problema-fundamental",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "",
+    "text": "4.1.1 VARIÁVEIS DICOTÔMICAS\n\nSituação de saúde: Doente / Não doente\n\nExposição a fator de risco: Exposto / Não exposto\n\nResultado acadêmico: Aprovado / Reprovado\n\nSexo: Masculino / Feminino\n\nResposta à pergunta: Sim / Não\n\n\n\n4.1.2 VARIÁVEIS COM MÚLTIPLAS CATEGORIAS NOMINAIS\n\nTipo sanguíneo: A / B / AB / O\n\nEstado civil: Solteiro / Casado / Divorciado / Viúvo\n\nPartido político: Partido A / Partido B / Partido C / Partido D\n\nRegião: Norte / Nordeste / Centro-Oeste / Sudeste / Sul - Tipo de escola: Pública municipal / Pública estadual / Federal / Privada\n\n\n\n4.1.3 VARIÁVEIS COM MÚLTIPLAS CATEGORIAS ORDINAIS\n\nGrau de instrução: Fundamental / Médio / Superior / Pós-graduação\n\nNível de satisfação: Muito insatisfeito / Insatisfeito / Neutro / Satisfeito / Muito satisfeito\n\nClassificação de risco: Baixo / Moderado / Alto / Muito alto\n\nFaixa de renda: Até 2 SM / 2–5 SM / 5–10 SM / Acima de 10 SM\n\n\nIndependentemente do número de categorias, a pergunta estatística permanece a mesma:\nA distribuição de uma variável depende da categoria da outra?\nOu seja,\nExiste relação entre essas categorias ou elas ocorrem de forma independente?\n\nEssa é uma das questões mais importantes da Estatística Aplicada.\nPor exemplo, ao verificar a associação entre Situação de Saúde e Sexo, podemos chegar em duas situações possíveis.\n\nSe a proporção de mulheres dentro do grupo de doentes é muito próxima proporção de mulheres dentro do grupo de não doentes, então há grandes evidências de que essas variáveis não estejam associadas (independentes).\nSe a proporção de mulheres dentro do grupo de doentes é bem diferente da proporção de mulheres dentro do grupo de não doentes, então há grandes evidências de que essas variáveis estejam associadas (dependentes).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#o-conceito-de-independência",
+    "href": "Cap1.html#o-conceito-de-independência",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.2 O CONCEITO DE INDEPENDÊNCIA",
+    "text": "4.2 O CONCEITO DE INDEPENDÊNCIA\nDuas variáveis qualitativas são independentes quando:\nA distribuição de uma não depende da categoria da outra.\nEm termos probabilísticos, considere dois eventos \\(A\\) e \\(B\\). Os dois eventos são independentes se:\n[ P(A B) = P(A),P(B) ]\nOu, equivalentemente,\n[ P(A B) = P(A) ]\nOu seja:\n\nA presença de uma característica\n\nNão altera a probabilidade da outra",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#como-observamos-na-prática",
+    "href": "Cap1.html#como-observamos-na-prática",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.3 COMO OBSERVAMOS NA PRÁTICA",
+    "text": "4.3 COMO OBSERVAMOS NA PRÁTICA\nNa prática, não observamos probabilidades populacionais.\nObservamos:\n\nFrequências amostrais\n\nTabelas de contingência\n\nDistribuições empíricas\n\nE então surge a pergunta crucial:\nAs diferenças observadas refletem associação real ou apenas variação amostral?",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#teste-qui-quadrado-de-independência",
+    "href": "Cap1.html#teste-qui-quadrado-de-independência",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.4 TESTE QUI-QUADRADO DE INDEPENDÊNCIA",
+    "text": "4.4 TESTE QUI-QUADRADO DE INDEPENDÊNCIA\nBlá Blá Blá ## SITUAÇÕES PRÁTICAS MOTIVADORAS\nPara motivar a construção da estatística qui-quadrado que é a base para o teste, considere os seguintes exemplos onde foram avaliadas 200 pessoas:\nExemplo 1 — Vacinação por Sexo\n\n\n\n\nVacinou\nNão vacinou\nTotal\n\n\n\n\nHomem\n40\n40\n80\n\n\nMulher\n100\n20\n120\n\n\nTotal\n140\n60\n200\n\n\n\nExemplo 2 — Vacinação por Região\n\n\n\n\nVacinou\nNão vacinou\nTotal\n\n\n\n\nRegião A\n85\n35\n120\n\n\nRegião B\n55\n25\n80\n\n\nTotal\n140\n60\n200\n\n\n\nAo olhar estas tabelas com as frequências absolutas fica complicado começar a investigar possíveis associações entre as variáveis porque os totais marginais são bem distintos. Uma alternativa é recorrer às tabelas com percentuais relativos por linha ou coluna.\nPara o Exemplo 1, temos as seguintes tabelas relativas por linha e por coluna, respectivamente:\n\n\n\n\nVacinou\nNão vacinou\nTotal\n\n\n\n\nHomem\n40 (50.0%)\n40 (50.0%)\n80 (100%)\n\n\nMulher\n100 (83.3%)\n20 (16.7%)\n120 (100%)\n\n\nTotal\n140 (70%)\n60 (30%)\n200 (100%)\n\n\n\n\n\n\n\nVacinou\nNão vacinou\nTotal\n\n\n\n\nHomem\n40 (28.6%)\n40 (66.7%)\n80 (40%)\n\n\nMulher\n100 (71.4%)\n20 (33.3%)\n120 (60%)\n\n\nTotal\n140 (100%)\n60 (100%)\n200 (100%)\n\n\n\nPara o Exemplo 2, temos as seguintes tabelas relativas por linha e por coluna, respectivamente:\n\n\n\n\nVacinou\nNão vacinou\nTotal\n\n\n\n\nRegião A\n85 (70.8%)\n35 (29.2%)\n120 (100%)\n\n\nRegião B\n55 (68.8%)\n25 (31.2%)\n80 (100%)\n\n\nTotal\n140 (70%)\n60 (30.0%)\n200 (100%)\n\n\n\n\n\n\n\nVacinou\nNão vacinou\nTotal\n\n\n\n\nRegião A\n85 (60.7%)\n35 (58.3%)\n120 (60%)\n\n\nRegião B\n55 (39.3%)\n25 (41.7%)\n80 (40%)\n\n\nTotal\n140 (100%)\n60 (100%)\n200 (100%)\n\n\n\nAo observar as tabelas relativas, conseguimos enxergar melhor possíveis padrões de associação entre as variáveis.\nNo Exemplo 1 — Vacinação por Sexo, a diferença nas proporções é significativa:\n- Entre os homens, 50% se vacinaram e 50% não se vacinaram.\n- Entre as mulheres, 83,3% se vacinaram e apenas 16,7% não se vacinaram.\nEssa diferença indica que a vacinação está relacionada ao sexo: mulheres têm maior propensão a se vacinar. Por isso, podemos dizer que há uma forte associação entre sexo e vacinação.\nNo Exemplo 2 — Vacinação por Região, as proporções são bastante semelhantes:\n- Na Região A, 70,8% se vacinaram e 29,2% não se vacinaram.\n- Na Região B, 68,8% se vacinaram e 31,2% não se vacinaram.\nAqui, a diferença entre as regiões é mínima, o que sugere que a vacinação não depende da região. Portanto, neste caso, a associação é fraca ou praticamente inexistente.\nEm resumo, ao comparar os percentuais relativos por linha ou coluna, conseguimos identificar rapidamente onde existe associação significativa e onde ela é mínima, preparando o terreno para o cálculo da estatística qui-quadrado, que quantifica essas diferenças.\nPara seguir com a estatística qui-quadrado vamos utilizar o Exemplo 1 e, posteriormente, apenas apresentaremos o resultado do teste com o exemplo 2.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#o-papel-da-variabilidade-amostral",
+    "href": "Cap1.html#o-papel-da-variabilidade-amostral",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.5 🎲 O Papel da Variabilidade Amostral",
+    "text": "4.5 🎲 O Papel da Variabilidade Amostral\nMesmo que duas variáveis sejam independentes na população,\numa amostra pode apresentar diferenças aparentes.\nIsso ocorre porque:\n\nAmostras flutuam\n\nFrequências variam ao acaso\n\nPequenas discrepâncias são naturais\n\nPortanto, precisamos de um mecanismo formal para decidir:\n\nA discrepância observada é grande o suficiente para rejeitar a hipótese de independência?",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#estrutura-do-teste-de-independência",
+    "href": "Cap1.html#estrutura-do-teste-de-independência",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.6 🎯 Estrutura do Teste de Independência",
+    "text": "4.6 🎯 Estrutura do Teste de Independência\nTodo teste de independência segue a mesma lógica inferencial:\n\n4.6.1 1️⃣ Formular hipóteses\n\nH₀: Independência\n\nH₁: Associação\n\n\n\n4.6.2 2️⃣ Assumir H₀ como verdadeira\nSob independência, podemos calcular:\nFrequências esperadas\n\n\n4.6.3 3️⃣ Medir discrepância\nComparamos:\n\nFrequências observadas\n\nFrequências esperadas\n\n\n\n4.6.4 4️⃣ Avaliar significância\nSe a discrepância for improvável sob H₀ → rejeitamos independência.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#a-ideia-das-frequências-esperadas",
+    "href": "Cap1.html#a-ideia-das-frequências-esperadas",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.7 📐 A Ideia das Frequências Esperadas",
+    "text": "4.7 📐 A Ideia das Frequências Esperadas\nSe duas variáveis forem independentes, então:\n[ E_{ij} = ]\nEssa fórmula surge diretamente da definição de independência probabilística.\nPortanto:\n\nIndependência impõe uma estrutura matemática específica às frequências da tabela.\n\nSe os dados não seguem essa estrutura → há evidência de associação.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#por-que-existem-vários-testes",
+    "href": "Cap1.html#por-que-existem-vários-testes",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.8 ⚖️ Por Que Existem Vários Testes?",
+    "text": "4.8 ⚖️ Por Que Existem Vários Testes?\nTodos os testes respondem à mesma pergunta:\nHá evidência contra a independência?\nMas diferem quanto a:\n\n📌 Tamanho da amostra\n\n📌 Aproximação assintótica ou exata\n\n📌 Condicionamento das margens\n\n📌 Potência estatística\n\nEm especial:\n\nAlguns são aproximados\n\nOutros são exatos\n\nAlguns condicionam as margens\n\nOutros não\n\nEssas diferenças são fundamentais.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#o-contexto-das-tabelas-22",
+    "href": "Cap1.html#o-contexto-das-tabelas-22",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.9 🔬 O Contexto das Tabelas 2×2",
+    "text": "4.9 🔬 O Contexto das Tabelas 2×2\nGrande parte das aplicações ocorre em tabelas 2×2:\n\nExposição × Doença\n\nTratamento × Cura\n\nVacina × Evento\n\nAqui surgem questões importantes:\n\nA amostra é pequena?\n\nAs frequências esperadas são baixas?\n\nDevemos usar aproximação ou cálculo exato?\n\nEssas perguntas determinam o teste adequado.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#a-filosofia-inferencial",
+    "href": "Cap1.html#a-filosofia-inferencial",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.10 📌 A Filosofia Inferencial",
+    "text": "4.10 📌 A Filosofia Inferencial\nOs testes de independência não medem apenas diferença.\nEles medem:\nEvidência estatística contra um modelo estrutural específico: o modelo de independência.\nAssim, estamos comparando:\n\n🔹 Modelo 1: independência\n\n🔹 Modelo 2: associação\n\nA decisão é baseada na compatibilidade dos dados com o modelo nulo.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap1.html#ideia-central-para-guardar",
+    "href": "Cap1.html#ideia-central-para-guardar",
+    "title": "4  TESTES DE INDEPENDÊNCIA",
+    "section": "4.11 ✨ Ideia Central para Guardar",
+    "text": "4.11 ✨ Ideia Central para Guardar\n\nTestar independência é avaliar se a estrutura observada na tabela pode ser explicada apenas pelo acaso sob um modelo de independência probabilística.\n\nSe a resposta for “não”, concluímos que existe associação.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>**TESTES DE INDEPENDÊNCIA**</span>"
+    ]
+  }
+]
