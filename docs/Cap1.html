@@ -234,6 +234,24 @@ window.Quarto = {
   <li><a href="#decisão-do-teste" id="toc-decisão-do-teste" class="nav-link" data-scroll-target="#decisão-do-teste"><span class="header-section-number">4.3.4.3</span> <strong>DECISÃO DO TESTE</strong></a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#teste-exato-de-fisher" id="toc-teste-exato-de-fisher" class="nav-link" data-scroll-target="#teste-exato-de-fisher"><span class="header-section-number">4.4</span> <strong>TESTE EXATO DE FISHER</strong></a>
+  <ul>
+  <li><a href="#situação-prática-motivadora" id="toc-situação-prática-motivadora" class="nav-link" data-scroll-target="#situação-prática-motivadora"><span class="header-section-number">4.4.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
+  <li><a href="#suposições-1" id="toc-suposições-1" class="nav-link" data-scroll-target="#suposições-1"><span class="header-section-number">4.4.2</span> <strong>SUPOSIÇÕES</strong></a></li>
+  <li><a href="#hipóteses-de-interesse-1" id="toc-hipóteses-de-interesse-1" class="nav-link" data-scroll-target="#hipóteses-de-interesse-1"><span class="header-section-number">4.4.3</span> <strong>HIPÓTESES DE INTERESSE</strong></a></li>
+  <li><a href="#construção-do-teste" id="toc-construção-do-teste" class="nav-link" data-scroll-target="#construção-do-teste"><span class="header-section-number">4.4.4</span> <strong>CONSTRUÇÃO DO TESTE</strong></a>
+  <ul class="collapse">
+  <li><a href="#tabelas-possíveis-com-os-mesmos-totais-marginais" id="toc-tabelas-possíveis-com-os-mesmos-totais-marginais" class="nav-link" data-scroll-target="#tabelas-possíveis-com-os-mesmos-totais-marginais"><span class="header-section-number">4.4.4.1</span> <strong>TABELAS POSSÍVEIS COM OS MESMOS TOTAIS MARGINAIS</strong></a></li>
+  <li><a href="#distribuição-hipergeométrica" id="toc-distribuição-hipergeométrica" class="nav-link" data-scroll-target="#distribuição-hipergeométrica"><span class="header-section-number">4.4.4.2</span> <strong>DISTRIBUIÇÃO HIPERGEOMÉTRICA</strong></a></li>
+  <li><a href="#ligação-com-o-teste-exato-de-fisher" id="toc-ligação-com-o-teste-exato-de-fisher" class="nav-link" data-scroll-target="#ligação-com-o-teste-exato-de-fisher"><span class="header-section-number">4.4.4.3</span> <strong>LIGAÇÃO COM O TESTE EXATO DE FISHER</strong></a></li>
+  <li><a href="#probabilidade-de-uma-tabela-específica" id="toc-probabilidade-de-uma-tabela-específica" class="nav-link" data-scroll-target="#probabilidade-de-uma-tabela-específica"><span class="header-section-number">4.4.4.4</span> <strong>PROBABILIDADE DE UMA TABELA ESPECÍFICA</strong></a></li>
+  <li><a href="#probabilidade-da-tabela-observada" id="toc-probabilidade-da-tabela-observada" class="nav-link" data-scroll-target="#probabilidade-da-tabela-observada"><span class="header-section-number">4.4.4.5</span> <strong>PROBABILIDADE DA TABELA OBSERVADA</strong></a></li>
+  <li><a href="#construção-do-valor-p" id="toc-construção-do-valor-p" class="nav-link" data-scroll-target="#construção-do-valor-p"><span class="header-section-number">4.4.4.6</span> <strong>CONSTRUÇÃO DO VALOR-P</strong></a></li>
+  <li><a href="#regra-de-decisão" id="toc-regra-de-decisão" class="nav-link" data-scroll-target="#regra-de-decisão"><span class="header-section-number">4.4.4.7</span> <strong>REGRA DE DECISÃO</strong></a></li>
+  </ul></li>
+  <li><a href="#aplicando-o-teste-em-tabelas-maiores" id="toc-aplicando-o-teste-em-tabelas-maiores" class="nav-link" data-scroll-target="#aplicando-o-teste-em-tabelas-maiores"><span class="header-section-number">4.4.5</span> <strong>APLICANDO O TESTE EM TABELAS MAIORES</strong></a></li>
+  </ul></li>
+  <li><a href="#recomendações-gerais" id="toc-recomendações-gerais" class="nav-link" data-scroll-target="#recomendações-gerais"><span class="header-section-number">4.5</span> <strong>RECOMENDAÇÕES GERAIS</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -871,7 +889,7 @@ O-E =
 \chi^2 \sim \chi^2_{(r-1)(c-1)}
 \]</span></p>
 </div>
-<p>No exemplo 1, como <span class="math inline">\(r=c=2\)</span>, tem-se que a estatística de teste <span class="math inline">\(\chi^2\)</span> possui a seguinte distribuição (sob <span class="math inline">\(H_0\)</span>):</p>
+<p>Nos nossos exemplos, como <span class="math inline">\(r=c=2\)</span>, tem-se que a estatística de teste <span class="math inline">\(\chi^2\)</span> possui a seguinte distribuição (sob <span class="math inline">\(H_0\)</span>):</p>
 <p><span class="math display">\[
 \chi^2 \sim \chi^2_{(2-1)(2-1)}=\chi^2_1
 \]</span></p>
@@ -880,7 +898,7 @@ O-E =
 </section>
 <section id="decisão-do-teste" class="level4" data-number="4.3.4.3">
 <h4 data-number="4.3.4.3" class="anchored" data-anchor-id="decisão-do-teste"><span class="header-section-number">4.3.4.3</span> <strong>DECISÃO DO TESTE</strong></h4>
-<p>Como valores grandes da estatística indicam maior evidência contra a hipótese de independência, a região crítica está na cauda direita, caracterizando um teste unilateral à direita.</p>
+<p>Como <strong>valores grandes</strong> da estatística indicam maior evidência contra a hipótese de independência, a <strong>região crítica está na cauda direita</strong>, caracterizando um teste unilateral à direita.</p>
 <div class="pergunta">
 <p>O nível de significância <span class="math inline">\(\alpha\)</span> é definido por</p>
 <p><span class="math display">\[
@@ -908,19 +926,556 @@ p\text{-valor} \leq \alpha.
 <p><span class="math display">\[\chi^2_{0.95,1=3,84}\]</span></p>
 <ul>
 <li><p>No exemplo 1, como <span class="math inline">\(\chi^2_{\text{obs}}=25,40 &gt; 3,84\)</span>, então rejeitamos <span class="math inline">\(H_0\)</span> e há evidências de que as variáveis sexo e vacinação estão associadas.</p></li>
-<li><p>No exemplo 2, como <span class="math inline">\(\chi^2_{\text{obs}}=0.09 &lt; 3,84\)</span>, então não rejeitamos <span class="math inline">\(H_0\)</span> e há evidências de que as variáveis região e vacinação não estão associadas.</p></li>
+<li><p>No exemplo 2, como <span class="math inline">\(\chi^2_{\text{obs}}=0,09 &lt; 3,84\)</span>, então não rejeitamos <span class="math inline">\(H_0\)</span> e há evidências de que as variáveis região e vacinação não estão associadas.</p></li>
 </ul>
 <p><strong>MÉTODO DO VALOR-P</strong></p>
 <ul>
-<li><p>O valor-p do teste aplicado ao exemplo 1 é <span class="math inline">\(p\text{-valor} = P\left(\chi^2_1 \geq 25,4\right)=4.65e^{-7}\)</span>. Como p-valor <span class="math inline">\(&lt;0,05\)</span>, rejeita-se <span class="math inline">\(H_O\)</span>.</p></li>
-<li><p>O valor-p do teste aplicado ao exemplo 2 é <span class="math inline">\(p\text{-valor} = P\left(\chi^2_1 \geq 0,09\right)=0,76\)</span>. Como p-valor <span class="math inline">\(&gt;0,05\)</span>, não rejeita-se <span class="math inline">\(H_O\)</span>.</p></li>
+<li><p>O valor-p do teste aplicado ao exemplo 1 é <span class="math inline">\(p\text{-valor} = P\left(\chi^2_1 \geq 25,4\right)=4.65e^{-7}\)</span>. Como p-valor <span class="math inline">\(&lt;0,05\)</span>, rejeita-se <span class="math inline">\(H_O\)</span> e há evidências de que as variáveis sexo e vacinação estão associadas.</p></li>
+<li><p>O valor-p do teste aplicado ao exemplo 2 é <span class="math inline">\(p\text{-valor} = P\left(\chi^2_1 \geq 0,09\right)=0,76\)</span>. Como p-valor <span class="math inline">\(&gt;0,05\)</span>, não rejeita-se <span class="math inline">\(H_O\)</span> e há evidências de que as variáveis região e vacinação não estão associadas.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="teste-exato-de-fisher" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="teste-exato-de-fisher"><span class="header-section-number">4.4</span> <strong>TESTE EXATO DE FISHER</strong></h2>
+<section id="situação-prática-motivadora" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="situação-prática-motivadora"><span class="header-section-number">4.4.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
+<p>Considere agora um <strong>estudo piloto</strong> conduzido com <strong>35 pacientes</strong> para investigar se existe associação entre <strong>uso de um novo medicamento</strong> e <strong>ocorrência de um efeito adverso</strong>.</p>
+<p>Os resultados observados foram os seguintes:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Efeito adverso</th>
+<th style="text-align: center;">Sem efeito</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usou medicamento</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td><strong>Não usou</strong></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">35</td>
+</tr>
+</tbody>
+</table>
+<p>Assim como fizemos anteriormente, uma forma inicial de investigar possíveis associações entre as variáveis é observar <strong>tabelas com percentuais relativos</strong>.</p>
+<p>A seguir, apresentamos a <strong>tabela de percentuais por linha</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Efeito adverso</th>
+<th style="text-align: center;">Sem efeito</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usou medicamento</strong></td>
+<td style="text-align: center;">1 (6,7%)</td>
+<td style="text-align: center;">14 (93,3%)</td>
+<td style="text-align: center;">15 (100%)</td>
+</tr>
+<tr class="even">
+<td><strong>Não usou</strong></td>
+<td style="text-align: center;">8 (40,0%)</td>
+<td style="text-align: center;">12 (60,0%)</td>
+<td style="text-align: center;">20 (100%)</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9 (25,7%)</td>
+<td style="text-align: center;">26 (74,3%)</td>
+<td style="text-align: center;">35 (100%)</td>
+</tr>
+</tbody>
+</table>
+<p>Observando os percentuais, nota-se que:</p>
+<ul>
+<li>Entre os pacientes que <strong>usaram o medicamento</strong>, apenas <strong>6,7% apresentaram efeito adverso</strong>.</li>
+<li>Entre os pacientes que <strong>não usaram o medicamento</strong>, <strong>40,0% apresentaram efeito adverso</strong>.</li>
+</ul>
+<p>Essas diferenças sugerem que pode existir <strong>associação entre o uso do medicamento e a ocorrência de efeito adverso</strong>. Entretanto, essa conclusão ainda é apenas <strong>uma observação baseada nos dados da amostra</strong>.</p>
+<p>Para avaliar estatisticamente essa possível associação, poderíamos pensar em aplicar o <strong>teste qui-quadrado de independência</strong>. Contudo, antes disso, é importante verificar as <strong>frequências esperadas</strong> em cada célula da tabela.</p>
+<div class="pergunta">
+<p><strong>Para utilizar o teste qui-quadrado de independência, lembre-se que todas as caselas devem ter uma frequência esperada maior ou igual a 5</strong></p>
+</div>
+<p>Recordando, pela <strong>regra de bolso</strong>, que a <strong>frequência esperada</strong> é calculada por:</p>
+<p><span class="math display">\[
+E_{ij} = \frac{(\text{Total da linha i})(\text{Total da coluna j})}{\text{Total geral}}
+\]</span></p>
+<p>Vamos calcular, por exemplo, a <strong>frequência esperada para a célula “Usou medicamento e teve efeito adverso”</strong>:</p>
+<p><span class="math display">\[
+E_{11} = \frac{(15)(9)}{35} \approx 3{,}86
+\]</span></p>
+<p>Note que essa <strong>frequência esperada é menor que 5</strong>.</p>
+<p>Calculando as demais frequências esperadas:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Efeito adverso</th>
+<th style="text-align: center;">Sem efeito</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usou medicamento</strong></td>
+<td style="text-align: center;">3,86</td>
+<td style="text-align: center;">11,14</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td><strong>Não usou</strong></td>
+<td style="text-align: center;">5,14</td>
+<td style="text-align: center;">14,86</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">35</td>
+</tr>
+</tbody>
+</table>
+<p>Observa-se que <strong>uma das células apresenta frequência esperada menor que 5</strong>.</p>
+<p>Nessas situações, a <strong>aproximação utilizada pelo teste qui-quadrado pode não ser adequada</strong>, pois o teste depende de uma <strong>aproximação assintótica</strong> que funciona melhor quando as frequências esperadas são suficientemente grandes.</p>
+<p>Nesse caso, uma alternativa mais apropriada é utilizar o <strong>teste exato de Fisher</strong>.</p>
+</section>
+<section id="suposições-1" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="suposições-1"><span class="header-section-number">4.4.2</span> <strong>SUPOSIÇÕES</strong></h3>
+<p>Para que <strong>o teste exato de Fisher produza resultados válidos</strong>, algumas condições devem ser consideradas antes da sua aplicação. A seguir estão as <strong>suposições centrais</strong>, com uma curta explicação e recomendações práticas.</p>
+<ol type="1">
+<li><p><strong>Observações independentes</strong><br>
+As observações (linhas da amostra) devem ser independentes entre si — por exemplo, cada indivíduo aparece apenas uma vez. Dependência entre observações (dados pareados, medidas repetidas, amostras agrupadas) viola a suposição e exige métodos alternativos.</p></li>
+<li><p><strong>Amostragem aleatória ou representatividade</strong><br>
+Os resultados são interpretáveis como inferência populacional quando os dados vêm de uma amostra aleatória ou de um processo que permita generalização (ou quando o estudo foi desenhado para representar a população-alvo).</p></li>
+<li><p><strong>Totais marginais considerados fixos</strong><br>
+O teste de Fisher parte da ideia de que os <strong>totais das linhas e das colunas são fixos</strong>. Ou seja, a análise considera todas as tabelas possíveis que mantêm esses mesmos totais marginais.</p></li>
+</ol>
+<blockquote class="blockquote">
+<p>Em muitas situações reais, os totais marginais não são fixos. Por exemplo, se você está estudando a relação entre tabagismo e doença pulmonar, você não controla quantos fumantes e não-fumantes existem; eles surgem naturalmente da população. O teste de Fisher ainda funciona e é conservador nessas situações, mas a interpretação exata da p-valor fica um pouco mais “teórica”, porque a suposição de marginais fixos não corresponde exatamente à realidade.</p>
+</blockquote>
+<p>Diferentemente do <strong>teste qui-quadrado</strong>, o teste exato de Fisher <strong>não depende de aproximações assintóticas</strong> e <strong>não exige frequências esperadas mínimas</strong>.</p>
+<p>Por esse motivo, ele é particularmente útil quando:</p>
+<ul>
+<li>a <strong>amostra é pequena</strong>;</li>
+<li>existem <strong>frequências esperadas menores que 5</strong> em alguma célula da tabela.</li>
+</ul>
+<p>Embora seja mais conhecido para <strong>tabelas 2 × 2</strong>, o teste também pode ser aplicado a <strong>tabelas maiores</strong>, embora o cálculo do valor-p possa exigir <strong>simulações computacionais</strong> nesses casos.</p>
+</section>
+<section id="hipóteses-de-interesse-1" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="hipóteses-de-interesse-1"><span class="header-section-number">4.4.3</span> <strong>HIPÓTESES DE INTERESSE</strong></h3>
+<p>Assim como no teste qui-quadrado de independência, estamos interessados em avaliar se duas variáveis categóricas são <strong>independentes</strong> ou se existe <strong>associação</strong> entre elas.</p>
+<p>Formalmente, as hipóteses são:</p>
+<ul>
+<li><span class="math inline">\(H_0\)</span>: As variáveis são <strong>independentes</strong> (não existe associação entre elas).<br>
+</li>
+<li><span class="math inline">\(H_1\)</span>: As variáveis são <strong>dependentes</strong> (existe associação entre elas).</li>
+</ul>
+<p>No contexto do exemplo apresentado, poderíamos escrever de forma mais específica:</p>
+<ul>
+<li><span class="math inline">\(H_0\)</span>: O <strong>uso do medicamento</strong> e a <strong>ocorrência de efeito adverso</strong> são independentes.<br>
+</li>
+<li><span class="math inline">\(H_1\)</span>: Existe <strong>associação</strong> entre o uso do medicamento e a ocorrência de efeito adverso.</li>
+</ul>
+</section>
+<section id="construção-do-teste" class="level3" data-number="4.4.4">
+<h3 data-number="4.4.4" class="anchored" data-anchor-id="construção-do-teste"><span class="header-section-number">4.4.4</span> <strong>CONSTRUÇÃO DO TESTE</strong></h3>
+<p>Ao considerar, inicialmente, o caso 2x2, retomemos o <strong>exemplo apresentado anteriormente</strong>, em que investigamos a associação entre <strong>uso de um medicamento</strong> e <strong>ocorrência de efeito adverso</strong> em um estudo com 35 pacientes.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Efeito adverso</th>
+<th style="text-align: center;">Sem efeito</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usou medicamento</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td><strong>Não usou</strong></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">35</td>
+</tr>
+</tbody>
+</table>
+<p>No <strong>teste exato de Fisher</strong>, partimos da ideia de que os <strong>totais marginais da tabela são fixos</strong>, ou seja:</p>
+<ul>
+<li>15 pacientes <strong>usaram o medicamento</strong></li>
+<li>20 pacientes <strong>não usaram</strong></li>
+<li>9 pacientes <strong>tiveram efeito adverso</strong></li>
+<li>26 pacientes <strong>não tiveram efeito</strong></li>
+</ul>
+<p>Assim, a pergunta que o teste responde é a seguinte:</p>
+<blockquote class="blockquote">
+<p>Supondo que o <strong>uso do medicamento não influencie a ocorrência de efeito adverso</strong> (isto é, assumindo <span class="math inline">\(H_0\)</span> verdadeira), qual seria a probabilidade de observar uma tabela como a obtida?</p>
+</blockquote>
+<p>Sob <span class="math inline">\(H_0\)</span>, o efeito adverso não depende do uso do medicamento. Assim, os 9 pacientes que apresentaram efeito adverso poderiam aparecer em qualquer um dos dois grupos apenas por variação aleatória.</p>
+<p>Para responder à pergunta do teste, consideramos <strong>todas as tabelas possíveis que preservam esses mesmos totais marginais</strong>.</p>
+<section id="tabelas-possíveis-com-os-mesmos-totais-marginais" class="level4" data-number="4.4.4.1">
+<h4 data-number="4.4.4.1" class="anchored" data-anchor-id="tabelas-possíveis-com-os-mesmos-totais-marginais"><span class="header-section-number">4.4.4.1</span> <strong>TABELAS POSSÍVEIS COM OS MESMOS TOTAIS MARGINAIS</strong></h4>
+<p>Como os totais são fixos, a única célula que pode variar, sem perda de generalidade, é o número de indivíduos que:</p>
+<ul>
+<li><strong>usaram o medicamento</strong></li>
+<li><strong>e tiveram efeito adverso</strong></li>
+</ul>
+<p>Denotemos essa célula por <span class="math inline">\(a\)</span>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Efeito adverso</th>
+<th style="text-align: center;">Sem efeito</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usou medicamento</strong></td>
+<td style="text-align: center;"><span class="math inline">\(a\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(15-a\)</span></td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td><strong>Não usou</strong></td>
+<td style="text-align: center;"><span class="math inline">\(9-a\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(11+a\)</span></td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">35</td>
+</tr>
+</tbody>
+</table>
+<p>No nosso exemplo, observamos</p>
+<p><span class="math display">\[
+a = 1
+\]</span></p>
+<p>Ou seja, <strong>apenas 1 paciente que usou o medicamento apresentou efeito adverso</strong>.</p>
+<p>A pergunta que surge é:</p>
+<blockquote class="blockquote">
+<p>Qual é a probabilidade de observar <strong>exatamente 1 paciente com efeito adverso entre os 15 que usaram o medicamento</strong>, supondo que os efeitos adversos estejam distribuídos aleatoriamente entre os pacientes?</p>
+</blockquote>
+<p><strong>PENSE:</strong> Quantas tabelas possíveis existem com esses totais marginais fixos?</p>
+</section>
+<section id="distribuição-hipergeométrica" class="level4" data-number="4.4.4.2">
+<h4 data-number="4.4.4.2" class="anchored" data-anchor-id="distribuição-hipergeométrica"><span class="header-section-number">4.4.4.2</span> <strong>DISTRIBUIÇÃO HIPERGEOMÉTRICA</strong></h4>
+<p>A <strong>distribuição hipergeométrica</strong> descreve o número de sucessos obtidos quando retiramos <strong>uma amostra sem reposição de uma população finita</strong>.</p>
+<p>Suponha uma população com:</p>
+<ul>
+<li><span class="math inline">\(N\)</span> elementos no total</li>
+<li><span class="math inline">\(K\)</span> elementos que possuem uma determinada característica (chamados de <strong>sucessos</strong>)</li>
+<li><span class="math inline">\(N-K\)</span> elementos que não possuem essa característica</li>
+</ul>
+<p>Agora selecionamos <strong>uma amostra de tamanho <span class="math inline">\(n\)</span></strong>, <strong>sem reposição</strong>.</p>
+<p>Se denotarmos por <span class="math inline">\(X\)</span> o <strong>número de sucessos observados na amostra</strong>, então dizemos que</p>
+<p><span class="math display">\[
+X \sim \text{Hipergeométrica}(N,K,n)
+\]</span></p>
+<p>A função de probabilidade dessa distribuição é dada por</p>
+<p><span class="math display">\[
+P(X=x)=
+\frac{\binom{K}{x}\binom{N-K}{n-x}}
+{\binom{N}{n}}
+\]</span></p>
+<p>onde:</p>
+<ul>
+<li><span class="math inline">\(\binom{K}{x}\)</span> representa o número de maneiras de escolher <strong><span class="math inline">\(x\)</span> sucessos</strong> entre os <span class="math inline">\(K\)</span> existentes</li>
+<li><span class="math inline">\(\binom{N-K}{n-x}\)</span> representa o número de maneiras de escolher <strong>os restantes elementos sem sucesso</strong></li>
+<li><span class="math inline">\(\binom{N}{n}\)</span> representa <strong>todas as formas possíveis de selecionar <span class="math inline">\(n\)</span> elementos da população</strong></li>
+</ul>
+<p>Essa distribuição surge naturalmente quando o processo de seleção ocorre <strong>sem reposição</strong>, isto é, quando um elemento selecionado <strong>não pode ser escolhido novamente</strong>.</p>
+</section>
+<section id="ligação-com-o-teste-exato-de-fisher" class="level4" data-number="4.4.4.3">
+<h4 data-number="4.4.4.3" class="anchored" data-anchor-id="ligação-com-o-teste-exato-de-fisher"><span class="header-section-number">4.4.4.3</span> <strong>LIGAÇÃO COM O TESTE EXATO DE FISHER</strong></h4>
+<p>O problema do teste exato de Fisher pode ser interpretado exatamente como um experimento desse tipo.</p>
+<p>No nosso exemplo:</p>
+<ul>
+<li>existem <strong><span class="math inline">\(N = 35\)</span> pacientes</strong> no total</li>
+<li><strong><span class="math inline">\(K = 9\)</span> tiveram efeito adverso</strong></li>
+<li><strong><span class="math inline">\(26\)</span> não tiveram efeito adverso</strong></li>
+<li>selecionamos <strong><span class="math inline">\(n = 15\)</span> pacientes</strong> (os que <strong>usaram o medicamento</strong>)</li>
+</ul>
+<p>Queremos saber <strong>quantos desses 15 pacientes apresentam efeito adverso</strong>.</p>
+<p>Se denotarmos por <span class="math inline">\(A\)</span> o número de pacientes com efeito adverso entre os que usaram o medicamento, então, sob <span class="math inline">\(H_0\)</span>,</p>
+<p><span class="math display">\[
+A \sim \text{Hipergeométrica}(N=35,\,K=9,\,n=15)
+\]</span></p>
+</section>
+<section id="probabilidade-de-uma-tabela-específica" class="level4" data-number="4.4.4.4">
+<h4 data-number="4.4.4.4" class="anchored" data-anchor-id="probabilidade-de-uma-tabela-específica"><span class="header-section-number">4.4.4.4</span> <strong>PROBABILIDADE DE UMA TABELA ESPECÍFICA</strong></h4>
+<p>A probabilidade de observar <strong><span class="math inline">\(a\)</span> pacientes com efeito adverso entre os 15 que usaram o medicamento</strong> é</p>
+<p><span class="math display">\[
+P(A=a)=
+\frac{\binom{9}{a}\binom{26}{15-a}}
+{\binom{35}{15}}
+\]</span></p>
+<p>onde:</p>
+<ul>
+<li><span class="math inline">\(\binom{9}{a}\)</span> representa o número de maneiras de escolher <span class="math inline">\(a\)</span> pacientes com efeito adverso</li>
+<li><span class="math inline">\(\binom{26}{15-a}\)</span> representa o número de maneiras de escolher os restantes sem efeito adverso</li>
+<li><span class="math inline">\(\binom{35}{15}\)</span> representa todas as possíveis seleções de 15 pacientes entre os 35</li>
+</ul>
+<p>Cada valor possível de <span class="math inline">\(a\)</span> corresponde, portanto, <strong>a uma tabela de contingência diferente que preserva os mesmos totais marginais</strong>.</p>
+</section>
+<section id="probabilidade-da-tabela-observada" class="level4" data-number="4.4.4.5">
+<h4 data-number="4.4.4.5" class="anchored" data-anchor-id="probabilidade-da-tabela-observada"><span class="header-section-number">4.4.4.5</span> <strong>PROBABILIDADE DA TABELA OBSERVADA</strong></h4>
+<p>No nosso exemplo, observamos <span class="math inline">\(a=1\)</span>.</p>
+<p>Portanto,</p>
+<p><span class="math display">\[
+P(A=1)=
+\frac{\binom{9}{1}\binom{26}{14}}
+{\binom{35}{15}}=0.02676134
+\]</span></p>
+<p>Essa expressão fornece a <strong>probabilidade exata de observar a tabela obtida</strong>, assumindo que <span class="math inline">\(H_0\)</span> seja verdadeira.</p>
+</section>
+<section id="construção-do-valor-p" class="level4" data-number="4.4.4.6">
+<h4 data-number="4.4.4.6" class="anchored" data-anchor-id="construção-do-valor-p"><span class="header-section-number">4.4.4.6</span> <strong>CONSTRUÇÃO DO VALOR-P</strong></h4>
+<p>Entretanto, para realizar o teste de hipótese não consideramos apenas a probabilidade da tabela observada.</p>
+<p>O <strong>valor-p</strong> do teste exato de Fisher é obtido somando as probabilidades de:</p>
+<ul>
+<li>todas as tabelas possíveis com os <strong>mesmos totais marginais</strong></li>
+<li>que sejam <strong>tão extremas quanto ou mais extremas que a tabela observada</strong>, de acordo com a hipótese alternativa</li>
+<li>uma tabela é considerada <strong>extrema</strong> quando possui <strong>probabilidade menor ou igual à probabilidade da tabela observada</strong> sob <span class="math inline">\(H_0\)</span></li>
+</ul>
+<p>Assim,</p>
+<p><span class="math display">\[
+p\text{-valor} =
+\sum P(\text{tabelas tão extremas quanto a observada})
+\]</span></p>
+<p>Todas essas probabilidades são calculadas utilizando <strong>a mesma fórmula da distribuição hipergeométrica</strong>.</p>
+<p>No nosso exemplo, a tabela observada corresponde a</p>
+<p><span class="math display">\[
+a_{obs}=1
+\]</span></p>
+<p>com probabilidade</p>
+<p><span class="math display">\[
+P(A=1)=0.02676134
+\]</span></p>
+<p>Portanto, as <strong>tabelas extremas</strong> são aquelas cuja probabilidade é <strong>menor ou igual a esse valor</strong>.</p>
+<p>No nosso caso, isso ocorre para</p>
+<p><span class="math display">\[
+a = 0,7,8,9
+\]</span></p>
+<ul>
+<li><span class="math inline">\(a=0\)</span>:</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Efeito adverso</th>
+<th style="text-align: center;">Sem efeito</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usou medicamento</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td><strong>Não usou</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">35</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+P(A=0)=0.002378785
+\]</span></p>
+<ul>
+<li><span class="math inline">\(a=7\)</span>:</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Efeito adverso</th>
+<th style="text-align: center;">Sem efeito</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usou medicamento</strong></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td><strong>Não usou</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">35</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+P(A=7)=0.01731616
+\]</span></p>
+<ul>
+<li><span class="math inline">\(a=8\)</span>:</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Efeito adverso</th>
+<th style="text-align: center;">Sem efeito</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usou medicamento</strong></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td><strong>Não usou</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">35</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+P(A=8)=0.001822754
+\]</span></p>
+<ul>
+<li><span class="math inline">\(a=9\)</span>:</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Efeito adverso</th>
+<th style="text-align: center;">Sem efeito</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Usou medicamento</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr class="even">
+<td><strong>Não usou</strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">35</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+P(A=9)=0.00007088486
+\]</span></p>
+<p>Assim, o <strong>valor-p</strong> é obtido somando as probabilidades dessas tabelas:</p>
+<p><span class="math display">\[
+p\text{-valor} =
+P(A=0)+P(A=1)+P(A=7)+P(A=8)+P(A=9)\approx 0,04835
+\]</span></p>
+</section>
+<section id="regra-de-decisão" class="level4" data-number="4.4.4.7">
+<h4 data-number="4.4.4.7" class="anchored" data-anchor-id="regra-de-decisão"><span class="header-section-number">4.4.4.7</span> <strong>REGRA DE DECISÃO</strong></h4>
+<p>Após calcular o <strong>valor-p</strong>, aplicamos a regra usual dos testes de hipótese:</p>
+<ul>
+<li><p>se <span class="math inline">\(p\text{-valor} \leq \alpha\)</span>, <strong>rejeitamos <span class="math inline">\(H_0\)</span></strong>, concluindo que há evidência de <strong>associação entre as variáveis</strong>;</p></li>
+<li><p>se <span class="math inline">\(p\text{-valor} &gt; \alpha\)</span>, <strong>não rejeitamos <span class="math inline">\(H_0\)</span></strong>, indicando que os dados <strong>não fornecem evidência suficiente de associação</strong>.</p></li>
+</ul>
+<p>No nosso exemplo, considere <span class="math inline">\(\alpha=0,05\)</span>. Como o valor-p é menor que 0.05, rejeitamos a hipotese nula <span class="math inline">\(H_0\)</span>. Assim, há evidências de que existe associação entre a utilização do medicamento e o aparecimento do efeito adverso.</p>
+</section>
+</section>
+<section id="aplicando-o-teste-em-tabelas-maiores" class="level3" data-number="4.4.5">
+<h3 data-number="4.4.5" class="anchored" data-anchor-id="aplicando-o-teste-em-tabelas-maiores"><span class="header-section-number">4.4.5</span> <strong>APLICANDO O TESTE EM TABELAS MAIORES</strong></h3>
+<p>O <strong>teste exato de Fisher</strong> não está restrito apenas a tabelas <span class="math inline">\(2 \times 2\)</span>. Ele também pode ser aplicado a <strong>tabelas de contingência maiores</strong>, como <span class="math inline">\(2 \times 3\)</span>, <span class="math inline">\(3 \times 3\)</span> ou dimensões ainda maiores.</p>
+<p>Nesses casos, o princípio do teste permanece o mesmo: calcular a probabilidade da tabela observada <strong>condicionando aos totais marginais fixos</strong> e somar as probabilidades de todas as tabelas <strong>tão extremas quanto ou mais extremas</strong> que a observada.</p>
+<p>Entretanto, conforme o tamanho da tabela aumenta, o <strong>número de tabelas possíveis cresce muito rapidamente</strong>, tornando o cálculo exato mais complexo do ponto de vista computacional.</p>
+<p>Por isso, em tabelas grandes, o R pode utilizar <strong>métodos computacionais ou simulações de Monte Carlo</strong> para aproximar o valor-p.</p>
+</section>
+</section>
+<section id="recomendações-gerais" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="recomendações-gerais"><span class="header-section-number">4.5</span> <strong>RECOMENDAÇÕES GERAIS</strong></h2>
+<p>Na prática, tanto o <strong>teste qui-quadrado de independência</strong> quanto o <strong>teste exato de Fisher</strong> podem ser utilizados para avaliar associação entre duas variáveis categóricas. A escolha entre eles depende principalmente do <strong>tamanho da amostra</strong> e da <strong>frequência esperada nas células da tabela</strong>.</p>
+<p>De modo geral, o <strong>teste qui-quadrado</strong> é o mais utilizado quando as frequências esperadas são suficientemente grandes. Uma recomendação comum é que <strong>todas as frequências esperadas sejam maiores que 5</strong>, ou pelo menos que a grande maioria das células satisfaça essa condição. Nessas situações, a aproximação pela distribuição qui-quadrado funciona muito bem.</p>
+<p>Quando existem <strong>frequências esperadas pequenas</strong>, especialmente menores que 5, a aproximação do qui-quadrado pode se tornar imprecisa. Nesses casos, recomenda-se utilizar o <strong>teste exato de Fisher</strong>, que calcula o valor-p a partir das probabilidades exatas das tabelas possíveis.</p>
+<p>Em termos de poder estatístico, quando as condições do qui-quadrado são satisfeitas, ele tende a ser <strong>mais poderoso</strong> e <strong>computacionalmente mais simples</strong> de aplicar. O teste de Fisher, por sua vez, é <strong>mais conservador</strong> em algumas situações, mas possui a vantagem de <strong>não depender de aproximações assintóticas</strong>.</p>
+<p>Quando a tabela possui muitas células com frequências muito pequenas, uma estratégia comum é <strong>agregar categorias semelhantes</strong>, reduzindo o número de células e aumentando as frequências esperadas. No entanto, essa agregação deve sempre fazer <strong>sentido do ponto de vista substantivo</strong>, e não apenas estatístico.</p>
+<p>Assim, de forma geral:</p>
+<ul>
+<li>Utilize o <strong>teste qui-quadrado</strong> quando as frequências esperadas forem adequadas.</li>
+<li>Utilize o <strong>teste exato de Fisher</strong> quando houver <strong>células com frequências pequenas</strong>.</li>
+<li>Considere <strong>agregar categorias</strong> quando houver muitas células raras.</li>
+<li>Sempre interprete os resultados <strong>no contexto do problema estudado</strong>.</li>
 </ul>
 
 
 <!-- -->
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1861,7 +2416,7 @@ p\text{-valor} \leq \alpha.
 <span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
 <span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a>No exemplo 1, como $r=c=2$, tem-se que a estatística de teste $\chi^2$ possui a seguinte distribuição (sob $H_0$):</span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a>Nos nossos exemplos, como $r=c=2$, tem-se que a estatística de teste $\chi^2$ possui a seguinte distribuição (sob $H_0$):</span>
 <span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a>$$</span>
 <span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a>\chi^2 \sim \chi^2_{(2-1)(2-1)}=\chi^2_1</span>
@@ -1873,7 +2428,7 @@ p\text{-valor} \leq \alpha.
 <span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **DECISÃO DO TESTE**</span></span>
 <span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a>Como valores grandes da estatística indicam maior evidência contra a hipótese de independência, a região crítica está na cauda direita, caracterizando um teste unilateral à direita.</span>
+<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a>Como **valores grandes** da estatística indicam maior evidência contra a hipótese de independência, a **região crítica está na cauda direita**, caracterizando um teste unilateral à direita.</span>
 <span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"pergunta"</span><span class="dt">&gt;</span></span>
 <span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a></span>
@@ -1920,14 +2475,396 @@ p\text{-valor} \leq \alpha.
 <span id="cb1-525"><a href="#cb1-525" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-526"><a href="#cb1-526" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>No exemplo 1, como $\chi^2_{\text{obs}}=25,40 &gt; 3,84$, então rejeitamos $H_0$ e há evidências de que as variáveis sexo e vacinação estão associadas. </span>
 <span id="cb1-527"><a href="#cb1-527" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>No exemplo 2, como $\chi^2_{\text{obs}}=0.09 &lt; 3,84$, então não rejeitamos $H_0$ e há evidências de que as variáveis região e vacinação não estão associadas. </span>
+<span id="cb1-528"><a href="#cb1-528" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>No exemplo 2, como $\chi^2_{\text{obs}}=0,09 &lt; 3,84$, então não rejeitamos $H_0$ e há evidências de que as variáveis região e vacinação não estão associadas. </span>
 <span id="cb1-529"><a href="#cb1-529" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-530"><a href="#cb1-530" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-531"><a href="#cb1-531" aria-hidden="true" tabindex="-1"></a>**MÉTODO DO VALOR-P**</span>
 <span id="cb1-532"><a href="#cb1-532" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>O valor-p do teste aplicado ao exemplo 1 é $p\text{-valor} = P\left(\chi^2_1 \geq 25,4\right)=4.65e^{-7}$. Como p-valor $&lt;0,05$, rejeita-se $H_O$.</span>
+<span id="cb1-533"><a href="#cb1-533" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>O valor-p do teste aplicado ao exemplo 1 é $p\text{-valor} = P\left(\chi^2_1 \geq 25,4\right)=4.65e^{-7}$. Como p-valor $&lt;0,05$, rejeita-se $H_O$ e há evidências de que as variáveis sexo e vacinação estão associadas.</span>
 <span id="cb1-534"><a href="#cb1-534" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>O valor-p do teste aplicado ao exemplo 2 é $p\text{-valor} = P\left(\chi^2_1 \geq 0,09\right)=0,76$. Como p-valor $&gt;0,05$, não rejeita-se $H_O$.</span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-535"><a href="#cb1-535" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>O valor-p do teste aplicado ao exemplo 2 é $p\text{-valor} = P\left(\chi^2_1 \geq 0,09\right)=0,76$. Como p-valor $&gt;0,05$, não rejeita-se $H_O$ e há evidências de que as variáveis região e vacinação não estão associadas.</span>
+<span id="cb1-536"><a href="#cb1-536" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-537"><a href="#cb1-537" aria-hidden="true" tabindex="-1"></a><span class="fu">## **TESTE EXATO DE FISHER**</span></span>
+<span id="cb1-538"><a href="#cb1-538" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-539"><a href="#cb1-539" aria-hidden="true" tabindex="-1"></a><span class="fu">### **SITUAÇÃO PRÁTICA MOTIVADORA**</span></span>
+<span id="cb1-540"><a href="#cb1-540" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-541"><a href="#cb1-541" aria-hidden="true" tabindex="-1"></a>Considere agora um **estudo piloto** conduzido com **35 pacientes** para investigar se existe associação entre **uso de um novo medicamento** e **ocorrência de um efeito adverso**.</span>
+<span id="cb1-542"><a href="#cb1-542" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-543"><a href="#cb1-543" aria-hidden="true" tabindex="-1"></a>Os resultados observados foram os seguintes:</span>
+<span id="cb1-544"><a href="#cb1-544" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-545"><a href="#cb1-545" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>                     <span class="pp">|</span> Efeito adverso <span class="pp">|</span> Sem efeito <span class="pp">|</span> Total <span class="pp">|</span></span>
+<span id="cb1-546"><a href="#cb1-546" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------------------|:--------------:|:----------:|:-----:|</span></span>
+<span id="cb1-547"><a href="#cb1-547" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Usou medicamento** <span class="pp">|</span>       1        <span class="pp">|</span>     14     <span class="pp">|</span>  15   <span class="pp">|</span></span>
+<span id="cb1-548"><a href="#cb1-548" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Não usou**        <span class="pp">|</span>       8        <span class="pp">|</span>     12     <span class="pp">|</span>  20   <span class="pp">|</span></span>
+<span id="cb1-549"><a href="#cb1-549" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total**           <span class="pp">|</span>       9        <span class="pp">|</span>     26     <span class="pp">|</span>  35   <span class="pp">|</span></span>
+<span id="cb1-550"><a href="#cb1-550" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-551"><a href="#cb1-551" aria-hidden="true" tabindex="-1"></a>Assim como fizemos anteriormente, uma forma inicial de investigar possíveis associações entre as variáveis é observar **tabelas com percentuais relativos**.</span>
+<span id="cb1-552"><a href="#cb1-552" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-553"><a href="#cb1-553" aria-hidden="true" tabindex="-1"></a>A seguir, apresentamos a **tabela de percentuais por linha**:</span>
+<span id="cb1-554"><a href="#cb1-554" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-555"><a href="#cb1-555" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>                     <span class="pp">|</span> Efeito adverso <span class="pp">|</span> Sem efeito <span class="pp">|</span> Total <span class="pp">|</span></span>
+<span id="cb1-556"><a href="#cb1-556" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------------------|:--------------:|:----------:|:-----:|</span></span>
+<span id="cb1-557"><a href="#cb1-557" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Usou medicamento** <span class="pp">|</span> 1 (6,7%) <span class="pp">|</span> 14 (93,3%) <span class="pp">|</span> 15 (100%) <span class="pp">|</span></span>
+<span id="cb1-558"><a href="#cb1-558" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Não usou**        <span class="pp">|</span> 8 (40,0%) <span class="pp">|</span> 12 (60,0%) <span class="pp">|</span> 20 (100%) <span class="pp">|</span></span>
+<span id="cb1-559"><a href="#cb1-559" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total**           <span class="pp">|</span> 9 (25,7%) <span class="pp">|</span> 26 (74,3%) <span class="pp">|</span> 35 (100%) <span class="pp">|</span></span>
+<span id="cb1-560"><a href="#cb1-560" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-561"><a href="#cb1-561" aria-hidden="true" tabindex="-1"></a>Observando os percentuais, nota-se que:</span>
+<span id="cb1-562"><a href="#cb1-562" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-563"><a href="#cb1-563" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Entre os pacientes que **usaram o medicamento**, apenas **6,7% apresentaram efeito adverso**.</span>
+<span id="cb1-564"><a href="#cb1-564" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Entre os pacientes que **não usaram o medicamento**, **40,0% apresentaram efeito adverso**.</span>
+<span id="cb1-565"><a href="#cb1-565" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-566"><a href="#cb1-566" aria-hidden="true" tabindex="-1"></a>Essas diferenças sugerem que pode existir **associação entre o uso do medicamento e a ocorrência de efeito adverso**. Entretanto, essa conclusão ainda é apenas **uma observação baseada nos dados da amostra**.</span>
+<span id="cb1-567"><a href="#cb1-567" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-568"><a href="#cb1-568" aria-hidden="true" tabindex="-1"></a>Para avaliar estatisticamente essa possível associação, poderíamos pensar em aplicar o **teste qui-quadrado de independência**. Contudo, antes disso, é importante verificar as **frequências esperadas** em cada célula da tabela.</span>
+<span id="cb1-569"><a href="#cb1-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-570"><a href="#cb1-570" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"pergunta"</span><span class="dt">&gt;</span></span>
+<span id="cb1-571"><a href="#cb1-571" aria-hidden="true" tabindex="-1"></a>**Para utilizar o teste qui-quadrado de independência, lembre-se que todas as caselas devem ter uma frequência esperada maior ou igual a 5**</span>
+<span id="cb1-572"><a href="#cb1-572" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb1-573"><a href="#cb1-573" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-574"><a href="#cb1-574" aria-hidden="true" tabindex="-1"></a>Recordando, pela **regra de bolso**, que a **frequência esperada** é calculada por:</span>
+<span id="cb1-575"><a href="#cb1-575" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-576"><a href="#cb1-576" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-577"><a href="#cb1-577" aria-hidden="true" tabindex="-1"></a>E_{ij} = \frac{(\text{Total da linha i})(\text{Total da coluna j})}{\text{Total geral}}</span>
+<span id="cb1-578"><a href="#cb1-578" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-579"><a href="#cb1-579" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-580"><a href="#cb1-580" aria-hidden="true" tabindex="-1"></a>Vamos calcular, por exemplo, a **frequência esperada para a célula "Usou medicamento e teve efeito adverso"**:</span>
+<span id="cb1-581"><a href="#cb1-581" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-582"><a href="#cb1-582" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-583"><a href="#cb1-583" aria-hidden="true" tabindex="-1"></a>E_{11} = \frac{(15)(9)}{35} \approx 3{,}86</span>
+<span id="cb1-584"><a href="#cb1-584" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-585"><a href="#cb1-585" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-586"><a href="#cb1-586" aria-hidden="true" tabindex="-1"></a>Note que essa **frequência esperada é menor que 5**.</span>
+<span id="cb1-587"><a href="#cb1-587" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-588"><a href="#cb1-588" aria-hidden="true" tabindex="-1"></a>Calculando as demais frequências esperadas:</span>
+<span id="cb1-589"><a href="#cb1-589" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-590"><a href="#cb1-590" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>                     <span class="pp">|</span> Efeito adverso <span class="pp">|</span> Sem efeito <span class="pp">|</span> Total <span class="pp">|</span></span>
+<span id="cb1-591"><a href="#cb1-591" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------------------|:--------------:|:----------:|:-----:|</span></span>
+<span id="cb1-592"><a href="#cb1-592" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Usou medicamento** <span class="pp">|</span> 3,86 <span class="pp">|</span> 11,14 <span class="pp">|</span> 15 <span class="pp">|</span></span>
+<span id="cb1-593"><a href="#cb1-593" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Não usou**        <span class="pp">|</span> 5,14 <span class="pp">|</span> 14,86 <span class="pp">|</span> 20 <span class="pp">|</span></span>
+<span id="cb1-594"><a href="#cb1-594" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total**           <span class="pp">|</span> 9 <span class="pp">|</span> 26 <span class="pp">|</span> 35 <span class="pp">|</span></span>
+<span id="cb1-595"><a href="#cb1-595" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-596"><a href="#cb1-596" aria-hidden="true" tabindex="-1"></a>Observa-se que **uma das células apresenta frequência esperada menor que 5**.</span>
+<span id="cb1-597"><a href="#cb1-597" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-598"><a href="#cb1-598" aria-hidden="true" tabindex="-1"></a>Nessas situações, a **aproximação utilizada pelo teste qui-quadrado pode não ser adequada**, pois o teste depende de uma **aproximação assintótica** que funciona melhor quando as frequências esperadas são suficientemente grandes.</span>
+<span id="cb1-599"><a href="#cb1-599" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-600"><a href="#cb1-600" aria-hidden="true" tabindex="-1"></a>Nesse caso, uma alternativa mais apropriada é utilizar o **teste exato de Fisher**.</span>
+<span id="cb1-601"><a href="#cb1-601" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-602"><a href="#cb1-602" aria-hidden="true" tabindex="-1"></a><span class="fu">### **SUPOSIÇÕES**</span></span>
+<span id="cb1-603"><a href="#cb1-603" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-604"><a href="#cb1-604" aria-hidden="true" tabindex="-1"></a>Para que **o teste exato de Fisher produza resultados válidos**, algumas condições devem ser consideradas antes da sua aplicação. A seguir estão as **suposições centrais**, com uma curta explicação e recomendações práticas.</span>
+<span id="cb1-605"><a href="#cb1-605" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-606"><a href="#cb1-606" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Observações independentes**  </span>
+<span id="cb1-607"><a href="#cb1-607" aria-hidden="true" tabindex="-1"></a>As observações (linhas da amostra) devem ser independentes entre si — por exemplo, cada indivíduo aparece apenas uma vez. Dependência entre observações (dados pareados, medidas repetidas, amostras agrupadas) viola a suposição e exige métodos alternativos.</span>
+<span id="cb1-608"><a href="#cb1-608" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-609"><a href="#cb1-609" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Amostragem aleatória ou representatividade**  </span>
+<span id="cb1-610"><a href="#cb1-610" aria-hidden="true" tabindex="-1"></a>Os resultados são interpretáveis como inferência populacional quando os dados vêm de uma amostra aleatória ou de um processo que permita generalização (ou quando o estudo foi desenhado para representar a população-alvo). </span>
+<span id="cb1-611"><a href="#cb1-611" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-612"><a href="#cb1-612" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Totais marginais considerados fixos**  </span>
+<span id="cb1-613"><a href="#cb1-613" aria-hidden="true" tabindex="-1"></a>O teste de Fisher parte da ideia de que os **totais das linhas e das colunas são fixos**. Ou seja, a análise considera todas as tabelas possíveis que mantêm esses mesmos totais marginais.</span>
+<span id="cb1-614"><a href="#cb1-614" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-615"><a href="#cb1-615" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Em muitas situações reais, os totais marginais não são fixos. Por exemplo, se você está estudando a relação entre tabagismo e doença pulmonar, você não controla quantos fumantes e não-fumantes existem; eles surgem naturalmente da população.</span></span>
+<span id="cb1-616"><a href="#cb1-616" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; O teste de Fisher ainda funciona e é conservador nessas situações, mas a interpretação exata da p-valor fica um pouco mais “teórica”, porque a suposição de marginais fixos não corresponde exatamente à realidade.</span></span>
+<span id="cb1-617"><a href="#cb1-617" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-618"><a href="#cb1-618" aria-hidden="true" tabindex="-1"></a>Diferentemente do **teste qui-quadrado**, o teste exato de Fisher **não depende de aproximações assintóticas** e **não exige frequências esperadas mínimas**. </span>
+<span id="cb1-619"><a href="#cb1-619" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-620"><a href="#cb1-620" aria-hidden="true" tabindex="-1"></a>Por esse motivo, ele é particularmente útil quando:</span>
+<span id="cb1-621"><a href="#cb1-621" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-622"><a href="#cb1-622" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>a **amostra é pequena**;</span>
+<span id="cb1-623"><a href="#cb1-623" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>existem **frequências esperadas menores que 5** em alguma célula da tabela.</span>
+<span id="cb1-624"><a href="#cb1-624" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-625"><a href="#cb1-625" aria-hidden="true" tabindex="-1"></a>Embora seja mais conhecido para **tabelas 2 × 2**, o teste também pode ser aplicado a **tabelas maiores**, embora o cálculo do valor-p possa exigir **simulações computacionais** nesses casos.</span>
+<span id="cb1-626"><a href="#cb1-626" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-627"><a href="#cb1-627" aria-hidden="true" tabindex="-1"></a><span class="fu">### **HIPÓTESES DE INTERESSE**</span></span>
+<span id="cb1-628"><a href="#cb1-628" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-629"><a href="#cb1-629" aria-hidden="true" tabindex="-1"></a>Assim como no teste qui-quadrado de independência, estamos interessados em avaliar se duas variáveis categóricas são **independentes** ou se existe **associação** entre elas.</span>
+<span id="cb1-630"><a href="#cb1-630" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-631"><a href="#cb1-631" aria-hidden="true" tabindex="-1"></a>Formalmente, as hipóteses são:</span>
+<span id="cb1-632"><a href="#cb1-632" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-633"><a href="#cb1-633" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$H_0$: As variáveis são **independentes** (não existe associação entre elas).  </span>
+<span id="cb1-634"><a href="#cb1-634" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$H_1$: As variáveis são **dependentes** (existe associação entre elas).  </span>
+<span id="cb1-635"><a href="#cb1-635" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-636"><a href="#cb1-636" aria-hidden="true" tabindex="-1"></a>No contexto do exemplo apresentado, poderíamos escrever de forma mais específica:</span>
+<span id="cb1-637"><a href="#cb1-637" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-638"><a href="#cb1-638" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$H_0$: O **uso do medicamento** e a **ocorrência de efeito adverso** são independentes.  </span>
+<span id="cb1-639"><a href="#cb1-639" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$H_1$: Existe **associação** entre o uso do medicamento e a ocorrência de efeito adverso.</span>
+<span id="cb1-640"><a href="#cb1-640" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-641"><a href="#cb1-641" aria-hidden="true" tabindex="-1"></a><span class="fu">### **CONSTRUÇÃO DO TESTE**</span></span>
+<span id="cb1-642"><a href="#cb1-642" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-643"><a href="#cb1-643" aria-hidden="true" tabindex="-1"></a>Ao considerar, inicialmente, o caso 2x2, retomemos o **exemplo apresentado anteriormente**, em que investigamos a associação entre **uso de um medicamento** e **ocorrência de efeito adverso** em um estudo com 35 pacientes.</span>
+<span id="cb1-644"><a href="#cb1-644" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-645"><a href="#cb1-645" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>                     <span class="pp">|</span> Efeito adverso <span class="pp">|</span> Sem efeito <span class="pp">|</span> Total <span class="pp">|</span></span>
+<span id="cb1-646"><a href="#cb1-646" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------------------|:--------------:|:----------:|:-----:|</span></span>
+<span id="cb1-647"><a href="#cb1-647" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Usou medicamento** <span class="pp">|</span> 1 <span class="pp">|</span> 14 <span class="pp">|</span> 15 <span class="pp">|</span></span>
+<span id="cb1-648"><a href="#cb1-648" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Não usou**        <span class="pp">|</span> 8 <span class="pp">|</span> 12 <span class="pp">|</span> 20 <span class="pp">|</span></span>
+<span id="cb1-649"><a href="#cb1-649" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total**           <span class="pp">|</span> 9 <span class="pp">|</span> 26 <span class="pp">|</span> 35 <span class="pp">|</span></span>
+<span id="cb1-650"><a href="#cb1-650" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-651"><a href="#cb1-651" aria-hidden="true" tabindex="-1"></a>No **teste exato de Fisher**, partimos da ideia de que os **totais marginais da tabela são fixos**, ou seja:</span>
+<span id="cb1-652"><a href="#cb1-652" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-653"><a href="#cb1-653" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>15 pacientes **usaram o medicamento**</span>
+<span id="cb1-654"><a href="#cb1-654" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>20 pacientes **não usaram**</span>
+<span id="cb1-655"><a href="#cb1-655" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>9 pacientes **tiveram efeito adverso**</span>
+<span id="cb1-656"><a href="#cb1-656" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>26 pacientes **não tiveram efeito**</span>
+<span id="cb1-657"><a href="#cb1-657" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-658"><a href="#cb1-658" aria-hidden="true" tabindex="-1"></a>Assim, a pergunta que o teste responde é a seguinte:</span>
+<span id="cb1-659"><a href="#cb1-659" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-660"><a href="#cb1-660" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Supondo que o **uso do medicamento não influencie a ocorrência de efeito adverso** (isto é, assumindo $H_0$ verdadeira), qual seria a probabilidade de observar uma tabela como a obtida?</span></span>
+<span id="cb1-661"><a href="#cb1-661" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-662"><a href="#cb1-662" aria-hidden="true" tabindex="-1"></a>Sob $H_0$, o efeito adverso não depende do uso do medicamento. Assim, os 9 pacientes que apresentaram efeito adverso poderiam aparecer em qualquer um dos dois grupos apenas por variação aleatória.</span>
+<span id="cb1-663"><a href="#cb1-663" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-664"><a href="#cb1-664" aria-hidden="true" tabindex="-1"></a>Para responder à pergunta do teste, consideramos **todas as tabelas possíveis que preservam esses mesmos totais marginais**.</span>
+<span id="cb1-665"><a href="#cb1-665" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-666"><a href="#cb1-666" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **TABELAS POSSÍVEIS COM OS MESMOS TOTAIS MARGINAIS**</span></span>
+<span id="cb1-667"><a href="#cb1-667" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-668"><a href="#cb1-668" aria-hidden="true" tabindex="-1"></a>Como os totais são fixos, a única célula que pode variar, sem perda de generalidade, é o número de indivíduos que:</span>
+<span id="cb1-669"><a href="#cb1-669" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-670"><a href="#cb1-670" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**usaram o medicamento**</span>
+<span id="cb1-671"><a href="#cb1-671" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**e tiveram efeito adverso**</span>
+<span id="cb1-672"><a href="#cb1-672" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-673"><a href="#cb1-673" aria-hidden="true" tabindex="-1"></a>Denotemos essa célula por $a$.</span>
+<span id="cb1-674"><a href="#cb1-674" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-675"><a href="#cb1-675" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>                     <span class="pp">|</span> Efeito adverso <span class="pp">|</span> Sem efeito <span class="pp">|</span> Total <span class="pp">|</span></span>
+<span id="cb1-676"><a href="#cb1-676" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------------------|:--------------:|:----------:|:-----:|</span></span>
+<span id="cb1-677"><a href="#cb1-677" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Usou medicamento** <span class="pp">|</span> $a$ <span class="pp">|</span> $15-a$ <span class="pp">|</span> 15 <span class="pp">|</span></span>
+<span id="cb1-678"><a href="#cb1-678" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Não usou**        <span class="pp">|</span> $9-a$ <span class="pp">|</span> $11+a$ <span class="pp">|</span> 20 <span class="pp">|</span></span>
+<span id="cb1-679"><a href="#cb1-679" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total**           <span class="pp">|</span> 9 <span class="pp">|</span> 26 <span class="pp">|</span> 35 <span class="pp">|</span></span>
+<span id="cb1-680"><a href="#cb1-680" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-681"><a href="#cb1-681" aria-hidden="true" tabindex="-1"></a>No nosso exemplo, observamos</span>
+<span id="cb1-682"><a href="#cb1-682" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-683"><a href="#cb1-683" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-684"><a href="#cb1-684" aria-hidden="true" tabindex="-1"></a>a = 1</span>
+<span id="cb1-685"><a href="#cb1-685" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-686"><a href="#cb1-686" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-687"><a href="#cb1-687" aria-hidden="true" tabindex="-1"></a>Ou seja, **apenas 1 paciente que usou o medicamento apresentou efeito adverso**.</span>
+<span id="cb1-688"><a href="#cb1-688" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-689"><a href="#cb1-689" aria-hidden="true" tabindex="-1"></a>A pergunta que surge é:</span>
+<span id="cb1-690"><a href="#cb1-690" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-691"><a href="#cb1-691" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Qual é a probabilidade de observar **exatamente 1 paciente com efeito adverso entre os 15 que usaram o medicamento**, supondo que os efeitos adversos estejam distribuídos aleatoriamente entre os pacientes?</span></span>
+<span id="cb1-692"><a href="#cb1-692" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-693"><a href="#cb1-693" aria-hidden="true" tabindex="-1"></a>**PENSE:** Quantas tabelas possíveis existem com esses totais marginais fixos?</span>
+<span id="cb1-694"><a href="#cb1-694" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-695"><a href="#cb1-695" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **DISTRIBUIÇÃO HIPERGEOMÉTRICA**</span></span>
+<span id="cb1-696"><a href="#cb1-696" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-697"><a href="#cb1-697" aria-hidden="true" tabindex="-1"></a>A **distribuição hipergeométrica** descreve o número de sucessos obtidos quando retiramos **uma amostra sem reposição de uma população finita**.</span>
+<span id="cb1-698"><a href="#cb1-698" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-699"><a href="#cb1-699" aria-hidden="true" tabindex="-1"></a>Suponha uma população com:</span>
+<span id="cb1-700"><a href="#cb1-700" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-701"><a href="#cb1-701" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$N$ elementos no total</span>
+<span id="cb1-702"><a href="#cb1-702" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$K$ elementos que possuem uma determinada característica (chamados de **sucessos**)</span>
+<span id="cb1-703"><a href="#cb1-703" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$N-K$ elementos que não possuem essa característica</span>
+<span id="cb1-704"><a href="#cb1-704" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-705"><a href="#cb1-705" aria-hidden="true" tabindex="-1"></a>Agora selecionamos **uma amostra de tamanho $n$**, **sem reposição**.</span>
+<span id="cb1-706"><a href="#cb1-706" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-707"><a href="#cb1-707" aria-hidden="true" tabindex="-1"></a>Se denotarmos por $X$ o **número de sucessos observados na amostra**, então dizemos que</span>
+<span id="cb1-708"><a href="#cb1-708" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-709"><a href="#cb1-709" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-710"><a href="#cb1-710" aria-hidden="true" tabindex="-1"></a>X \sim \text{Hipergeométrica}(N,K,n)</span>
+<span id="cb1-711"><a href="#cb1-711" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-712"><a href="#cb1-712" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-713"><a href="#cb1-713" aria-hidden="true" tabindex="-1"></a>A função de probabilidade dessa distribuição é dada por</span>
+<span id="cb1-714"><a href="#cb1-714" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-715"><a href="#cb1-715" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-716"><a href="#cb1-716" aria-hidden="true" tabindex="-1"></a>P(X=x)=</span>
+<span id="cb1-717"><a href="#cb1-717" aria-hidden="true" tabindex="-1"></a>\frac{\binom{K}{x}\binom{N-K}{n-x}}</span>
+<span id="cb1-718"><a href="#cb1-718" aria-hidden="true" tabindex="-1"></a>{\binom{N}{n}}</span>
+<span id="cb1-719"><a href="#cb1-719" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-720"><a href="#cb1-720" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-721"><a href="#cb1-721" aria-hidden="true" tabindex="-1"></a>onde:</span>
+<span id="cb1-722"><a href="#cb1-722" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-723"><a href="#cb1-723" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\binom{K}{x}$ representa o número de maneiras de escolher **$x$ sucessos** entre os $K$ existentes</span>
+<span id="cb1-724"><a href="#cb1-724" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\binom{N-K}{n-x}$ representa o número de maneiras de escolher **os restantes elementos sem sucesso**</span>
+<span id="cb1-725"><a href="#cb1-725" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\binom{N}{n}$ representa **todas as formas possíveis de selecionar $n$ elementos da população**</span>
+<span id="cb1-726"><a href="#cb1-726" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-727"><a href="#cb1-727" aria-hidden="true" tabindex="-1"></a>Essa distribuição surge naturalmente quando o processo de seleção ocorre **sem reposição**, isto é, quando um elemento selecionado **não pode ser escolhido novamente**.</span>
+<span id="cb1-728"><a href="#cb1-728" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-729"><a href="#cb1-729" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-730"><a href="#cb1-730" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **LIGAÇÃO COM O TESTE EXATO DE FISHER**</span></span>
+<span id="cb1-731"><a href="#cb1-731" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-732"><a href="#cb1-732" aria-hidden="true" tabindex="-1"></a>O problema do teste exato de Fisher pode ser interpretado exatamente como um experimento desse tipo.</span>
+<span id="cb1-733"><a href="#cb1-733" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-734"><a href="#cb1-734" aria-hidden="true" tabindex="-1"></a>No nosso exemplo:</span>
+<span id="cb1-735"><a href="#cb1-735" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-736"><a href="#cb1-736" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>existem **$N = 35$ pacientes** no total</span>
+<span id="cb1-737"><a href="#cb1-737" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**$K = 9$ tiveram efeito adverso**</span>
+<span id="cb1-738"><a href="#cb1-738" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**$26$ não tiveram efeito adverso**</span>
+<span id="cb1-739"><a href="#cb1-739" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>selecionamos **$n = 15$ pacientes** (os que **usaram o medicamento**)</span>
+<span id="cb1-740"><a href="#cb1-740" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-741"><a href="#cb1-741" aria-hidden="true" tabindex="-1"></a>Queremos saber **quantos desses 15 pacientes apresentam efeito adverso**.</span>
+<span id="cb1-742"><a href="#cb1-742" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-743"><a href="#cb1-743" aria-hidden="true" tabindex="-1"></a>Se denotarmos por $A$ o número de pacientes com efeito adverso entre os que usaram o medicamento, então, sob $H_0$,</span>
+<span id="cb1-744"><a href="#cb1-744" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-745"><a href="#cb1-745" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-746"><a href="#cb1-746" aria-hidden="true" tabindex="-1"></a>A \sim \text{Hipergeométrica}(N=35,\,K=9,\,n=15)</span>
+<span id="cb1-747"><a href="#cb1-747" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-748"><a href="#cb1-748" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-749"><a href="#cb1-749" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-750"><a href="#cb1-750" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **PROBABILIDADE DE UMA TABELA ESPECÍFICA**</span></span>
+<span id="cb1-751"><a href="#cb1-751" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-752"><a href="#cb1-752" aria-hidden="true" tabindex="-1"></a>A probabilidade de observar **$a$ pacientes com efeito adverso entre os 15 que usaram o medicamento** é</span>
+<span id="cb1-753"><a href="#cb1-753" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-754"><a href="#cb1-754" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-755"><a href="#cb1-755" aria-hidden="true" tabindex="-1"></a>P(A=a)=</span>
+<span id="cb1-756"><a href="#cb1-756" aria-hidden="true" tabindex="-1"></a>\frac{\binom{9}{a}\binom{26}{15-a}}</span>
+<span id="cb1-757"><a href="#cb1-757" aria-hidden="true" tabindex="-1"></a>{\binom{35}{15}}</span>
+<span id="cb1-758"><a href="#cb1-758" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-759"><a href="#cb1-759" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-760"><a href="#cb1-760" aria-hidden="true" tabindex="-1"></a>onde:</span>
+<span id="cb1-761"><a href="#cb1-761" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-762"><a href="#cb1-762" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\binom{9}{a}$ representa o número de maneiras de escolher $a$ pacientes com efeito adverso</span>
+<span id="cb1-763"><a href="#cb1-763" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\binom{26}{15-a}$ representa o número de maneiras de escolher os restantes sem efeito adverso</span>
+<span id="cb1-764"><a href="#cb1-764" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\binom{35}{15}$ representa todas as possíveis seleções de 15 pacientes entre os 35</span>
+<span id="cb1-765"><a href="#cb1-765" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-766"><a href="#cb1-766" aria-hidden="true" tabindex="-1"></a>Cada valor possível de $a$ corresponde, portanto, **a uma tabela de contingência diferente que preserva os mesmos totais marginais**.</span>
+<span id="cb1-767"><a href="#cb1-767" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-768"><a href="#cb1-768" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-769"><a href="#cb1-769" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **PROBABILIDADE DA TABELA OBSERVADA**</span></span>
+<span id="cb1-770"><a href="#cb1-770" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-771"><a href="#cb1-771" aria-hidden="true" tabindex="-1"></a>No nosso exemplo, observamos $a=1$.</span>
+<span id="cb1-772"><a href="#cb1-772" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-773"><a href="#cb1-773" aria-hidden="true" tabindex="-1"></a>Portanto,</span>
+<span id="cb1-774"><a href="#cb1-774" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-775"><a href="#cb1-775" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-776"><a href="#cb1-776" aria-hidden="true" tabindex="-1"></a>P(A=1)=</span>
+<span id="cb1-777"><a href="#cb1-777" aria-hidden="true" tabindex="-1"></a>\frac{\binom{9}{1}\binom{26}{14}}</span>
+<span id="cb1-778"><a href="#cb1-778" aria-hidden="true" tabindex="-1"></a>{\binom{35}{15}}=0.02676134</span>
+<span id="cb1-779"><a href="#cb1-779" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-780"><a href="#cb1-780" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-781"><a href="#cb1-781" aria-hidden="true" tabindex="-1"></a>Essa expressão fornece a **probabilidade exata de observar a tabela obtida**, assumindo que $H_0$ seja verdadeira.</span>
+<span id="cb1-782"><a href="#cb1-782" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-783"><a href="#cb1-783" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-784"><a href="#cb1-784" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **CONSTRUÇÃO DO VALOR-P**</span></span>
+<span id="cb1-785"><a href="#cb1-785" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-786"><a href="#cb1-786" aria-hidden="true" tabindex="-1"></a>Entretanto, para realizar o teste de hipótese não consideramos apenas a probabilidade da tabela observada.</span>
+<span id="cb1-787"><a href="#cb1-787" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-788"><a href="#cb1-788" aria-hidden="true" tabindex="-1"></a>O **valor-p** do teste exato de Fisher é obtido somando as probabilidades de:</span>
+<span id="cb1-789"><a href="#cb1-789" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-790"><a href="#cb1-790" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>todas as tabelas possíveis com os **mesmos totais marginais**</span>
+<span id="cb1-791"><a href="#cb1-791" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>que sejam **tão extremas quanto ou mais extremas que a tabela observada**, de acordo com a hipótese alternativa</span>
+<span id="cb1-792"><a href="#cb1-792" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>uma tabela é considerada **extrema** quando possui **probabilidade menor ou igual à probabilidade da tabela observada** sob $H_0$</span>
+<span id="cb1-793"><a href="#cb1-793" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-794"><a href="#cb1-794" aria-hidden="true" tabindex="-1"></a>Assim,</span>
+<span id="cb1-795"><a href="#cb1-795" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-796"><a href="#cb1-796" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-797"><a href="#cb1-797" aria-hidden="true" tabindex="-1"></a>p\text{-valor} =</span>
+<span id="cb1-798"><a href="#cb1-798" aria-hidden="true" tabindex="-1"></a>\sum P(\text{tabelas tão extremas quanto a observada})</span>
+<span id="cb1-799"><a href="#cb1-799" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-800"><a href="#cb1-800" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-801"><a href="#cb1-801" aria-hidden="true" tabindex="-1"></a>Todas essas probabilidades são calculadas utilizando **a mesma fórmula da distribuição hipergeométrica**.</span>
+<span id="cb1-802"><a href="#cb1-802" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-803"><a href="#cb1-803" aria-hidden="true" tabindex="-1"></a>No nosso exemplo, a tabela observada corresponde a</span>
+<span id="cb1-804"><a href="#cb1-804" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-805"><a href="#cb1-805" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-806"><a href="#cb1-806" aria-hidden="true" tabindex="-1"></a>a_{obs}=1</span>
+<span id="cb1-807"><a href="#cb1-807" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-808"><a href="#cb1-808" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-809"><a href="#cb1-809" aria-hidden="true" tabindex="-1"></a>com probabilidade</span>
+<span id="cb1-810"><a href="#cb1-810" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-811"><a href="#cb1-811" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-812"><a href="#cb1-812" aria-hidden="true" tabindex="-1"></a>P(A=1)=0.02676134</span>
+<span id="cb1-813"><a href="#cb1-813" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-814"><a href="#cb1-814" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-815"><a href="#cb1-815" aria-hidden="true" tabindex="-1"></a>Portanto, as **tabelas extremas** são aquelas cuja probabilidade é **menor ou igual a esse valor**.</span>
+<span id="cb1-816"><a href="#cb1-816" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-817"><a href="#cb1-817" aria-hidden="true" tabindex="-1"></a>No nosso caso, isso ocorre para</span>
+<span id="cb1-818"><a href="#cb1-818" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-819"><a href="#cb1-819" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-820"><a href="#cb1-820" aria-hidden="true" tabindex="-1"></a>a = 0,7,8,9</span>
+<span id="cb1-821"><a href="#cb1-821" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-822"><a href="#cb1-822" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-823"><a href="#cb1-823" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>$a=0$:</span>
+<span id="cb1-824"><a href="#cb1-824" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-825"><a href="#cb1-825" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>                     <span class="pp">|</span> Efeito adverso <span class="pp">|</span> Sem efeito <span class="pp">|</span> Total <span class="pp">|</span></span>
+<span id="cb1-826"><a href="#cb1-826" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------------------|:--------------:|:----------:|:-----:|</span></span>
+<span id="cb1-827"><a href="#cb1-827" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Usou medicamento** <span class="pp">|</span> 0 <span class="pp">|</span> 15 <span class="pp">|</span> 15 <span class="pp">|</span></span>
+<span id="cb1-828"><a href="#cb1-828" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Não usou** <span class="pp">|</span> 9 <span class="pp">|</span> 11 <span class="pp">|</span> 20 <span class="pp">|</span></span>
+<span id="cb1-829"><a href="#cb1-829" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total** <span class="pp">|</span> 9 <span class="pp">|</span> 26 <span class="pp">|</span> 35 <span class="pp">|</span></span>
+<span id="cb1-830"><a href="#cb1-830" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-831"><a href="#cb1-831" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-832"><a href="#cb1-832" aria-hidden="true" tabindex="-1"></a>P(A=0)=0.002378785</span>
+<span id="cb1-833"><a href="#cb1-833" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-834"><a href="#cb1-834" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-835"><a href="#cb1-835" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-836"><a href="#cb1-836" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>$a=7$:</span>
+<span id="cb1-837"><a href="#cb1-837" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-838"><a href="#cb1-838" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>                     <span class="pp">|</span> Efeito adverso <span class="pp">|</span> Sem efeito <span class="pp">|</span> Total <span class="pp">|</span></span>
+<span id="cb1-839"><a href="#cb1-839" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------------------|:--------------:|:----------:|:-----:|</span></span>
+<span id="cb1-840"><a href="#cb1-840" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Usou medicamento** <span class="pp">|</span> 7 <span class="pp">|</span> 8 <span class="pp">|</span> 15 <span class="pp">|</span></span>
+<span id="cb1-841"><a href="#cb1-841" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Não usou** <span class="pp">|</span> 2 <span class="pp">|</span> 18 <span class="pp">|</span> 20 <span class="pp">|</span></span>
+<span id="cb1-842"><a href="#cb1-842" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total** <span class="pp">|</span> 9 <span class="pp">|</span> 26 <span class="pp">|</span> 35 <span class="pp">|</span></span>
+<span id="cb1-843"><a href="#cb1-843" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-844"><a href="#cb1-844" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-845"><a href="#cb1-845" aria-hidden="true" tabindex="-1"></a>P(A=7)=0.01731616</span>
+<span id="cb1-846"><a href="#cb1-846" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-847"><a href="#cb1-847" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-848"><a href="#cb1-848" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>$a=8$:</span>
+<span id="cb1-849"><a href="#cb1-849" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-850"><a href="#cb1-850" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>                     <span class="pp">|</span> Efeito adverso <span class="pp">|</span> Sem efeito <span class="pp">|</span> Total <span class="pp">|</span></span>
+<span id="cb1-851"><a href="#cb1-851" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------------------|:--------------:|:----------:|:-----:|</span></span>
+<span id="cb1-852"><a href="#cb1-852" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Usou medicamento** <span class="pp">|</span> 8 <span class="pp">|</span> 7 <span class="pp">|</span> 15 <span class="pp">|</span></span>
+<span id="cb1-853"><a href="#cb1-853" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Não usou** <span class="pp">|</span> 1 <span class="pp">|</span> 19 <span class="pp">|</span> 20 <span class="pp">|</span></span>
+<span id="cb1-854"><a href="#cb1-854" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total** <span class="pp">|</span> 9 <span class="pp">|</span> 26 <span class="pp">|</span> 35 <span class="pp">|</span></span>
+<span id="cb1-855"><a href="#cb1-855" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-856"><a href="#cb1-856" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-857"><a href="#cb1-857" aria-hidden="true" tabindex="-1"></a>P(A=8)=0.001822754</span>
+<span id="cb1-858"><a href="#cb1-858" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-859"><a href="#cb1-859" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-860"><a href="#cb1-860" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>$a=9$:</span>
+<span id="cb1-861"><a href="#cb1-861" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-862"><a href="#cb1-862" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>                     <span class="pp">|</span> Efeito adverso <span class="pp">|</span> Sem efeito <span class="pp">|</span> Total <span class="pp">|</span></span>
+<span id="cb1-863"><a href="#cb1-863" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------------------|:--------------:|:----------:|:-----:|</span></span>
+<span id="cb1-864"><a href="#cb1-864" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Usou medicamento** <span class="pp">|</span> 9 <span class="pp">|</span> 6 <span class="pp">|</span> 15 <span class="pp">|</span></span>
+<span id="cb1-865"><a href="#cb1-865" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Não usou** <span class="pp">|</span> 0 <span class="pp">|</span> 20 <span class="pp">|</span> 20 <span class="pp">|</span></span>
+<span id="cb1-866"><a href="#cb1-866" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Total** <span class="pp">|</span> 9 <span class="pp">|</span> 26 <span class="pp">|</span> 35 <span class="pp">|</span></span>
+<span id="cb1-867"><a href="#cb1-867" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-868"><a href="#cb1-868" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-869"><a href="#cb1-869" aria-hidden="true" tabindex="-1"></a>P(A=9)=0.00007088486</span>
+<span id="cb1-870"><a href="#cb1-870" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-871"><a href="#cb1-871" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-872"><a href="#cb1-872" aria-hidden="true" tabindex="-1"></a>Assim, o **valor-p** é obtido somando as probabilidades dessas tabelas:</span>
+<span id="cb1-873"><a href="#cb1-873" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-874"><a href="#cb1-874" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-875"><a href="#cb1-875" aria-hidden="true" tabindex="-1"></a>p\text{-valor} =</span>
+<span id="cb1-876"><a href="#cb1-876" aria-hidden="true" tabindex="-1"></a>P(A=0)+P(A=1)+P(A=7)+P(A=8)+P(A=9)\approx 0,04835</span>
+<span id="cb1-877"><a href="#cb1-877" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-878"><a href="#cb1-878" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-879"><a href="#cb1-879" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **REGRA DE DECISÃO**</span></span>
+<span id="cb1-880"><a href="#cb1-880" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-881"><a href="#cb1-881" aria-hidden="true" tabindex="-1"></a>Após calcular o **valor-p**, aplicamos a regra usual dos testes de hipótese:</span>
+<span id="cb1-882"><a href="#cb1-882" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-883"><a href="#cb1-883" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>se $p\text{-valor} \leq \alpha$, **rejeitamos $H_0$**, concluindo que há evidência de **associação entre as variáveis**;</span>
+<span id="cb1-884"><a href="#cb1-884" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-885"><a href="#cb1-885" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>se $p\text{-valor} &gt; \alpha$, **não rejeitamos $H_0$**, indicando que os dados **não fornecem evidência suficiente de associação**.</span>
+<span id="cb1-886"><a href="#cb1-886" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-887"><a href="#cb1-887" aria-hidden="true" tabindex="-1"></a>No nosso exemplo, considere $\alpha=0,05$. Como o valor-p é menor que 0.05, rejeitamos a hipotese nula $H_0$. Assim, há evidências de que existe associação entre a utilização do medicamento e o aparecimento do efeito adverso.</span>
+<span id="cb1-888"><a href="#cb1-888" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-889"><a href="#cb1-889" aria-hidden="true" tabindex="-1"></a><span class="fu">### **APLICANDO O TESTE EM TABELAS MAIORES**</span></span>
+<span id="cb1-890"><a href="#cb1-890" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-891"><a href="#cb1-891" aria-hidden="true" tabindex="-1"></a>O **teste exato de Fisher** não está restrito apenas a tabelas $2 \times 2$. Ele também pode ser aplicado a **tabelas de contingência maiores**, como $2 \times 3$, $3 \times 3$ ou dimensões ainda maiores.</span>
+<span id="cb1-892"><a href="#cb1-892" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-893"><a href="#cb1-893" aria-hidden="true" tabindex="-1"></a>Nesses casos, o princípio do teste permanece o mesmo: calcular a probabilidade da tabela observada **condicionando aos totais marginais fixos** e somar as probabilidades de todas as tabelas **tão extremas quanto ou mais extremas** que a observada.</span>
+<span id="cb1-894"><a href="#cb1-894" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-895"><a href="#cb1-895" aria-hidden="true" tabindex="-1"></a>Entretanto, conforme o tamanho da tabela aumenta, o **número de tabelas possíveis cresce muito rapidamente**, tornando o cálculo exato mais complexo do ponto de vista computacional.</span>
+<span id="cb1-896"><a href="#cb1-896" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-897"><a href="#cb1-897" aria-hidden="true" tabindex="-1"></a>Por isso, em tabelas grandes, o R pode utilizar **métodos computacionais ou simulações de Monte Carlo** para aproximar o valor-p.</span>
+<span id="cb1-898"><a href="#cb1-898" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-899"><a href="#cb1-899" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-900"><a href="#cb1-900" aria-hidden="true" tabindex="-1"></a><span class="fu">## **RECOMENDAÇÕES GERAIS**</span></span>
+<span id="cb1-901"><a href="#cb1-901" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-902"><a href="#cb1-902" aria-hidden="true" tabindex="-1"></a>Na prática, tanto o **teste qui-quadrado de independência** quanto o **teste exato de Fisher** podem ser utilizados para avaliar associação entre duas variáveis categóricas. A escolha entre eles depende principalmente do **tamanho da amostra** e da **frequência esperada nas células da tabela**.</span>
+<span id="cb1-903"><a href="#cb1-903" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-904"><a href="#cb1-904" aria-hidden="true" tabindex="-1"></a>De modo geral, o **teste qui-quadrado** é o mais utilizado quando as frequências esperadas são suficientemente grandes. Uma recomendação comum é que **todas as frequências esperadas sejam maiores que 5**, ou pelo menos que a grande maioria das células satisfaça essa condição. Nessas situações, a aproximação pela distribuição qui-quadrado funciona muito bem.</span>
+<span id="cb1-905"><a href="#cb1-905" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-906"><a href="#cb1-906" aria-hidden="true" tabindex="-1"></a>Quando existem **frequências esperadas pequenas**, especialmente menores que 5, a aproximação do qui-quadrado pode se tornar imprecisa. Nesses casos, recomenda-se utilizar o **teste exato de Fisher**, que calcula o valor-p a partir das probabilidades exatas das tabelas possíveis.</span>
+<span id="cb1-907"><a href="#cb1-907" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-908"><a href="#cb1-908" aria-hidden="true" tabindex="-1"></a>Em termos de poder estatístico, quando as condições do qui-quadrado são satisfeitas, ele tende a ser **mais poderoso** e **computacionalmente mais simples** de aplicar. O teste de Fisher, por sua vez, é **mais conservador** em algumas situações, mas possui a vantagem de **não depender de aproximações assintóticas**.</span>
+<span id="cb1-909"><a href="#cb1-909" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-910"><a href="#cb1-910" aria-hidden="true" tabindex="-1"></a>Quando a tabela possui muitas células com frequências muito pequenas, uma estratégia comum é **agregar categorias semelhantes**, reduzindo o número de células e aumentando as frequências esperadas. No entanto, essa agregação deve sempre fazer **sentido do ponto de vista substantivo**, e não apenas estatístico.</span>
+<span id="cb1-911"><a href="#cb1-911" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-912"><a href="#cb1-912" aria-hidden="true" tabindex="-1"></a>Assim, de forma geral:</span>
+<span id="cb1-913"><a href="#cb1-913" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-914"><a href="#cb1-914" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Utilize o **teste qui-quadrado** quando as frequências esperadas forem adequadas.</span>
+<span id="cb1-915"><a href="#cb1-915" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Utilize o **teste exato de Fisher** quando houver **células com frequências pequenas**.</span>
+<span id="cb1-916"><a href="#cb1-916" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Considere **agregar categorias** quando houver muitas células raras.</span>
+<span id="cb1-917"><a href="#cb1-917" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Sempre interprete os resultados **no contexto do problema estudado**.</span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
