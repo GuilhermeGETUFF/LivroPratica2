@@ -586,7 +586,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="atividade-avaliativa-4-testes-de-hipótese-para-1-2-ou-mais-de-2-populações-na-literatura" class="level2" data-number="8.5">
 <h2 data-number="8.5" class="anchored" data-anchor-id="atividade-avaliativa-4-testes-de-hipótese-para-1-2-ou-mais-de-2-populações-na-literatura"><span class="header-section-number">8.5</span> <strong>ATIVIDADE AVALIATIVA 4: TESTES DE HIPÓTESE PARA 1, 2 OU MAIS DE 2 POPULAÇÕES NA LITERATURA</strong></h2>
-<p>Cada dupla ficará responsável por <strong>um artigo científico</strong> que utiliza testes de associação (Qui-quadrado e/ou Fisher): - O objetivo é <strong>apresentar o artigo, explicando o contexto, os métodos estatísticos e os resultados</strong>. - Tempo por apresentação: <strong>10 a 12 minutos</strong>.</p>
+<p>Cada dupla ficará responsável por <strong>um artigo científico</strong> que utiliza testes paramétricos para 1, 2 ou mais de 2 populações: - O objetivo é <strong>apresentar o artigo, explicando o contexto, os métodos estatísticos e os resultados</strong>. - Tempo por apresentação: <strong>10 a 12 minutos</strong>.</p>
 <p>O <strong>sorteio do artigo</strong> para cada dupla foi realizado com o seguinte código:</p>
 <div class="cell">
 <details class="code-fold">
@@ -594,7 +594,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2026</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Duplas</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>duplas <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"Dupla "</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>)</span>
@@ -635,23 +635,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td style="text-align: left; background-color: orange !important;">Dupla 1</td>
-<td style="text-align: left; background-color: orange !important;">Artigo5</td>
+<td style="text-align: left; background-color: orange !important;">Artigo7</td>
 </tr>
 <tr class="even">
 <td style="text-align: left; background-color: magenta !important;">Dupla 2</td>
-<td style="text-align: left; background-color: magenta !important;">Artigo1</td>
+<td style="text-align: left; background-color: magenta !important;">Artigo8</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; background-color: green !important;">Dupla 3</td>
-<td style="text-align: left; background-color: green !important;">Artigo7</td>
+<td style="text-align: left; background-color: green !important;">Artigo3</td>
 </tr>
 <tr class="even">
 <td style="text-align: left; background-color: cyan !important;">Dupla 4</td>
-<td style="text-align: left; background-color: cyan !important;">Artigo8</td>
+<td style="text-align: left; background-color: cyan !important;">Artigo6</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; background-color: brown !important;">Dupla 5</td>
-<td style="text-align: left; background-color: brown !important;">Artigo3</td>
+<td style="text-align: left; background-color: brown !important;">Artigo2</td>
 </tr>
 <tr class="even">
 <td style="text-align: left; background-color: pink !important;">Dupla 6</td>
@@ -659,11 +659,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: left; background-color: lightblue !important;">Dupla 7</td>
-<td style="text-align: left; background-color: lightblue !important;">Artigo2</td>
+<td style="text-align: left; background-color: lightblue !important;">Artigo5</td>
 </tr>
 <tr class="even">
 <td style="text-align: left; background-color: lightgreen !important;">Dupla 8</td>
-<td style="text-align: left; background-color: lightgreen !important;">Artigo6</td>
+<td style="text-align: left; background-color: lightgreen !important;">Artigo1</td>
 </tr>
 </tbody>
 </table>
@@ -683,7 +683,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 data-number="8.5.2" class="anchored" data-anchor-id="capítulo-2-metodologia-estatística-1"><span class="header-section-number">8.5.2</span> <strong>CAPÍTULO 2: METODOLOGIA ESTATÍSTICA</strong></h3>
 <ul>
 <li>Descrever as <strong>variáveis analisadas</strong> (desfecho e fatores de exposição).</li>
-<li>Explicar <strong>como os testes de associação foram aplicados e apresentados</strong>:</li>
+<li>Explicar <strong>como os testes foram aplicados e apresentados</strong>:</li>
 </ul>
 </section>
 <section id="capítulo-3-resultados-1" class="level3" data-number="8.5.3">
@@ -697,13 +697,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 data-number="8.5.4" class="anchored" data-anchor-id="capítulo-4-conclusão-1"><span class="header-section-number">8.5.4</span> <strong>CAPÍTULO 4: CONCLUSÃO</strong></h3>
 <ul>
 <li>Sintetizar <strong>principais achados</strong>.</li>
-<li>Destacar <strong>a importância do teste de associação</strong> na pesquisa.</li>
+<li>Destacar <strong>a importância dos testes de hipótese</strong> na pesquisa.</li>
 <li>Qual a contribuição dessa pesquisa para a sociedade?</li>
 </ul>
 </section>
 <section id="publicação-com-github-pages-2" class="level3" data-number="8.5.5">
 <h3 data-number="8.5.5" class="anchored" data-anchor-id="publicação-com-github-pages-2"><span class="header-section-number">8.5.5</span> <strong>PUBLICAÇÃO COM <code>GitHub Pages</code></strong></h3>
-<p>Após <strong>finalizarem a apresentação em slides <code>quarto</code></strong>, publiquem com o <code>GitHub Pages</code> usando o nome “Apresentacao1” e colem o <em>link</em> <strong>gerado no <code>Google Classroom</code> na atividade “Atividade Avaliativa 1”</strong>.</p>
+<p>Após <strong>finalizarem a apresentação em slides <code>quarto</code></strong>, publiquem com o <code>GitHub Pages</code> usando o nome “Apresentacao4” e colem o <em>link</em> <strong>gerado no <code>Google Classroom</code> na atividade “Atividade Avaliativa 4”</strong>.</p>
 
 
 <!-- -->
@@ -1393,7 +1393,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-217"><a href="#cb4-217" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-218"><a href="#cb4-218" aria-hidden="true" tabindex="-1"></a><span class="fu">## **ATIVIDADE AVALIATIVA 4: TESTES DE HIPÓTESE PARA 1, 2 OU MAIS DE 2 POPULAÇÕES NA LITERATURA**</span></span>
 <span id="cb4-219"><a href="#cb4-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-220"><a href="#cb4-220" aria-hidden="true" tabindex="-1"></a>Cada dupla ficará responsável por **um artigo científico** que utiliza testes de associação (Qui-quadrado e/ou Fisher):</span>
+<span id="cb4-220"><a href="#cb4-220" aria-hidden="true" tabindex="-1"></a>Cada dupla ficará responsável por **um artigo científico** que utiliza testes paramétricos para 1, 2 ou mais de 2 populações:</span>
 <span id="cb4-221"><a href="#cb4-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>O objetivo é **apresentar o artigo, explicando o contexto, os métodos estatísticos e os resultados**. </span>
 <span id="cb4-222"><a href="#cb4-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tempo por apresentação: **10 a 12 minutos**.</span>
 <span id="cb4-223"><a href="#cb4-223" aria-hidden="true" tabindex="-1"></a></span>
@@ -1403,7 +1403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-229"><a href="#cb4-229" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb4-230"><a href="#cb4-230" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
 <span id="cb4-231"><a href="#cb4-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-232"><a href="#cb4-232" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2026</span>)</span>
+<span id="cb4-232"><a href="#cb4-232" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
 <span id="cb4-233"><a href="#cb4-233" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-234"><a href="#cb4-234" aria-hidden="true" tabindex="-1"></a><span class="co"># Duplas</span></span>
 <span id="cb4-235"><a href="#cb4-235" aria-hidden="true" tabindex="-1"></a>duplas <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"Dupla "</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>)</span>
@@ -1447,7 +1447,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-273"><a href="#cb4-273" aria-hidden="true" tabindex="-1"></a><span class="fu">### **CAPÍTULO 2: METODOLOGIA ESTATÍSTICA**</span></span>
 <span id="cb4-274"><a href="#cb4-274" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-275"><a href="#cb4-275" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Descrever as **variáveis analisadas** (desfecho e fatores de exposição).</span>
-<span id="cb4-276"><a href="#cb4-276" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Explicar **como os testes de associação foram aplicados e apresentados**:</span>
+<span id="cb4-276"><a href="#cb4-276" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Explicar **como os testes foram aplicados e apresentados**:</span>
 <span id="cb4-277"><a href="#cb4-277" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-278"><a href="#cb4-278" aria-hidden="true" tabindex="-1"></a><span class="fu">### **CAPÍTULO 3: RESULTADOS**</span></span>
 <span id="cb4-279"><a href="#cb4-279" aria-hidden="true" tabindex="-1"></a></span>
@@ -1457,12 +1457,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-283"><a href="#cb4-283" aria-hidden="true" tabindex="-1"></a><span class="fu">### **CAPÍTULO 4: CONCLUSÃO**</span></span>
 <span id="cb4-284"><a href="#cb4-284" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-285"><a href="#cb4-285" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Sintetizar **principais achados**.</span>
-<span id="cb4-286"><a href="#cb4-286" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Destacar **a importância do teste de associação** na pesquisa.</span>
+<span id="cb4-286"><a href="#cb4-286" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Destacar **a importância dos testes de hipótese** na pesquisa.</span>
 <span id="cb4-287"><a href="#cb4-287" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Qual a contribuição dessa pesquisa para a sociedade?</span>
 <span id="cb4-288"><a href="#cb4-288" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-289"><a href="#cb4-289" aria-hidden="true" tabindex="-1"></a><span class="fu">### **PUBLICAÇÃO COM `GitHub Pages`** </span></span>
 <span id="cb4-290"><a href="#cb4-290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-291"><a href="#cb4-291" aria-hidden="true" tabindex="-1"></a>Após **finalizarem a apresentação em slides `quarto`**, publiquem com o `GitHub Pages` usando o nome "Apresentacao1" e colem o *link* **gerado no `Google Classroom` na atividade "Atividade Avaliativa 1"**.</span>
+<span id="cb4-291"><a href="#cb4-291" aria-hidden="true" tabindex="-1"></a>Após **finalizarem a apresentação em slides `quarto`**, publiquem com o `GitHub Pages` usando o nome "Apresentacao4" e colem o *link* **gerado no `Google Classroom` na atividade "Atividade Avaliativa 4"**.</span>
 </code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
