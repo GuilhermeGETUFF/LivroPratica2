@@ -1,0 +1,73 @@
+# **ORGANIZAÇÃO E CRONOGRAMA DA DISCIPLINA**
+
+
+Segue o **cronograma** da disciplina de **Prática Estatística II** do primeiro semestre de 2026:
+
+```{r, message=FALSE, warning=FALSE, results='asis',echo=FALSE}
+library(dplyr)
+library(kableExtra)
+
+cronograma <- tribble(
+  ~Data, ~Conteúdo, ~Cor,
+  "09/03", "Introdução da disciplina. Testes de Independência (parte I).", "lightblue",
+  "11/03", "Treinamento 1: Construindo Apresentações em Slides com o <code>quarto</code>", "lightblue",
+  "16/03", "Testes de Independência (parte II).", "lightblue",
+  "18/03", "Treinamento 2: GitHub Pages", "lightblue",
+  "23/03", "Atividade Avaliativa 1: Testes de Independência na Literatura", "lightgreen",
+  "25/03", "Treinamento 3: O Pacote <code>gtsummary</code> (Parte I)", "lightblue",
+  "30/03", "Atividade Avaliativa 2: Aplicando o Pacote <code>gtsummary</code>", "lightgreen",
+  "01/04", "Treinamento 4: Revisão de Testes de Hipótese para 1, 2 ou mais de 2 populações", "lightblue",
+  "06/04", "Atividade Avaliativa 3: Revisão de Testes de Hipótese para 1, 2 ou mais de 2 populações", "lightgreen",
+  "08/04", "Execução da Atividade Avaliativa 4", "lightblue",
+  "13/04", "Atividade Avaliativa 4: Testes de Hipótese para 1, 2 ou mais de 2 populações na Literatura", "lightgreen",
+  "15/04", "Treinamento 5: O pacote <code>gtsummary</code> (Parte II). Orientações sobre o Projeto I", "lightblue",
+  "20/04", "Não Haverá Aula (Recesso Tiradentes)", "lightpink",
+  "22/04", "Treinamento 6: Construindo nuvens de palavras no <code>R</code>", "lightblue",
+  "27/04", "Atividade avaliativa 5: A ANOVA de Welch", "lightgreen",
+  "29/04", "Execução Projeto I", "lightblue",
+  "04/05", "Testes de Aderência e Homogeneidade", "lightblue",
+  "06/05", "Execução Projeto I", "lightblue",
+  "11/05", "Projeto I (Atividades Avaliativas 6 e 7)", "lightgreen",
+  "13/05", "Projeto I (Atividades Avaliativas 6 e 7)", "lightgreen",
+  "18/05", "Atividade avaliativa 8: Testes Qui-Quadrado", "lightgreen",
+  "20/05", "Treinamento 7: Construindo Mapas Coropléticos com o <code>quarto</code>", "lightblue",
+  "25/05", "Atividade avaliativa 9: Mapas Coropléticos", "lightgreen",
+  "27/05", "Treinamento 8: Construindo Dashboards com o <code>quarto</code>", "lightblue",
+  "01/06", "Orientações sobre o Projeto II (Atividades Avaliativas 10 e 11)", "lightblue",
+  "03/06", "Execução Projeto II", "lightblue",
+  "08/06", "Acessando Bases Públicas", "lightblue",
+  "10/06", "Treinamento 9: Utilizando o <code>R</code> para Acessar Bases Públicas. Execução Projeto II", "lightblue",
+  "15/06", "Projeto II", "lightgreen",
+  "17/06", "Projeto II", "lightgreen",
+  "22/06", "Conclusão da disciplina", "lightblue",
+  "24/06", "Não Haverá Aula (Feriado Municipal)", "lightpink",
+  "29/06 - 01/07 - 06/07 - 08/07", "Não Haverá Aula (Congressos ISBA e IBC)", "lightpink"
+  
+  
+)
+
+tabela <- cronograma %>%
+  select(Data, Conteúdo)
+
+kbl_out <- kbl(
+  tabela,
+  align = "l",
+  col.names = c("Data", "Conteúdo"),
+  escape = FALSE
+) %>%
+  kable_styling(
+    full_width = FALSE,
+    bootstrap_options = c("striped", "hover")
+  ) %>%
+  row_spec(0, bold = TRUE)
+
+for (i in 1:nrow(tabela)) {
+  kbl_out <- kbl_out %>%
+    row_spec(i, background = cronograma$Cor[i])
+}
+
+kbl_out
+
+
+```
+
