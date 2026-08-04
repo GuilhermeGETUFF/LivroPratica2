@@ -171,6 +171,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><strong>TESTES DE INDEPENDÊNCIA</strong></span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Cap3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -222,14 +228,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left; background-color: lightblue !important;">Treinamento 1: <code>quarto</code> A plataforma : Apresentação em Slides</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left; background-color: pink !important;">08/08</td>
+<td style="text-align: left; background-color: pink !important;">Laboratório</td>
+<td style="text-align: left; background-color: pink !important;">Revisão do Treinamento 1</td>
+</tr>
+<tr class="even">
 <td style="text-align: left; background-color: lightblue !important;">10/08</td>
 <td style="text-align: left; background-color: lightblue !important;">Sala de Aula</td>
 <td style="text-align: left; background-color: lightblue !important;">Testes de Independência (parte II).</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left; background-color: lightblue !important;">12/08</td>
 <td style="text-align: left; background-color: lightblue !important;">Laboratório</td>
 <td style="text-align: left; background-color: lightblue !important;">Treinamento 2: Compartilhamento de produtos <code>quarto</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; background-color: pink !important;">14/08</td>
+<td style="text-align: left; background-color: pink !important;">Laboratório</td>
+<td style="text-align: left; background-color: pink !important;">Execução Atividade Avaliativa 1</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; background-color: lightgreen !important;">17/08</td>
@@ -242,14 +258,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left; background-color: lightblue !important;">Treinamento 3: O Pacote <code>gtsummary</code> (Parte I)</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left; background-color: pink !important;">21/08</td>
+<td style="text-align: left; background-color: pink !important;">Laboratório</td>
+<td style="text-align: left; background-color: pink !important;">Execução Atividade Avaliativa 2</td>
+</tr>
+<tr class="even">
 <td style="text-align: left; background-color: lightgreen !important;">24/08</td>
 <td style="text-align: left; background-color: lightgreen !important;">Sala de Aula</td>
 <td style="text-align: left; background-color: lightgreen !important;">Atividade Avaliativa 2: Aplicando o Pacote <code>gtsummary</code></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left; background-color: lightblue !important;">26/08</td>
 <td style="text-align: left; background-color: lightblue !important;">Sala de Aula</td>
 <td style="text-align: left; background-color: lightblue !important;">Treinamento 4: Revisão de Testes de Hipótese para 1, 2 ou mais de 2 populações</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; background-color: pink !important;">28/08</td>
+<td style="text-align: left; background-color: pink !important;">Laboratório</td>
+<td style="text-align: left; background-color: pink !important;">Revisão do Treinamento 4</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; background-color: lightgreen !important;">31/08</td>
@@ -776,69 +802,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>Data, <span class="sc">~</span>Local, <span class="sc">~</span>Conteúdo,  <span class="sc">~</span>Cor,</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">"03/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Introdução da disciplina. Testes de Independência (parte I)."</span>, <span class="st">"lightblue"</span>,</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">"05/08"</span>, <span class="st">"Laboratório"</span>, <span class="st">"Treinamento 1: &lt;code&gt;quarto&lt;/code&gt; A plataforma : Apresentação em Slides"</span>, <span class="st">"lightblue"</span>,</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Testes de Independência (parte II)."</span>, <span class="st">"lightblue"</span>,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">"12/08"</span>, <span class="st">"Laboratório"</span>,<span class="st">"Treinamento 2: Compartilhamento de produtos &lt;code&gt;quarto&lt;/code&gt; "</span>, <span class="st">"lightblue"</span>,</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"17/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Atividade Avaliativa 1: Testes de Independência na Literatura"</span>, <span class="st">"lightgreen"</span>,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">"19/08"</span>, <span class="st">"Laboratório"</span>, <span class="st">"Treinamento 3: O Pacote &lt;code&gt;gtsummary&lt;/code&gt; (Parte I)"</span>, <span class="st">"lightblue"</span>,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"24/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Atividade Avaliativa 2: Aplicando o Pacote &lt;code&gt;gtsummary&lt;/code&gt;"</span>, <span class="st">"lightgreen"</span>,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"26/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Treinamento 4: Revisão de Testes de Hipótese para 1, 2 ou mais de 2 populações"</span>, <span class="st">"lightblue"</span>,</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="st">"31/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Atividade Avaliativa 3: Revisão de Testes de Hipótese para 1, 2 ou mais de 2 populações"</span>, <span class="st">"lightgreen"</span>,</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"02/09"</span>, <span class="st">"Laboratório"</span>, <span class="st">"Execução da Atividade Avaliativa 4"</span>, <span class="st">"lightblue"</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>tabela <span class="ot">&lt;-</span> cronograma <span class="sc">%&gt;%</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Data, Local, Conteúdo)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">"08/08"</span>, <span class="st">"Laboratório"</span>, <span class="st">"Revisão do Treinamento 1"</span>, <span class="st">"pink"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">"10/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Testes de Independência (parte II)."</span>, <span class="st">"lightblue"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"12/08"</span>, <span class="st">"Laboratório"</span>,<span class="st">"Treinamento 2: Compartilhamento de produtos &lt;code&gt;quarto&lt;/code&gt; "</span>, <span class="st">"lightblue"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">"14/08"</span>, <span class="st">"Laboratório"</span>, <span class="st">"Execução Atividade Avaliativa 1"</span>, <span class="st">"pink"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"17/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Atividade Avaliativa 1: Testes de Independência na Literatura"</span>, <span class="st">"lightgreen"</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"19/08"</span>, <span class="st">"Laboratório"</span>, <span class="st">"Treinamento 3: O Pacote &lt;code&gt;gtsummary&lt;/code&gt; (Parte I)"</span>, <span class="st">"lightblue"</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="st">"21/08"</span>, <span class="st">"Laboratório"</span>, <span class="st">"Execução Atividade Avaliativa 2"</span>, <span class="st">"pink"</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"24/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Atividade Avaliativa 2: Aplicando o Pacote &lt;code&gt;gtsummary&lt;/code&gt;"</span>, <span class="st">"lightgreen"</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"26/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Treinamento 4: Revisão de Testes de Hipótese para 1, 2 ou mais de 2 populações"</span>, <span class="st">"lightblue"</span>,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"28/08"</span>, <span class="st">"Laboratório"</span>, <span class="st">"Revisão do Treinamento 4"</span>, <span class="st">"pink"</span>,</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"31/08"</span>, <span class="st">"Sala de Aula"</span>, <span class="st">"Atividade Avaliativa 3: Revisão de Testes de Hipótese para 1, 2 ou mais de 2 populações"</span>, <span class="st">"lightgreen"</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"02/09"</span>, <span class="st">"Laboratório"</span>, <span class="st">"Execução da Atividade Avaliativa 4"</span>, <span class="st">"lightblue"</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>kbl_out <span class="ot">&lt;-</span> <span class="fu">kbl</span>(</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  tabela,</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">align =</span> <span class="st">"l"</span>,</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">"Data"</span>, <span class="st">"Local"</span>, <span class="st">"Conteúdo"</span>),</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="at">escape =</span> <span class="cn">FALSE</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">full_width =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>)</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">0</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(tabela)) {</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  kbl_out <span class="ot">&lt;-</span> kbl_out <span class="sc">%&gt;%</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">row_spec</span>(i, <span class="at">background =</span> cronograma<span class="sc">$</span>Cor[i])</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>kbl_out</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>tabela <span class="ot">&lt;-</span> cronograma <span class="sc">%&gt;%</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Data, Local, Conteúdo)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>kbl_out <span class="ot">&lt;-</span> <span class="fu">kbl</span>(</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  tabela,</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">align =</span> <span class="st">"l"</span>,</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">"Data"</span>, <span class="st">"Local"</span>, <span class="st">"Conteúdo"</span>),</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  <span class="at">escape =</span> <span class="cn">FALSE</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">full_width =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">0</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(tabela)) {</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>  kbl_out <span class="ot">&lt;-</span> kbl_out <span class="sc">%&gt;%</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="fu">row_spec</span>(i, <span class="at">background =</span> cronograma<span class="sc">$</span>Cor[i])</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>kbl_out</span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!--</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="co">  "13/04", "Atividade Avaliativa 4: Testes de Hipótese para 1, 2 ou mais de 2 populações na Literatura", "lightgreen",</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co">  "15/04", "Treinamento 5: O pacote &lt;code&gt;gtsummary&lt;/code&gt; (Parte II). Orientações sobre o Projeto I", "lightblue",</span></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="co">  "20/04", "Não Haverá Aula (Recesso Tiradentes)", "lightpink",</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co">  "22/04", "Treinamento 6: Construindo nuvens de palavras no &lt;code&gt;R&lt;/code&gt;", "lightblue",</span></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="co">  "27/04", "Atividade avaliativa 5: A ANOVA de Welch", "lightgreen",</span></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="co">  "29/04", "Execução Projeto I", "lightblue",</span></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="co">  "04/05", "Testes de Aderência e Homogeneidade", "lightblue",</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="co">  "06/05", "Execução Projeto I", "lightblue",</span></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co">  "11/05", "Projeto I (Atividades Avaliativas 6 e 7)", "lightgreen",</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="co">  "13/05", "Projeto I (Atividades Avaliativas 6 e 7)", "lightgreen",</span></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="co">  "18/05", "Atividade avaliativa 8: Testes de Independência, Homogeneidade e Aderência", "lightgreen",</span></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="co">  "20/05", "Treinamento 7: Construindo Mapas Coropléticos com o pacote `geobr`", "lightblue",</span></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="co">  "25/05", "Treinamento 7: Construindo Mapas Coropléticos com o pacote `geobr`", "lightblue",</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="co">  "27/05", "Treinamento 8: Construindo Dashboards com o &lt;code&gt;quarto&lt;/code&gt;", "lightblue",</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="co">  "01/06", "Atividade avaliativa 9: Explorando o pacote `geobr`", "lightgreen",</span></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="co">  "03/06", "Orientações sobre o Projeto II (Atividades Avaliativas 10 e 11) - Execução Projeto II", "lightblue",</span></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="co">  "08/06", "Execução Projeto II", "lightblue",</span></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="co">  "10/06", "Execução Projeto II", "lightblue",</span></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="co">  "15/06", "Projeto II", "lightgreen",</span></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co">  "17/06", "Projeto II", "lightgreen",</span></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="co">  "22/06", "Conclusão da disciplina", "lightblue",</span></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="co">  "24/06", "Não Haverá Aula (Feriado Municipal)", "lightpink",</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="co">  "29/06 - 01/07 - 06/07 - 08/07", "Não Haverá Aula (Congressos ISBA e IBC)", "lightpink"</span></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co">--&gt;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!--</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co">  "13/04", "Atividade Avaliativa 4: Testes de Hipótese para 1, 2 ou mais de 2 populações na Literatura", "lightgreen",</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="co">  "15/04", "Treinamento 5: O pacote &lt;code&gt;gtsummary&lt;/code&gt; (Parte II). Orientações sobre o Projeto I", "lightblue",</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="co">  "20/04", "Não Haverá Aula (Recesso Tiradentes)", "lightpink",</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="co">  "22/04", "Treinamento 6: Construindo nuvens de palavras no &lt;code&gt;R&lt;/code&gt;", "lightblue",</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="co">  "27/04", "Atividade avaliativa 5: A ANOVA de Welch", "lightgreen",</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co">  "29/04", "Execução Projeto I", "lightblue",</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="co">  "04/05", "Testes de Aderência e Homogeneidade", "lightblue",</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="co">  "06/05", "Execução Projeto I", "lightblue",</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="co">  "11/05", "Projeto I (Atividades Avaliativas 6 e 7)", "lightgreen",</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="co">  "13/05", "Projeto I (Atividades Avaliativas 6 e 7)", "lightgreen",</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="co">  "18/05", "Atividade avaliativa 8: Testes de Independência, Homogeneidade e Aderência", "lightgreen",</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="co">  "20/05", "Treinamento 7: Construindo Mapas Coropléticos com o pacote `geobr`", "lightblue",</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="co">  "25/05", "Treinamento 7: Construindo Mapas Coropléticos com o pacote `geobr`", "lightblue",</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="co">  "27/05", "Treinamento 8: Construindo Dashboards com o &lt;code&gt;quarto&lt;/code&gt;", "lightblue",</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="co">  "01/06", "Atividade avaliativa 9: Explorando o pacote `geobr`", "lightgreen",</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="co">  "03/06", "Orientações sobre o Projeto II (Atividades Avaliativas 10 e 11) - Execução Projeto II", "lightblue",</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co">  "08/06", "Execução Projeto II", "lightblue",</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="co">  "10/06", "Execução Projeto II", "lightblue",</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="co">  "15/06", "Projeto II", "lightgreen",</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="co">  "17/06", "Projeto II", "lightgreen",</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co">  "22/06", "Conclusão da disciplina", "lightblue",</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="co">  "24/06", "Não Haverá Aula (Feriado Municipal)", "lightpink",</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="co">  "29/06 - 01/07 - 06/07 - 08/07", "Não Haverá Aula (Congressos ISBA e IBC)", "lightpink"</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="co">--&gt;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
