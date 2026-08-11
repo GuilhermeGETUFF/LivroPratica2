@@ -264,9 +264,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório" id="toc-passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório" class="nav-link" data-scroll-target="#passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório"><span class="header-section-number">5.6.3.6</span> <strong>PASSO 4: CRIAR UM PROJETO NO RStudio E VINCULAR O REPOSITÓRIO</strong></a></li>
   <li><a href="#passo-5-conectando-sua-conta-github-ao-rstudio" id="toc-passo-5-conectando-sua-conta-github-ao-rstudio" class="nav-link" data-scroll-target="#passo-5-conectando-sua-conta-github-ao-rstudio"><span class="header-section-number">5.6.3.7</span> <strong>PASSO 5: CONECTANDO SUA CONTA <code>GitHub</code> AO <code>RStudio</code></strong></a></li>
   <li><a href="#passo-6-algumas-configurações-importantes" id="toc-passo-6-algumas-configurações-importantes" class="nav-link" data-scroll-target="#passo-6-algumas-configurações-importantes"><span class="header-section-number">5.6.3.8</span> <strong>PASSO 6: ALGUMAS CONFIGURAÇÕES IMPORTANTES</strong></a></li>
+  <li><a href="#passo-7-compilar-a-apresentação-e-publicar" id="toc-passo-7-compilar-a-apresentação-e-publicar" class="nav-link" data-scroll-target="#passo-7-compilar-a-apresentação-e-publicar"><span class="header-section-number">5.6.3.9</span> <strong>PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR</strong></a></li>
+  <li><a href="#passo-8-configurando-a-publicação" id="toc-passo-8-configurando-a-publicação" class="nav-link" data-scroll-target="#passo-8-configurando-a-publicação"><span class="header-section-number">5.6.3.10</span> <strong>PASSO 8: CONFIGURANDO A PUBLICAÇÃO</strong></a></li>
   </ul></li>
-  <li><a href="#passo-7-compilar-a-apresentação-e-publicar" id="toc-passo-7-compilar-a-apresentação-e-publicar" class="nav-link" data-scroll-target="#passo-7-compilar-a-apresentação-e-publicar"><span class="header-section-number">5.6.4</span> <strong>PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR</strong></a></li>
-  <li><a href="#passo-8-configurando-a-publicação" id="toc-passo-8-configurando-a-publicação" class="nav-link" data-scroll-target="#passo-8-configurando-a-publicação"><span class="header-section-number">5.6.5</span> <strong>PASSO 8: CONFIGURANDO A PUBLICAÇÃO</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -1410,9 +1410,8 @@ Caso isso ocorra, é possível aumentar o tempo de armazenamento executando:</p>
 <li>Isso evita erros comuns de publicação.</li>
 </ul>
 </section>
-</section>
-<section id="passo-7-compilar-a-apresentação-e-publicar" class="level3" data-number="5.6.4">
-<h3 data-number="5.6.4" class="anchored" data-anchor-id="passo-7-compilar-a-apresentação-e-publicar"><span class="header-section-number">5.6.4</span> <strong>PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR</strong></h3>
+<section id="passo-7-compilar-a-apresentação-e-publicar" class="level4" data-number="5.6.3.9">
+<h4 data-number="5.6.3.9" class="anchored" data-anchor-id="passo-7-compilar-a-apresentação-e-publicar"><span class="header-section-number">5.6.3.9</span> <strong>PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR</strong></h4>
 <p>Para publicar o site no <strong>GitHub Pages</strong>, execute os seguintes comandos no <strong>terminal</strong>.</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>quarto render</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>git add docs</span>
@@ -1430,8 +1429,8 @@ Registra as alterações no histórico do repositório. A mensagem entre aspas d
 Envia essas alterações do seu computador para o <strong>repositório no GitHub</strong>, permitindo que o <strong>GitHub Pages atualize o site publicado</strong>.</p></li>
 </ul>
 </section>
-<section id="passo-8-configurando-a-publicação" class="level3" data-number="5.6.5">
-<h3 data-number="5.6.5" class="anchored" data-anchor-id="passo-8-configurando-a-publicação"><span class="header-section-number">5.6.5</span> <strong>PASSO 8: CONFIGURANDO A PUBLICAÇÃO</strong></h3>
+<section id="passo-8-configurando-a-publicação" class="level4" data-number="5.6.3.10">
+<h4 data-number="5.6.3.10" class="anchored" data-anchor-id="passo-8-configurando-a-publicação"><span class="header-section-number">5.6.3.10</span> <strong>PASSO 8: CONFIGURANDO A PUBLICAÇÃO</strong></h4>
 <p>Agora precisamos configurar o <strong>GitHub Pages</strong> para publicar o site a partir da pasta <code>docs</code> do repositório.</p>
 <p>Siga os passos:</p>
 <ol type="1">
@@ -1454,6 +1453,7 @@ Envia essas alterações do seu computador para o <strong>repositório no GitHub
 
 <!-- -->
 
+</section>
 </section>
 </section>
 
@@ -3139,7 +3139,7 @@ Envia essas alterações do seu computador para o <strong>repositório no GitHub
 <span id="cb37-1212"><a href="#cb37-1212" aria-hidden="true" tabindex="-1"></a><span class="ss">  * </span>Isso evita erros comuns de publicação.</span>
 <span id="cb37-1213"><a href="#cb37-1213" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-1214"><a href="#cb37-1214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1215"><a href="#cb37-1215" aria-hidden="true" tabindex="-1"></a><span class="fu">### **PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR** </span></span>
+<span id="cb37-1215"><a href="#cb37-1215" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR** </span></span>
 <span id="cb37-1216"><a href="#cb37-1216" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-1217"><a href="#cb37-1217" aria-hidden="true" tabindex="-1"></a>Para publicar o site no **GitHub Pages**, execute os seguintes comandos no **terminal**.</span>
 <span id="cb37-1218"><a href="#cb37-1218" aria-hidden="true" tabindex="-1"></a></span>
@@ -3165,7 +3165,7 @@ Envia essas alterações do seu computador para o <strong>repositório no GitHub
 <span id="cb37-1238"><a href="#cb37-1238" aria-hidden="true" tabindex="-1"></a>  Envia essas alterações do seu computador para o **repositório no GitHub**, permitindo que o **GitHub Pages atualize o site publicado**.</span>
 <span id="cb37-1239"><a href="#cb37-1239" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-1240"><a href="#cb37-1240" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1241"><a href="#cb37-1241" aria-hidden="true" tabindex="-1"></a><span class="fu">### **PASSO 8: CONFIGURANDO A PUBLICAÇÃO**</span></span>
+<span id="cb37-1241"><a href="#cb37-1241" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **PASSO 8: CONFIGURANDO A PUBLICAÇÃO**</span></span>
 <span id="cb37-1242"><a href="#cb37-1242" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-1243"><a href="#cb37-1243" aria-hidden="true" tabindex="-1"></a>Agora precisamos configurar o **GitHub Pages** para publicar o site a partir da pasta <span class="in">`docs`</span> do repositório.</span>
 <span id="cb37-1244"><a href="#cb37-1244" aria-hidden="true" tabindex="-1"></a></span>
