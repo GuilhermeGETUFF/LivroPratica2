@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O quarto – PRÁTICA ESTATÍSTICA II</title>
+<title>6&nbsp; CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O quarto – PRÁTICA ESTATÍSTICA II</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./Atividades.html" rel="next">
-<link href="./Cap1.html" rel="prev">
+<link href="./Cap2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Cap3.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Cap3.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -169,14 +169,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Cap2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>TESTES DE HOMOGENEIDADE E ADERÊNCIA</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Cap3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Atividades.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span></a>
   </div>
 </li>
     </ul>
@@ -189,83 +195,83 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#introdução-do-quarto" id="toc-introdução-do-quarto" class="nav-link active" data-scroll-target="#introdução-do-quarto"><span class="header-section-number">5.1</span> <strong>INTRODUÇÃO DO <code>quarto</code></strong></a>
+  <li><a href="#introdução-do-quarto" id="toc-introdução-do-quarto" class="nav-link active" data-scroll-target="#introdução-do-quarto"><span class="header-section-number">6.1</span> <strong>INTRODUÇÃO DO <code>quarto</code></strong></a>
   <ul>
-  <li><a href="#por-que-aprender-o-quarto" id="toc-por-que-aprender-o-quarto" class="nav-link" data-scroll-target="#por-que-aprender-o-quarto"><span class="header-section-number">5.1.1</span> <strong>POR QUE APRENDER O <code>quarto</code>?</strong></a>
+  <li><a href="#por-que-aprender-o-quarto" id="toc-por-que-aprender-o-quarto" class="nav-link" data-scroll-target="#por-que-aprender-o-quarto"><span class="header-section-number">6.1.1</span> <strong>POR QUE APRENDER O <code>quarto</code>?</strong></a>
   <ul class="collapse">
-  <li><a href="#reprodutibilidade" id="toc-reprodutibilidade" class="nav-link" data-scroll-target="#reprodutibilidade"><span class="header-section-number">5.1.1.1</span> <strong>REPRODUTIBILIDADE</strong></a></li>
-  <li><a href="#automação" id="toc-automação" class="nav-link" data-scroll-target="#automação"><span class="header-section-number">5.1.1.2</span> <strong>AUTOMAÇÃO</strong></a></li>
-  <li><a href="#organização" id="toc-organização" class="nav-link" data-scroll-target="#organização"><span class="header-section-number">5.1.1.3</span> <strong>ORGANIZAÇÃO</strong></a></li>
+  <li><a href="#reprodutibilidade" id="toc-reprodutibilidade" class="nav-link" data-scroll-target="#reprodutibilidade"><span class="header-section-number">6.1.1.1</span> <strong>REPRODUTIBILIDADE</strong></a></li>
+  <li><a href="#automação" id="toc-automação" class="nav-link" data-scroll-target="#automação"><span class="header-section-number">6.1.1.2</span> <strong>AUTOMAÇÃO</strong></a></li>
+  <li><a href="#organização" id="toc-organização" class="nav-link" data-scroll-target="#organização"><span class="header-section-number">6.1.1.3</span> <strong>ORGANIZAÇÃO</strong></a></li>
   </ul></li>
-  <li><a href="#flexibilidade-de-formatos" id="toc-flexibilidade-de-formatos" class="nav-link" data-scroll-target="#flexibilidade-de-formatos"><span class="header-section-number">5.1.2</span> <strong>FLEXIBILIDADE DE FORMATOS</strong></a></li>
-  <li><a href="#exemplos-de-uso-do-quarto" id="toc-exemplos-de-uso-do-quarto" class="nav-link" data-scroll-target="#exemplos-de-uso-do-quarto"><span class="header-section-number">5.1.3</span> <strong>EXEMPLOS DE USO DO <code>quarto</code></strong></a></li>
-  <li><a href="#o-que-vamos-ver-neste-módulo" id="toc-o-que-vamos-ver-neste-módulo" class="nav-link" data-scroll-target="#o-que-vamos-ver-neste-módulo"><span class="header-section-number">5.1.4</span> <strong>O QUE VAMOS VER NESTE MÓDULO?</strong></a></li>
+  <li><a href="#flexibilidade-de-formatos" id="toc-flexibilidade-de-formatos" class="nav-link" data-scroll-target="#flexibilidade-de-formatos"><span class="header-section-number">6.1.2</span> <strong>FLEXIBILIDADE DE FORMATOS</strong></a></li>
+  <li><a href="#exemplos-de-uso-do-quarto" id="toc-exemplos-de-uso-do-quarto" class="nav-link" data-scroll-target="#exemplos-de-uso-do-quarto"><span class="header-section-number">6.1.3</span> <strong>EXEMPLOS DE USO DO <code>quarto</code></strong></a></li>
+  <li><a href="#o-que-vamos-ver-neste-módulo" id="toc-o-que-vamos-ver-neste-módulo" class="nav-link" data-scroll-target="#o-que-vamos-ver-neste-módulo"><span class="header-section-number">6.1.4</span> <strong>O QUE VAMOS VER NESTE MÓDULO?</strong></a></li>
   </ul></li>
-  <li><a href="#como-instalar-o-quarto" id="toc-como-instalar-o-quarto" class="nav-link" data-scroll-target="#como-instalar-o-quarto"><span class="header-section-number">5.2</span> <strong>COMO INSTALAR O <code>quarto</code></strong></a>
+  <li><a href="#como-instalar-o-quarto" id="toc-como-instalar-o-quarto" class="nav-link" data-scroll-target="#como-instalar-o-quarto"><span class="header-section-number">6.2</span> <strong>COMO INSTALAR O <code>quarto</code></strong></a>
   <ul>
-  <li><a href="#pré-requisitos" id="toc-pré-requisitos" class="nav-link" data-scroll-target="#pré-requisitos"><span class="header-section-number">5.2.1</span> <strong>PRÉ REQUISITOS</strong></a></li>
-  <li><a href="#instalação-do-quarto" id="toc-instalação-do-quarto" class="nav-link" data-scroll-target="#instalação-do-quarto"><span class="header-section-number">5.2.2</span> <strong>INSTALAÇÃO DO <code>quarto</code></strong></a></li>
-  <li><a href="#verificar-a-instalação-no-rstudio" id="toc-verificar-a-instalação-no-rstudio" class="nav-link" data-scroll-target="#verificar-a-instalação-no-rstudio"><span class="header-section-number">5.2.3</span> <strong>VERIFICAR A INSTALAÇÃO NO RSTUDIO</strong></a></li>
-  <li><a href="#e-se-aparecer-um-erro" id="toc-e-se-aparecer-um-erro" class="nav-link" data-scroll-target="#e-se-aparecer-um-erro"><span class="header-section-number">5.2.4</span> <strong>E SE APARECER UM ERRO?</strong></a></li>
+  <li><a href="#pré-requisitos" id="toc-pré-requisitos" class="nav-link" data-scroll-target="#pré-requisitos"><span class="header-section-number">6.2.1</span> <strong>PRÉ REQUISITOS</strong></a></li>
+  <li><a href="#instalação-do-quarto" id="toc-instalação-do-quarto" class="nav-link" data-scroll-target="#instalação-do-quarto"><span class="header-section-number">6.2.2</span> <strong>INSTALAÇÃO DO <code>quarto</code></strong></a></li>
+  <li><a href="#verificar-a-instalação-no-rstudio" id="toc-verificar-a-instalação-no-rstudio" class="nav-link" data-scroll-target="#verificar-a-instalação-no-rstudio"><span class="header-section-number">6.2.3</span> <strong>VERIFICAR A INSTALAÇÃO NO RSTUDIO</strong></a></li>
+  <li><a href="#e-se-aparecer-um-erro" id="toc-e-se-aparecer-um-erro" class="nav-link" data-scroll-target="#e-se-aparecer-um-erro"><span class="header-section-number">6.2.4</span> <strong>E SE APARECER UM ERRO?</strong></a></li>
   </ul></li>
-  <li><a href="#passos-iniciais" id="toc-passos-iniciais" class="nav-link" data-scroll-target="#passos-iniciais"><span class="header-section-number">5.3</span> <strong>PASSOS INICIAIS</strong></a>
+  <li><a href="#passos-iniciais" id="toc-passos-iniciais" class="nav-link" data-scroll-target="#passos-iniciais"><span class="header-section-number">6.3</span> <strong>PASSOS INICIAIS</strong></a>
   <ul>
-  <li><a href="#o-arquivo-.qmd" id="toc-o-arquivo-.qmd" class="nav-link" data-scroll-target="#o-arquivo-.qmd"><span class="header-section-number">5.3.1</span> <strong>O ARQUIVO <code>.qmd</code></strong></a>
+  <li><a href="#o-arquivo-.qmd" id="toc-o-arquivo-.qmd" class="nav-link" data-scroll-target="#o-arquivo-.qmd"><span class="header-section-number">6.3.1</span> <strong>O ARQUIVO <code>.qmd</code></strong></a>
   <ul class="collapse">
-  <li><a href="#botões-iniciais-do-quarto" id="toc-botões-iniciais-do-quarto" class="nav-link" data-scroll-target="#botões-iniciais-do-quarto"><span class="header-section-number">5.3.1.1</span> <strong>BOTÕES INICIAIS DO QUARTO</strong></a></li>
-  <li><a href="#cabeçalho-yaml" id="toc-cabeçalho-yaml" class="nav-link" data-scroll-target="#cabeçalho-yaml"><span class="header-section-number">5.3.1.2</span> <strong>CABEÇALHO <code>yaml</code></strong></a></li>
-  <li><a href="#corpo-dos-slides" id="toc-corpo-dos-slides" class="nav-link" data-scroll-target="#corpo-dos-slides"><span class="header-section-number">5.3.1.3</span> <strong>CORPO DOS SLIDES</strong></a></li>
+  <li><a href="#botões-iniciais-do-quarto" id="toc-botões-iniciais-do-quarto" class="nav-link" data-scroll-target="#botões-iniciais-do-quarto"><span class="header-section-number">6.3.1.1</span> <strong>BOTÕES INICIAIS DO QUARTO</strong></a></li>
+  <li><a href="#cabeçalho-yaml" id="toc-cabeçalho-yaml" class="nav-link" data-scroll-target="#cabeçalho-yaml"><span class="header-section-number">6.3.1.2</span> <strong>CABEÇALHO <code>yaml</code></strong></a></li>
+  <li><a href="#corpo-dos-slides" id="toc-corpo-dos-slides" class="nav-link" data-scroll-target="#corpo-dos-slides"><span class="header-section-number">6.3.1.3</span> <strong>CORPO DOS SLIDES</strong></a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#corpo-dos-slides-1" id="toc-corpo-dos-slides-1" class="nav-link" data-scroll-target="#corpo-dos-slides-1"><span class="header-section-number">5.4</span> <strong>CORPO DOS SLIDES</strong></a>
+  <li><a href="#corpo-dos-slides-1" id="toc-corpo-dos-slides-1" class="nav-link" data-scroll-target="#corpo-dos-slides-1"><span class="header-section-number">6.4</span> <strong>CORPO DOS SLIDES</strong></a>
   <ul>
-  <li><a href="#ênfases-e-destaques" id="toc-ênfases-e-destaques" class="nav-link" data-scroll-target="#ênfases-e-destaques"><span class="header-section-number">5.4.1</span> <strong>ÊNFASES E DESTAQUES</strong></a></li>
-  <li><a href="#capítulos-e-seções-slides" id="toc-capítulos-e-seções-slides" class="nav-link" data-scroll-target="#capítulos-e-seções-slides"><span class="header-section-number">5.4.2</span> <strong>CAPÍTULOS E SEÇÕES (SLIDES)</strong></a></li>
-  <li><a href="#caixas" id="toc-caixas" class="nav-link" data-scroll-target="#caixas"><span class="header-section-number">5.4.3</span> <strong>CAIXAS</strong></a></li>
-  <li><a href="#listas" id="toc-listas" class="nav-link" data-scroll-target="#listas"><span class="header-section-number">5.4.4</span> <strong>LISTAS</strong></a>
+  <li><a href="#ênfases-e-destaques" id="toc-ênfases-e-destaques" class="nav-link" data-scroll-target="#ênfases-e-destaques"><span class="header-section-number">6.4.1</span> <strong>ÊNFASES E DESTAQUES</strong></a></li>
+  <li><a href="#capítulos-e-seções-slides" id="toc-capítulos-e-seções-slides" class="nav-link" data-scroll-target="#capítulos-e-seções-slides"><span class="header-section-number">6.4.2</span> <strong>CAPÍTULOS E SEÇÕES (SLIDES)</strong></a></li>
+  <li><a href="#caixas" id="toc-caixas" class="nav-link" data-scroll-target="#caixas"><span class="header-section-number">6.4.3</span> <strong>CAIXAS</strong></a></li>
+  <li><a href="#listas" id="toc-listas" class="nav-link" data-scroll-target="#listas"><span class="header-section-number">6.4.4</span> <strong>LISTAS</strong></a>
   <ul class="collapse">
-  <li><a href="#listas-não-ordenadas" id="toc-listas-não-ordenadas" class="nav-link" data-scroll-target="#listas-não-ordenadas"><span class="header-section-number">5.4.4.1</span> <strong>LISTAS NÃO ORDENADAS</strong></a></li>
-  <li><a href="#listas-ordenadas" id="toc-listas-ordenadas" class="nav-link" data-scroll-target="#listas-ordenadas"><span class="header-section-number">5.4.4.2</span> <strong>LISTAS ORDENADAS</strong></a></li>
-  <li><a href="#listas-de-tarefas" id="toc-listas-de-tarefas" class="nav-link" data-scroll-target="#listas-de-tarefas"><span class="header-section-number">5.4.4.3</span> <strong>LISTAS DE TAREFAS</strong></a></li>
+  <li><a href="#listas-não-ordenadas" id="toc-listas-não-ordenadas" class="nav-link" data-scroll-target="#listas-não-ordenadas"><span class="header-section-number">6.4.4.1</span> <strong>LISTAS NÃO ORDENADAS</strong></a></li>
+  <li><a href="#listas-ordenadas" id="toc-listas-ordenadas" class="nav-link" data-scroll-target="#listas-ordenadas"><span class="header-section-number">6.4.4.2</span> <strong>LISTAS ORDENADAS</strong></a></li>
+  <li><a href="#listas-de-tarefas" id="toc-listas-de-tarefas" class="nav-link" data-scroll-target="#listas-de-tarefas"><span class="header-section-number">6.4.4.3</span> <strong>LISTAS DE TAREFAS</strong></a></li>
   </ul></li>
-  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links"><span class="header-section-number">5.4.5</span> <strong>LINKS</strong></a></li>
-  <li><a href="#equações" id="toc-equações" class="nav-link" data-scroll-target="#equações"><span class="header-section-number">5.4.6</span> <strong>EQUAÇÕES</strong></a></li>
-  <li><a href="#figuras-e-tabelas" id="toc-figuras-e-tabelas" class="nav-link" data-scroll-target="#figuras-e-tabelas"><span class="header-section-number">5.4.7</span> <strong>FIGURAS E TABELAS</strong></a>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links"><span class="header-section-number">6.4.5</span> <strong>LINKS</strong></a></li>
+  <li><a href="#equações" id="toc-equações" class="nav-link" data-scroll-target="#equações"><span class="header-section-number">6.4.6</span> <strong>EQUAÇÕES</strong></a></li>
+  <li><a href="#figuras-e-tabelas" id="toc-figuras-e-tabelas" class="nav-link" data-scroll-target="#figuras-e-tabelas"><span class="header-section-number">6.4.7</span> <strong>FIGURAS E TABELAS</strong></a>
   <ul class="collapse">
-  <li><a href="#figuras" id="toc-figuras" class="nav-link" data-scroll-target="#figuras"><span class="header-section-number">5.4.7.1</span> <strong>FIGURAS</strong></a></li>
-  <li><a href="#tabelas" id="toc-tabelas" class="nav-link" data-scroll-target="#tabelas"><span class="header-section-number">5.4.7.2</span> <strong>TABELAS</strong></a></li>
+  <li><a href="#figuras" id="toc-figuras" class="nav-link" data-scroll-target="#figuras"><span class="header-section-number">6.4.7.1</span> <strong>FIGURAS</strong></a></li>
+  <li><a href="#tabelas" id="toc-tabelas" class="nav-link" data-scroll-target="#tabelas"><span class="header-section-number">6.4.7.2</span> <strong>TABELAS</strong></a></li>
   </ul></li>
-  <li><a href="#abas" id="toc-abas" class="nav-link" data-scroll-target="#abas"><span class="header-section-number">5.4.8</span> <strong>ABAS</strong></a></li>
-  <li><a href="#colunas" id="toc-colunas" class="nav-link" data-scroll-target="#colunas"><span class="header-section-number">5.4.9</span> <strong>COLUNAS</strong></a></li>
-  <li><a href="#scrolling" id="toc-scrolling" class="nav-link" data-scroll-target="#scrolling"><span class="header-section-number">5.4.10</span> <strong>SCROLLING</strong></a></li>
+  <li><a href="#abas" id="toc-abas" class="nav-link" data-scroll-target="#abas"><span class="header-section-number">6.4.8</span> <strong>ABAS</strong></a></li>
+  <li><a href="#colunas" id="toc-colunas" class="nav-link" data-scroll-target="#colunas"><span class="header-section-number">6.4.9</span> <strong>COLUNAS</strong></a></li>
+  <li><a href="#scrolling" id="toc-scrolling" class="nav-link" data-scroll-target="#scrolling"><span class="header-section-number">6.4.10</span> <strong>SCROLLING</strong></a></li>
   </ul></li>
-  <li><a href="#incorporando-códigos-e-resultados" id="toc-incorporando-códigos-e-resultados" class="nav-link" data-scroll-target="#incorporando-códigos-e-resultados"><span class="header-section-number">5.5</span> <strong>INCORPORANDO CÓDIGOS E RESULTADOS</strong></a>
+  <li><a href="#incorporando-códigos-e-resultados" id="toc-incorporando-códigos-e-resultados" class="nav-link" data-scroll-target="#incorporando-códigos-e-resultados"><span class="header-section-number">6.5</span> <strong>INCORPORANDO CÓDIGOS E RESULTADOS</strong></a>
   <ul>
-  <li><a href="#criando-um-chunk" id="toc-criando-um-chunk" class="nav-link" data-scroll-target="#criando-um-chunk"><span class="header-section-number">5.5.1</span> <strong>CRIANDO UM <em>CHUNK</em></strong></a></li>
-  <li><a href="#opções-de-execução" id="toc-opções-de-execução" class="nav-link" data-scroll-target="#opções-de-execução"><span class="header-section-number">5.5.2</span> <strong>OPÇÕES DE EXECUÇÃO</strong></a></li>
-  <li><a href="#nomeando-chunks" id="toc-nomeando-chunks" class="nav-link" data-scroll-target="#nomeando-chunks"><span class="header-section-number">5.5.3</span> <strong>NOMEANDO CHUNKS</strong></a></li>
-  <li><a href="#outras-opções-úteis" id="toc-outras-opções-úteis" class="nav-link" data-scroll-target="#outras-opções-úteis"><span class="header-section-number">5.5.4</span> <strong>OUTRAS OPÇÕES ÚTEIS</strong></a></li>
+  <li><a href="#criando-um-chunk" id="toc-criando-um-chunk" class="nav-link" data-scroll-target="#criando-um-chunk"><span class="header-section-number">6.5.1</span> <strong>CRIANDO UM <em>CHUNK</em></strong></a></li>
+  <li><a href="#opções-de-execução" id="toc-opções-de-execução" class="nav-link" data-scroll-target="#opções-de-execução"><span class="header-section-number">6.5.2</span> <strong>OPÇÕES DE EXECUÇÃO</strong></a></li>
+  <li><a href="#nomeando-chunks" id="toc-nomeando-chunks" class="nav-link" data-scroll-target="#nomeando-chunks"><span class="header-section-number">6.5.3</span> <strong>NOMEANDO CHUNKS</strong></a></li>
+  <li><a href="#outras-opções-úteis" id="toc-outras-opções-úteis" class="nav-link" data-scroll-target="#outras-opções-úteis"><span class="header-section-number">6.5.4</span> <strong>OUTRAS OPÇÕES ÚTEIS</strong></a></li>
   </ul></li>
-  <li><a href="#compartilhamento-de-produtos-quarto" id="toc-compartilhamento-de-produtos-quarto" class="nav-link" data-scroll-target="#compartilhamento-de-produtos-quarto"><span class="header-section-number">5.6</span> <strong>COMPARTILHAMENTO DE PRODUTOS QUARTO</strong></a>
+  <li><a href="#compartilhamento-de-produtos-quarto" id="toc-compartilhamento-de-produtos-quarto" class="nav-link" data-scroll-target="#compartilhamento-de-produtos-quarto"><span class="header-section-number">6.6</span> <strong>COMPARTILHAMENTO DE PRODUTOS QUARTO</strong></a>
   <ul>
-  <li><a href="#publicação-manual-arquivo-local" id="toc-publicação-manual-arquivo-local" class="nav-link" data-scroll-target="#publicação-manual-arquivo-local"><span class="header-section-number">5.6.1</span> <strong>PUBLICAÇÃO MANUAL (ARQUIVO LOCAL)</strong></a></li>
-  <li><a href="#posit-connect-cloud" id="toc-posit-connect-cloud" class="nav-link" data-scroll-target="#posit-connect-cloud"><span class="header-section-number">5.6.2</span> <strong>POSIT CONNECT CLOUD</strong></a>
+  <li><a href="#publicação-manual-arquivo-local" id="toc-publicação-manual-arquivo-local" class="nav-link" data-scroll-target="#publicação-manual-arquivo-local"><span class="header-section-number">6.6.1</span> <strong>PUBLICAÇÃO MANUAL (ARQUIVO LOCAL)</strong></a></li>
+  <li><a href="#posit-connect-cloud" id="toc-posit-connect-cloud" class="nav-link" data-scroll-target="#posit-connect-cloud"><span class="header-section-number">6.6.2</span> <strong>POSIT CONNECT CLOUD</strong></a>
   <ul class="collapse">
-  <li><a href="#publicação-pelo-rstudio" id="toc-publicação-pelo-rstudio" class="nav-link" data-scroll-target="#publicação-pelo-rstudio"><span class="header-section-number">5.6.2.1</span> <strong>PUBLICAÇÃO PELO RSTUDIO</strong></a></li>
-  <li><a href="#publicação-pelo-terminal" id="toc-publicação-pelo-terminal" class="nav-link" data-scroll-target="#publicação-pelo-terminal"><span class="header-section-number">5.6.2.2</span> <strong>PUBLICAÇÃO PELO TERMINAL</strong></a></li>
+  <li><a href="#publicação-pelo-rstudio" id="toc-publicação-pelo-rstudio" class="nav-link" data-scroll-target="#publicação-pelo-rstudio"><span class="header-section-number">6.6.2.1</span> <strong>PUBLICAÇÃO PELO RSTUDIO</strong></a></li>
+  <li><a href="#publicação-pelo-terminal" id="toc-publicação-pelo-terminal" class="nav-link" data-scroll-target="#publicação-pelo-terminal"><span class="header-section-number">6.6.2.2</span> <strong>PUBLICAÇÃO PELO TERMINAL</strong></a></li>
   </ul></li>
-  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><span class="header-section-number">5.6.3</span> <strong><code>GitHub Pages</code></strong></a>
+  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><span class="header-section-number">6.6.3</span> <strong><code>GitHub Pages</code></strong></a>
   <ul class="collapse">
-  <li><a href="#o-que-é-github" id="toc-o-que-é-github" class="nav-link" data-scroll-target="#o-que-é-github"><span class="header-section-number">5.6.3.1</span> <strong>O QUE É <code>GitHub</code>?</strong></a></li>
-  <li><a href="#o-que-é-o-github-pages" id="toc-o-que-é-o-github-pages" class="nav-link" data-scroll-target="#o-que-é-o-github-pages"><span class="header-section-number">5.6.3.2</span> <strong>O QUE É O <code>GitHub Pages</code>?</strong></a></li>
-  <li><a href="#passo-1-criando-uma-conta-no-github" id="toc-passo-1-criando-uma-conta-no-github" class="nav-link" data-scroll-target="#passo-1-criando-uma-conta-no-github"><span class="header-section-number">5.6.3.3</span> <strong>PASSO 1: CRIANDO UMA CONTA NO <code>GitHub</code></strong></a></li>
-  <li><a href="#passo-2-instalação-do-git" id="toc-passo-2-instalação-do-git" class="nav-link" data-scroll-target="#passo-2-instalação-do-git"><span class="header-section-number">5.6.3.4</span> <strong>PASSO 2: INSTALAÇÃO DO <code>GIT</code></strong></a></li>
-  <li><a href="#passo-3-criar-o-repositório-apresentacaoo-no-github" id="toc-passo-3-criar-o-repositório-apresentacaoo-no-github" class="nav-link" data-scroll-target="#passo-3-criar-o-repositório-apresentacaoo-no-github"><span class="header-section-number">5.6.3.5</span> <strong>PASSO 3: CRIAR O REPOSITÓRIO <code>ApresentacaoO</code> NO <code>GitHub</code></strong></a></li>
-  <li><a href="#passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório" id="toc-passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório" class="nav-link" data-scroll-target="#passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório"><span class="header-section-number">5.6.3.6</span> <strong>PASSO 4: CRIAR UM PROJETO NO RStudio E VINCULAR O REPOSITÓRIO</strong></a></li>
-  <li><a href="#passo-5-conectando-sua-conta-github-ao-rstudio" id="toc-passo-5-conectando-sua-conta-github-ao-rstudio" class="nav-link" data-scroll-target="#passo-5-conectando-sua-conta-github-ao-rstudio"><span class="header-section-number">5.6.3.7</span> <strong>PASSO 5: CONECTANDO SUA CONTA <code>GitHub</code> AO <code>RStudio</code></strong></a></li>
-  <li><a href="#passo-6-algumas-configurações-importantes" id="toc-passo-6-algumas-configurações-importantes" class="nav-link" data-scroll-target="#passo-6-algumas-configurações-importantes"><span class="header-section-number">5.6.3.8</span> <strong>PASSO 6: ALGUMAS CONFIGURAÇÕES IMPORTANTES</strong></a></li>
-  <li><a href="#passo-7-compilar-a-apresentação-e-publicar" id="toc-passo-7-compilar-a-apresentação-e-publicar" class="nav-link" data-scroll-target="#passo-7-compilar-a-apresentação-e-publicar"><span class="header-section-number">5.6.3.9</span> <strong>PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR</strong></a></li>
-  <li><a href="#passo-8-configurando-a-publicação" id="toc-passo-8-configurando-a-publicação" class="nav-link" data-scroll-target="#passo-8-configurando-a-publicação"><span class="header-section-number">5.6.3.10</span> <strong>PASSO 8: CONFIGURANDO A PUBLICAÇÃO</strong></a></li>
+  <li><a href="#o-que-é-github" id="toc-o-que-é-github" class="nav-link" data-scroll-target="#o-que-é-github"><span class="header-section-number">6.6.3.1</span> <strong>O QUE É <code>GitHub</code>?</strong></a></li>
+  <li><a href="#o-que-é-o-github-pages" id="toc-o-que-é-o-github-pages" class="nav-link" data-scroll-target="#o-que-é-o-github-pages"><span class="header-section-number">6.6.3.2</span> <strong>O QUE É O <code>GitHub Pages</code>?</strong></a></li>
+  <li><a href="#passo-1-criando-uma-conta-no-github" id="toc-passo-1-criando-uma-conta-no-github" class="nav-link" data-scroll-target="#passo-1-criando-uma-conta-no-github"><span class="header-section-number">6.6.3.3</span> <strong>PASSO 1: CRIANDO UMA CONTA NO <code>GitHub</code></strong></a></li>
+  <li><a href="#passo-2-instalação-do-git" id="toc-passo-2-instalação-do-git" class="nav-link" data-scroll-target="#passo-2-instalação-do-git"><span class="header-section-number">6.6.3.4</span> <strong>PASSO 2: INSTALAÇÃO DO <code>GIT</code></strong></a></li>
+  <li><a href="#passo-3-criar-o-repositório-apresentacaoo-no-github" id="toc-passo-3-criar-o-repositório-apresentacaoo-no-github" class="nav-link" data-scroll-target="#passo-3-criar-o-repositório-apresentacaoo-no-github"><span class="header-section-number">6.6.3.5</span> <strong>PASSO 3: CRIAR O REPOSITÓRIO <code>ApresentacaoO</code> NO <code>GitHub</code></strong></a></li>
+  <li><a href="#passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório" id="toc-passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório" class="nav-link" data-scroll-target="#passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório"><span class="header-section-number">6.6.3.6</span> <strong>PASSO 4: CRIAR UM PROJETO NO RStudio E VINCULAR O REPOSITÓRIO</strong></a></li>
+  <li><a href="#passo-5-conectando-sua-conta-github-ao-rstudio" id="toc-passo-5-conectando-sua-conta-github-ao-rstudio" class="nav-link" data-scroll-target="#passo-5-conectando-sua-conta-github-ao-rstudio"><span class="header-section-number">6.6.3.7</span> <strong>PASSO 5: CONECTANDO SUA CONTA <code>GitHub</code> AO <code>RStudio</code></strong></a></li>
+  <li><a href="#passo-6-algumas-configurações-importantes" id="toc-passo-6-algumas-configurações-importantes" class="nav-link" data-scroll-target="#passo-6-algumas-configurações-importantes"><span class="header-section-number">6.6.3.8</span> <strong>PASSO 6: ALGUMAS CONFIGURAÇÕES IMPORTANTES</strong></a></li>
+  <li><a href="#passo-7-compilar-a-apresentação-e-publicar" id="toc-passo-7-compilar-a-apresentação-e-publicar" class="nav-link" data-scroll-target="#passo-7-compilar-a-apresentação-e-publicar"><span class="header-section-number">6.6.3.9</span> <strong>PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR</strong></a></li>
+  <li><a href="#passo-8-configurando-a-publicação" id="toc-passo-8-configurando-a-publicação" class="nav-link" data-scroll-target="#passo-8-configurando-a-publicação"><span class="header-section-number">6.6.3.10</span> <strong>PASSO 8: CONFIGURANDO A PUBLICAÇÃO</strong></a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -276,7 +282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
 </div>
 
 
@@ -293,8 +299,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="introdução-do-quarto" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="introdução-do-quarto"><span class="header-section-number">5.1</span> <strong>INTRODUÇÃO DO <code>quarto</code></strong></h2>
+<section id="introdução-do-quarto" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="introdução-do-quarto"><span class="header-section-number">6.1</span> <strong>INTRODUÇÃO DO <code>quarto</code></strong></h2>
 <p>O <code>quarto</code> é uma <strong>ferramenta moderna e poderosa de publicação de documentos e relatórios</strong>, desenvolvida pela equipe da <code>RStudio</code> (agora chamada <code>Posit</code>) no ano de 2022. O <code>quarto</code> permite que você escreva documentos misturando <strong>texto, código e resultados</strong> — tudo em um só arquivo.</p>
 <p>É como escrever um relatório ou apresentação em <em>slides</em> no Word ou Power Point, mas com uma diferença fundamental: <strong>os resultados, tabelas, gráficos e análises são gerados automaticamente a partir do código</strong>. Isso garante reprodutibilidade, economia de tempo e maior confiabilidade.</p>
 <blockquote class="blockquote">
@@ -303,24 +309,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p><code>Markdown</code> é uma forma simples de escrever texto formatado. É muito mais leve que editores de texto tradicionais, e ideal para programadores, cientistas e analistas.</p>
 </blockquote>
-<section id="por-que-aprender-o-quarto" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="por-que-aprender-o-quarto"><span class="header-section-number">5.1.1</span> <strong>POR QUE APRENDER O <code>quarto</code>?</strong></h3>
+<section id="por-que-aprender-o-quarto" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="por-que-aprender-o-quarto"><span class="header-section-number">6.1.1</span> <strong>POR QUE APRENDER O <code>quarto</code>?</strong></h3>
 <p>Há <strong>várias razões para usarmos o <code>quarto</code></strong>, especialmente no <strong>ensino e na prática de ciência de dados</strong>, estatística e <strong>análise de dados</strong>:</p>
-<section id="reprodutibilidade" class="level4" data-number="5.1.1.1">
-<h4 data-number="5.1.1.1" class="anchored" data-anchor-id="reprodutibilidade"><span class="header-section-number">5.1.1.1</span> <strong>REPRODUTIBILIDADE</strong></h4>
+<section id="reprodutibilidade" class="level4" data-number="6.1.1.1">
+<h4 data-number="6.1.1.1" class="anchored" data-anchor-id="reprodutibilidade"><span class="header-section-number">6.1.1.1</span> <strong>REPRODUTIBILIDADE</strong></h4>
 <p>Você <strong>escreve o relatório uma vez</strong>, e ele <strong>sempre será gerado com os dados e análises atualizados</strong>. Isso é <strong>essencial em ambientes científicos e corporativos</strong>.</p>
 </section>
-<section id="automação" class="level4" data-number="5.1.1.2">
-<h4 data-number="5.1.1.2" class="anchored" data-anchor-id="automação"><span class="header-section-number">5.1.1.2</span> <strong>AUTOMAÇÃO</strong></h4>
+<section id="automação" class="level4" data-number="6.1.1.2">
+<h4 data-number="6.1.1.2" class="anchored" data-anchor-id="automação"><span class="header-section-number">6.1.1.2</span> <strong>AUTOMAÇÃO</strong></h4>
 <p>Se <strong>seus dados mudam</strong>, você não precisa copiar e <strong>colar gráficos ou resultados em outro documento</strong>. O <code>quarto</code> atualiza tudo automaticamente com um <strong>simples clique</strong>.</p>
 </section>
-<section id="organização" class="level4" data-number="5.1.1.3">
-<h4 data-number="5.1.1.3" class="anchored" data-anchor-id="organização"><span class="header-section-number">5.1.1.3</span> <strong>ORGANIZAÇÃO</strong></h4>
+<section id="organização" class="level4" data-number="6.1.1.3">
+<h4 data-number="6.1.1.3" class="anchored" data-anchor-id="organização"><span class="header-section-number">6.1.1.3</span> <strong>ORGANIZAÇÃO</strong></h4>
 <p><strong>Código, texto explicativo e visualizações</strong> ficam juntos em um único arquivo <code>.qmd</code>. Isso ajuda no <strong>aprendizado, na organização dos projetos e na documentação</strong> das análises.</p>
 </section>
 </section>
-<section id="flexibilidade-de-formatos" class="level3" data-number="5.1.2">
-<h3 data-number="5.1.2" class="anchored" data-anchor-id="flexibilidade-de-formatos"><span class="header-section-number">5.1.2</span> <strong>FLEXIBILIDADE DE FORMATOS</strong></h3>
+<section id="flexibilidade-de-formatos" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="flexibilidade-de-formatos"><span class="header-section-number">6.1.2</span> <strong>FLEXIBILIDADE DE FORMATOS</strong></h3>
 <p>Com o <code>quarto</code>, você pode gerar:</p>
 <ul>
 <li><strong>Documentos</strong> em <strong>HTML</strong> (para visualização no navegador).</li>
@@ -335,16 +341,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tinytex"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="exemplos-de-uso-do-quarto" class="level3" data-number="5.1.3">
-<h3 data-number="5.1.3" class="anchored" data-anchor-id="exemplos-de-uso-do-quarto"><span class="header-section-number">5.1.3</span> <strong>EXEMPLOS DE USO DO <code>quarto</code></strong></h3>
+<section id="exemplos-de-uso-do-quarto" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="exemplos-de-uso-do-quarto"><span class="header-section-number">6.1.3</span> <strong>EXEMPLOS DE USO DO <code>quarto</code></strong></h3>
 <ul>
 <li><strong>Alunos:</strong> Podem <strong>entregar trabalhos com gráficos, análises e textos bem organizados</strong>.</li>
 <li><strong>Pesquisadores:</strong> Criam <strong>artigos científicos e relatórios técnicos com análise de dados atualizável</strong>.</li>
 <li><strong>Empresas:</strong> Geram <strong>dashboards</strong> e <strong>relatórios automáticos</strong> de vendas, produção, RH etc.</li>
 </ul>
 </section>
-<section id="o-que-vamos-ver-neste-módulo" class="level3" data-number="5.1.4">
-<h3 data-number="5.1.4" class="anchored" data-anchor-id="o-que-vamos-ver-neste-módulo"><span class="header-section-number">5.1.4</span> <strong>O QUE VAMOS VER NESTE MÓDULO?</strong></h3>
+<section id="o-que-vamos-ver-neste-módulo" class="level3" data-number="6.1.4">
+<h3 data-number="6.1.4" class="anchored" data-anchor-id="o-que-vamos-ver-neste-módulo"><span class="header-section-number">6.1.4</span> <strong>O QUE VAMOS VER NESTE MÓDULO?</strong></h3>
 <ol type="1">
 <li><strong>Instalação e configuração</strong> do <code>quarto</code> no <code>RStudio</code>.</li>
 <li>Construção de um <em>template</em> (modelo) de uma <strong>apresentação em slides</strong> com texto, código e gráficos.</li>
@@ -357,11 +363,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>A partir de agora, você aprenderá uma das ferramentas mais úteis para transformar análises em <strong>documentos bonitos, organizados e profissionais</strong>.</p>
 </section>
 </section>
-<section id="como-instalar-o-quarto" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="como-instalar-o-quarto"><span class="header-section-number">5.2</span> <strong>COMO INSTALAR O <code>quarto</code></strong></h2>
+<section id="como-instalar-o-quarto" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="como-instalar-o-quarto"><span class="header-section-number">6.2</span> <strong>COMO INSTALAR O <code>quarto</code></strong></h2>
 <p>Este documento tem como objetivo <strong>ensinar passo a passo como instalar o <code>quarto</code></strong>, uma ferramenta moderna para geração de relatórios que une <strong>texto, código e resultados</strong> em um só lugar.</p>
-<section id="pré-requisitos" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="pré-requisitos"><span class="header-section-number">5.2.1</span> <strong>PRÉ REQUISITOS</strong></h3>
+<section id="pré-requisitos" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="pré-requisitos"><span class="header-section-number">6.2.1</span> <strong>PRÉ REQUISITOS</strong></h3>
 <p><strong>Antes de instalar</strong> o <code>quarto</code>, certifique-se de que os <strong>seguintes componentes</strong> estão instalados em seu computador:</p>
 <ul>
 <li>✅ <strong>R</strong> (versão 4.0 ou superior)<br>
@@ -372,29 +378,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Verifique a versão do R e RStudio instalado em seu computador antes de instalar o <code>quarto</code>. Para isso, digite <code>version</code> no console ou vá até o menu <code>help</code> &gt; <code>about</code>.</p>
 </blockquote>
 </section>
-<section id="instalação-do-quarto" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="instalação-do-quarto"><span class="header-section-number">5.2.2</span> <strong>INSTALAÇÃO DO <code>quarto</code></strong></h3>
+<section id="instalação-do-quarto" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="instalação-do-quarto"><span class="header-section-number">6.2.2</span> <strong>INSTALAÇÃO DO <code>quarto</code></strong></h3>
 <p>Abra o <strong>navegador</strong> e vá para:</p>
 <p>👉 <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a></p>
 <p>Escolha a <strong>versão de download de acordo com seu sistema operacional</strong>:</p>
 <p><img src="images/Exemplo22.png" class="img-fluid"></p>
 <p>Execute o <strong>instalador baixado</strong> e siga as <strong>instruções</strong> da tela.</p>
 </section>
-<section id="verificar-a-instalação-no-rstudio" class="level3" data-number="5.2.3">
-<h3 data-number="5.2.3" class="anchored" data-anchor-id="verificar-a-instalação-no-rstudio"><span class="header-section-number">5.2.3</span> <strong>VERIFICAR A INSTALAÇÃO NO RSTUDIO</strong></h3>
+<section id="verificar-a-instalação-no-rstudio" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="verificar-a-instalação-no-rstudio"><span class="header-section-number">6.2.3</span> <strong>VERIFICAR A INSTALAÇÃO NO RSTUDIO</strong></h3>
 <p>Depois de <strong>instalar</strong> o <code>quarto</code>, <strong>feche e reabra o <code>RStudio</code></strong>. No <strong>console</strong> do <code>RStudio</code>, digite:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_path</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Se aparecer um <strong>caminho válido</strong>, está tudo certo!</p>
 </section>
-<section id="e-se-aparecer-um-erro" class="level3" data-number="5.2.4">
-<h3 data-number="5.2.4" class="anchored" data-anchor-id="e-se-aparecer-um-erro"><span class="header-section-number">5.2.4</span> <strong>E SE APARECER UM ERRO?</strong></h3>
+<section id="e-se-aparecer-um-erro" class="level3" data-number="6.2.4">
+<h3 data-number="6.2.4" class="anchored" data-anchor-id="e-se-aparecer-um-erro"><span class="header-section-number">6.2.4</span> <strong>E SE APARECER UM ERRO?</strong></h3>
 <p>Caso o <code>RStudio</code> <strong>retorne erro</strong> dizendo que a função <code>quarto::quarto_path()</code> <strong>não existe</strong>, significa que o <strong>pacote</strong> <code>quarto</code> ainda <strong>não está instalado</strong> no <code>R</code>. Para <strong>instalar o pacote</strong>, utilize o <strong>seguinte comando</strong>:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"quarto"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Depois de <strong>instalar o pacote</strong>, repita <strong>o teste</strong> apontado em 5.2.3.</p>
 </section>
 </section>
-<section id="passos-iniciais" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="passos-iniciais"><span class="header-section-number">5.3</span> <strong>PASSOS INICIAIS</strong></h2>
+<section id="passos-iniciais" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="passos-iniciais"><span class="header-section-number">6.3</span> <strong>PASSOS INICIAIS</strong></h2>
 <p>Tudo <strong>começa</strong> com o <code>RStudio</code>, que é a <strong>nossa interface principal para escrever código, texto e gerar relatórios</strong>. Se estiver usando um <strong>computador com o <code>quarto</code> já instalado, basta abrir o <code>RStudio</code> normalmente</strong>.</p>
 <p>Antes de <strong>construir sua primeira apresentação em slides, o primeiro passo é criar um projeto</strong>. São apenas <strong>seis passos simples</strong>:</p>
 <p><img src="images/Exemplo23.png" class="img-fluid"> <em>Referência: <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a></em></p>
@@ -422,14 +428,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Assim, sempre que for <strong>editar o seu projeto</strong>, comece <strong>abrindo este arquivo</strong>.</li>
 </ul></li>
 </ul>
-<section id="o-arquivo-.qmd" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="o-arquivo-.qmd"><span class="header-section-number">5.3.1</span> <strong>O ARQUIVO <code>.qmd</code></strong></h3>
+<section id="o-arquivo-.qmd" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="o-arquivo-.qmd"><span class="header-section-number">6.3.1</span> <strong>O ARQUIVO <code>.qmd</code></strong></h3>
 <blockquote class="blockquote">
 <p>No <code>R</code>, um arquivo <code>.qmd</code> é um <code>Quarto Markdown document</code> — ou seja, um documento feito no <code>Quarto</code>, que é a evolução do <code>R Markdown</code>.</p>
 </blockquote>
 <p>Para <strong>entender bem o funcionamento deste arquivo</strong>, vamos dividí-lo em <strong>três partes</strong>:</p>
-<section id="botões-iniciais-do-quarto" class="level4" data-number="5.3.1.1">
-<h4 data-number="5.3.1.1" class="anchored" data-anchor-id="botões-iniciais-do-quarto"><span class="header-section-number">5.3.1.1</span> <strong>BOTÕES INICIAIS DO QUARTO</strong></h4>
+<section id="botões-iniciais-do-quarto" class="level4" data-number="6.3.1.1">
+<h4 data-number="6.3.1.1" class="anchored" data-anchor-id="botões-iniciais-do-quarto"><span class="header-section-number">6.3.1.1</span> <strong>BOTÕES INICIAIS DO QUARTO</strong></h4>
 <p>Ao <strong>trabalhar com um arquivo</strong> <code>quarto</code> dentro do <strong><code>RStudio</code></strong>, encontramos alguns <strong>botões iniciais que facilitam muito a edição e a produção dos relatórios</strong>. Vamos destacar <strong>três dos principais</strong>:</p>
 <ul>
 <li>Os botões <strong><code>Source / Visual</code></strong> permitem <strong>alternar entre dois modos de edição</strong>:
@@ -462,8 +468,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Resumindo todo o fluxo, podemos descrevê-lo assim: o arquivo <strong>.qmd</strong> é processado pelo knitr, gerando um Markdown intermediário, que é então convertido pelo Pandoc para produzir o documento final no formato desejado, conforme a figura a seguir:</p>
 <p><img src="images/Exemplo26.png" class="img-fluid"></p>
 </section>
-<section id="cabeçalho-yaml" class="level4" data-number="5.3.1.2">
-<h4 data-number="5.3.1.2" class="anchored" data-anchor-id="cabeçalho-yaml"><span class="header-section-number">5.3.1.2</span> <strong>CABEÇALHO <code>yaml</code></strong></h4>
+<section id="cabeçalho-yaml" class="level4" data-number="6.3.1.2">
+<h4 data-number="6.3.1.2" class="anchored" data-anchor-id="cabeçalho-yaml"><span class="header-section-number">6.3.1.2</span> <strong>CABEÇALHO <code>yaml</code></strong></h4>
 <p>O <code>yaml</code> (pronuncia-se “ié-mel” ou “yá-mel”) é uma <strong>linguagem de marcação</strong> usada para <strong>descrever configurações de forma simples</strong>, legível e organizada. É a <strong>parte entre as linhas com três hifens</strong> no <strong>início do arquivo</strong>:</p>
 <p><img src="images/Exemplo25.png" class="img-fluid"></p>
 <p>Esse cabeçalho <strong>diz como o documento será produzido</strong>: título, autor, formato, tema, sumário, numeração etc. Isto é, são as especificações do seu relatório. Os <strong>comandos</strong> escritos entre essas linhas <strong>não aparecem como texto no relatório final</strong> (com algumas <strong>exceções, como o título e o autor</strong>).</p>
@@ -679,8 +685,8 @@ Exemplos comuns: <code>0.2</code>, <code>0.4</code>, <code>0.6</code>.</li>
 </ul></li>
 </ul>
 </section>
-<section id="corpo-dos-slides" class="level4" data-number="5.3.1.3">
-<h4 data-number="5.3.1.3" class="anchored" data-anchor-id="corpo-dos-slides"><span class="header-section-number">5.3.1.3</span> <strong>CORPO DOS SLIDES</strong></h4>
+<section id="corpo-dos-slides" class="level4" data-number="6.3.1.3">
+<h4 data-number="6.3.1.3" class="anchored" data-anchor-id="corpo-dos-slides"><span class="header-section-number">6.3.1.3</span> <strong>CORPO DOS SLIDES</strong></h4>
 <p>Depois do cabeçalho <code>yaml</code>, vem o <strong>corpo do texto</strong>. É aqui que você realmente escreve o <strong>conteúdo da sua apresentação em slides</strong>: explicações, análises, interpretações e conclusões.</p>
 <p>Algumas <strong>características importantes</strong> do corpo do texto:</p>
 <ul>
@@ -693,10 +699,10 @@ Exemplos comuns: <code>0.2</code>, <code>0.4</code>, <code>0.6</code>.</li>
 </section>
 </section>
 </section>
-<section id="corpo-dos-slides-1" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="corpo-dos-slides-1"><span class="header-section-number">5.4</span> <strong>CORPO DOS SLIDES</strong></h2>
-<section id="ênfases-e-destaques" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="ênfases-e-destaques"><span class="header-section-number">5.4.1</span> <strong>ÊNFASES E DESTAQUES</strong></h3>
+<section id="corpo-dos-slides-1" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="corpo-dos-slides-1"><span class="header-section-number">6.4</span> <strong>CORPO DOS SLIDES</strong></h2>
+<section id="ênfases-e-destaques" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="ênfases-e-destaques"><span class="header-section-number">6.4.1</span> <strong>ÊNFASES E DESTAQUES</strong></h3>
 <p>Este recurso serve para <strong>chamar atenção</strong> para partes importantes do texto, tornando-o mais legível e organizado. As principais formas de destaque são:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> <span class="er">*</span>Itálico<span class="sc">*</span> → usado para termos técnicos, estrangeirismos </span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>ou palavras que você quer realçar levemente.  </span>
@@ -707,8 +713,8 @@ Exemplos comuns: <code>0.2</code>, <code>0.4</code>, <code>0.6</code>.</li>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> <span class="st">`</span><span class="at">comandos</span><span class="st">`</span> → serve para colocar nomes de funções e<span class="sc">/</span>ou </span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>comandos de alguma linguagem de programação.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="capítulos-e-seções-slides" class="level3" data-number="5.4.2">
-<h3 data-number="5.4.2" class="anchored" data-anchor-id="capítulos-e-seções-slides"><span class="header-section-number">5.4.2</span> <strong>CAPÍTULOS E SEÇÕES (SLIDES)</strong></h3>
+<section id="capítulos-e-seções-slides" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="capítulos-e-seções-slides"><span class="header-section-number">6.4.2</span> <strong>CAPÍTULOS E SEÇÕES (SLIDES)</strong></h3>
 <p>Eles <strong>organizam o conteúdo em diferentes níveis hierárquicos</strong>, ajudando a guiar a leitura.</p>
 <ul>
 <li><code>#</code> → Capítulo</li>
@@ -745,8 +751,8 @@ Neste caso:
 </ul></li>
 </ul>
 </section>
-<section id="caixas" class="level3" data-number="5.4.3">
-<h3 data-number="5.4.3" class="anchored" data-anchor-id="caixas"><span class="header-section-number">5.4.3</span> <strong>CAIXAS</strong></h3>
+<section id="caixas" class="level3" data-number="6.4.3">
+<h3 data-number="6.4.3" class="anchored" data-anchor-id="caixas"><span class="header-section-number">6.4.3</span> <strong>CAIXAS</strong></h3>
 <p>No <code>quarto</code>, caixas como <code>box-blue</code>, <code>box-green</code>, <code>box-orange</code> ou <code>box-purple</code> são <strong>divisões de conteúdo estilizadas</strong> usadas para destacar partes importantes do texto ou da apresentação.</p>
 <p>Suas <strong>principais características são</strong></p>
 <ul>
@@ -797,11 +803,11 @@ A cor da caixa pode representar <strong>tipos diferentes de informação</strong
 <span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>Este é um bloco laranja.</span>
 <span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="listas" class="level3" data-number="5.4.4">
-<h3 data-number="5.4.4" class="anchored" data-anchor-id="listas"><span class="header-section-number">5.4.4</span> <strong>LISTAS</strong></h3>
+<section id="listas" class="level3" data-number="6.4.4">
+<h3 data-number="6.4.4" class="anchored" data-anchor-id="listas"><span class="header-section-number">6.4.4</span> <strong>LISTAS</strong></h3>
 <p>As <strong>listas</strong> são ferramentas essenciais para <strong>organizar informações</strong>, tornar o texto mais legível e guiar o leitor. No <code>quarto</code>, temos diferentes <strong>tipos de listas e maneiras de destacar itens</strong>.</p>
-<section id="listas-não-ordenadas" class="level4" data-number="5.4.4.1">
-<h4 data-number="5.4.4.1" class="anchored" data-anchor-id="listas-não-ordenadas"><span class="header-section-number">5.4.4.1</span> <strong>LISTAS NÃO ORDENADAS</strong></h4>
+<section id="listas-não-ordenadas" class="level4" data-number="6.4.4.1">
+<h4 data-number="6.4.4.1" class="anchored" data-anchor-id="listas-não-ordenadas"><span class="header-section-number">6.4.4.1</span> <strong>LISTAS NÃO ORDENADAS</strong></h4>
 <p>Usam <code>-</code>, <code>*</code> ou <code>+</code> para cada item.<br>
 São ideais para tópicos que não têm ordem específica.</p>
 <p>📌 <strong>Exemplo:</strong> Compile o seguinte código no seu <em>template</em>:</p>
@@ -824,8 +830,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 <p><strong>DICA:</strong> Use dois “tab” para fazer as listas aninhadas.</p>
 </blockquote>
 </section>
-<section id="listas-ordenadas" class="level4" data-number="5.4.4.2">
-<h4 data-number="5.4.4.2" class="anchored" data-anchor-id="listas-ordenadas"><span class="header-section-number">5.4.4.2</span> <strong>LISTAS ORDENADAS</strong></h4>
+<section id="listas-ordenadas" class="level4" data-number="6.4.4.2">
+<h4 data-number="6.4.4.2" class="anchored" data-anchor-id="listas-ordenadas"><span class="header-section-number">6.4.4.2</span> <strong>LISTAS ORDENADAS</strong></h4>
 <p>Usam <code>1.</code>, <code>2.</code>, <code>3.</code> e são úteis quando a ordem importa (passo a passo).</p>
 <p>📌 <strong>Exemplo:</strong> Compile o seguinte código no seu relatório:</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="do">## LISTA ORDENADA</span></span>
@@ -847,8 +853,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 </blockquote>
 <hr>
 </section>
-<section id="listas-de-tarefas" class="level4" data-number="5.4.4.3">
-<h4 data-number="5.4.4.3" class="anchored" data-anchor-id="listas-de-tarefas"><span class="header-section-number">5.4.4.3</span> <strong>LISTAS DE TAREFAS</strong></h4>
+<section id="listas-de-tarefas" class="level4" data-number="6.4.4.3">
+<h4 data-number="6.4.4.3" class="anchored" data-anchor-id="listas-de-tarefas"><span class="header-section-number">6.4.4.3</span> <strong>LISTAS DE TAREFAS</strong></h4>
 <p>No <code>quarto</code> é possível criar checklists, útil para planos de ação.</p>
 <p>📌 <strong>Exemplo:</strong> Compile o seguinte código no seu <em>template</em>:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="do">## **LISTA DE TAREFAS**</span></span>
@@ -860,15 +866,15 @@ São ideais para tópicos que não têm ordem específica.</p>
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="links" class="level3" data-number="5.4.5">
-<h3 data-number="5.4.5" class="anchored" data-anchor-id="links"><span class="header-section-number">5.4.5</span> <strong>LINKS</strong></h3>
+<section id="links" class="level3" data-number="6.4.5">
+<h3 data-number="6.4.5" class="anchored" data-anchor-id="links"><span class="header-section-number">6.4.5</span> <strong>LINKS</strong></h3>
 <p>Os links permitem <strong>conectar seu texto a outras fontes</strong>, aumentando a <strong>utilidade</strong> do material.</p>
 <p>📌 <strong>Exemplo:</strong> Compile o seguinte código no seu <em>template</em>:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="do">## **LINKS**</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>Confira a documentação oficial do [Quarto](https<span class="sc">:</span><span class="er">//</span>quarto.org).</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="equações" class="level3" data-number="5.4.6">
-<h3 data-number="5.4.6" class="anchored" data-anchor-id="equações"><span class="header-section-number">5.4.6</span> <strong>EQUAÇÕES</strong></h3>
+<section id="equações" class="level3" data-number="6.4.6">
+<h3 data-number="6.4.6" class="anchored" data-anchor-id="equações"><span class="header-section-number">6.4.6</span> <strong>EQUAÇÕES</strong></h3>
 <p>As equações são escritas com a sintaxe do <code>LaTeX</code>, que é uma linguagem de marcação para <strong>documentos científicos</strong>, muito usada em matemática, estatística, física e engenharia. Podem estar no fluxo do texto ou em blocos destacados.</p>
 <ul>
 <li>Para fazer equações dentro do texto, use somente um cifrão <code>$</code>.</li>
@@ -895,12 +901,12 @@ São ideais para tópicos que não têm ordem específica.</p>
 </blockquote>
 <p>Para criar equações em latex você pode usar o site <a href="https://editor.codecogs.com/">codegos</a>.</p>
 </section>
-<section id="figuras-e-tabelas" class="level3" data-number="5.4.7">
-<h3 data-number="5.4.7" class="anchored" data-anchor-id="figuras-e-tabelas"><span class="header-section-number">5.4.7</span> <strong>FIGURAS E TABELAS</strong></h3>
+<section id="figuras-e-tabelas" class="level3" data-number="6.4.7">
+<h3 data-number="6.4.7" class="anchored" data-anchor-id="figuras-e-tabelas"><span class="header-section-number">6.4.7</span> <strong>FIGURAS E TABELAS</strong></h3>
 <p>Depois de estruturarmos o texto, uma parte essencial na construção de documentos científicos, relatórios e apostilas é a <strong>apresentação de figuras e tabelas</strong>. Esses elementos tornam o conteúdo mais claro e visual, além de servirem como referência para os leitores.</p>
 <p>No <code>quarto</code>, inserir imagens e tabelas simples é tão fácil quanto trabalhar com texto. Não é necessário código em R para isso — basta utilizar a sintaxe do <code>Markdown</code>.</p>
-<section id="figuras" class="level4" data-number="5.4.7.1">
-<h4 data-number="5.4.7.1" class="anchored" data-anchor-id="figuras"><span class="header-section-number">5.4.7.1</span> <strong>FIGURAS</strong></h4>
+<section id="figuras" class="level4" data-number="6.4.7.1">
+<h4 data-number="6.4.7.1" class="anchored" data-anchor-id="figuras"><span class="header-section-number">6.4.7.1</span> <strong>FIGURAS</strong></h4>
 <p>As figuras ajudam a <strong>ilustrar conceitos</strong>, mostrar <strong>resultados visuais</strong> e <strong>enriquecer a leitura</strong>.</p>
 <p>📌 Sintaxe básica para inserir uma imagem:</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[](caminho<span class="sc">/</span>da<span class="sc">/</span>imagem)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -923,8 +929,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="do">## **IMAGENS COM EDIÇÕES**</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[](Rstudio.png){fig<span class="sc">-</span>align<span class="ot">=</span><span class="st">"center"</span> width<span class="ot">=</span><span class="dv">100</span>%}</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="tabelas" class="level4" data-number="5.4.7.2">
-<h4 data-number="5.4.7.2" class="anchored" data-anchor-id="tabelas"><span class="header-section-number">5.4.7.2</span> <strong>TABELAS</strong></h4>
+<section id="tabelas" class="level4" data-number="6.4.7.2">
+<h4 data-number="6.4.7.2" class="anchored" data-anchor-id="tabelas"><span class="header-section-number">6.4.7.2</span> <strong>TABELAS</strong></h4>
 <p>As tabelas servem para <strong>organizar informações</strong> de forma clara e resumida. No Quarto, é possível criar tabelas apenas com <code>Markdown</code>, sem precisar de pacotes adicionais. Compile o seguinte exemplo básico em seu <em>template</em>:</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="do">## **TABELAS**</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="sc">|</span> Disciplina     <span class="sc">|</span> Professor        <span class="sc">|</span> Horário   <span class="sc">|</span></span>
@@ -950,8 +956,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 </blockquote>
 </section>
 </section>
-<section id="abas" class="level3" data-number="5.4.8">
-<h3 data-number="5.4.8" class="anchored" data-anchor-id="abas"><span class="header-section-number">5.4.8</span> <strong>ABAS</strong></h3>
+<section id="abas" class="level3" data-number="6.4.8">
+<h3 data-number="6.4.8" class="anchored" data-anchor-id="abas"><span class="header-section-number">6.4.8</span> <strong>ABAS</strong></h3>
 <p>No <code>Revealjs</code>, o <code>panel-tabset</code> é um recurso que permite organizar conteúdo em abas (tabs) dentro de um mesmo slide.</p>
 <p>Ou seja, em vez de criar vários slides, você cria um <strong>único slide</strong> com várias abas clicáveis, e <strong>cada aba mostra um conteúdo diferente</strong>.</p>
 <p>Compile o seguinte código no seu template:</p>
@@ -979,8 +985,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 <li>O comando <code>###</code> dá título a cada aba.</li>
 </ul>
 </section>
-<section id="colunas" class="level3" data-number="5.4.9">
-<h3 data-number="5.4.9" class="anchored" data-anchor-id="colunas"><span class="header-section-number">5.4.9</span> <strong>COLUNAS</strong></h3>
+<section id="colunas" class="level3" data-number="6.4.9">
+<h3 data-number="6.4.9" class="anchored" data-anchor-id="colunas"><span class="header-section-number">6.4.9</span> <strong>COLUNAS</strong></h3>
 <p>No Quarto, o <strong>ambiente de colunas</strong> (<code>columns</code>) permite dividir um slide ou uma página em duas ou mais colunas, organizando o conteúdo lado a lado. Esse <strong>recurso é muito usado em apresentações feitas com Reveal.js</strong>.</p>
 <p>A ideia é semelhante a um jornal: em vez de colocar tudo em sequência vertical, você pode <strong>separar o conteúdo horizontalmente</strong>, facilitando comparações entre textos, gráficos, imagens ou tabelas.</p>
 <p>Compile o seguinte código em seu template:</p>
@@ -1006,8 +1012,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 <li>Veja o encadeamento do comando <code>:::</code>. Os mais externos vão ficando maiores</li>
 </ul>
 </section>
-<section id="scrolling" class="level3" data-number="5.4.10">
-<h3 data-number="5.4.10" class="anchored" data-anchor-id="scrolling"><span class="header-section-number">5.4.10</span> <strong>SCROLLING</strong></h3>
+<section id="scrolling" class="level3" data-number="6.4.10">
+<h3 data-number="6.4.10" class="anchored" data-anchor-id="scrolling"><span class="header-section-number">6.4.10</span> <strong>SCROLLING</strong></h3>
 <p>Se você vai apresentar um conteúdo muito grande (verticalmente) em seu slide, você pode recorrer ao <em>scrolling</em> para ajustar uma barra de rolagem.</p>
 <p>Veja este exemplo:</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="do">## *SCROLLING* {.scrollable}</span></span>
@@ -1035,11 +1041,11 @@ São ideais para tópicos que não têm ordem específica.</p>
 <span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a><span class="sc">-</span> Item E</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="incorporando-códigos-e-resultados" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="incorporando-códigos-e-resultados"><span class="header-section-number">5.5</span> <strong>INCORPORANDO CÓDIGOS E RESULTADOS</strong></h2>
+<section id="incorporando-códigos-e-resultados" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="incorporando-códigos-e-resultados"><span class="header-section-number">6.5</span> <strong>INCORPORANDO CÓDIGOS E RESULTADOS</strong></h2>
 <p>Um dos grandes diferenciais do <code>quarto</code> é a possibilidade de <strong>inserir códigos de programação diretamente no documento</strong>. Esses blocos são chamados de <strong><em>chunks</em></strong>. Com os <em>chunks</em>, podemos <strong>escrever código, executá-lo e mostrar seus resultados</strong> (como tabelas, gráficos e cálculos) <strong>no mesmo lugar em que construímos o texto</strong>. Isso facilita a integração entre explicação teórica e prática.</p>
-<section id="criando-um-chunk" class="level3" data-number="5.5.1">
-<h3 data-number="5.5.1" class="anchored" data-anchor-id="criando-um-chunk"><span class="header-section-number">5.5.1</span> <strong>CRIANDO UM <em>CHUNK</em></strong></h3>
+<section id="criando-um-chunk" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="criando-um-chunk"><span class="header-section-number">6.5.1</span> <strong>CRIANDO UM <em>CHUNK</em></strong></h3>
 <p>Um <em>chunk</em> é iniciado e finalizado por três crases. Dentro da abertura colocamos <code>{linguagem}</code>, indicando em qual linguagem vamos programar.</p>
 <p>📌 <strong>Exemplo:</strong> Compile o seguinte código no seu <em>template</em> para gerar um código <code>R</code> e seu resultado:</p>
 <div class="sourceCode" id="cb26"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>## **CRIANDO UMA CHUNK**</span>
@@ -1057,8 +1063,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 <p>Nas configurações, você pode determinar que a saída do código apareça apenas no console com a opção <code>chunk outuput in console</code>.</p>
 </blockquote>
 </section>
-<section id="opções-de-execução" class="level3" data-number="5.5.2">
-<h3 data-number="5.5.2" class="anchored" data-anchor-id="opções-de-execução"><span class="header-section-number">5.5.2</span> <strong>OPÇÕES DE EXECUÇÃO</strong></h3>
+<section id="opções-de-execução" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="opções-de-execução"><span class="header-section-number">6.5.2</span> <strong>OPÇÕES DE EXECUÇÃO</strong></h3>
 <p>Por padrão, os <em>chunks</em> em apresentação de slides exibem apenas o resiltado. Entretanto, os <em>chunks</em> têm diversas <strong>opções de controle</strong> que permitem personalizar o que será exibido no documento final:</p>
 <ul>
 <li><code>{r, echo=TRUE}</code>
@@ -1083,8 +1089,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 </ul></li>
 </ul>
 </section>
-<section id="nomeando-chunks" class="level3" data-number="5.5.3">
-<h3 data-number="5.5.3" class="anchored" data-anchor-id="nomeando-chunks"><span class="header-section-number">5.5.3</span> <strong>NOMEANDO CHUNKS</strong></h3>
+<section id="nomeando-chunks" class="level3" data-number="6.5.3">
+<h3 data-number="6.5.3" class="anchored" data-anchor-id="nomeando-chunks"><span class="header-section-number">6.5.3</span> <strong>NOMEANDO CHUNKS</strong></h3>
 <p>Cada chunk pode ter um <strong>nome</strong>, o que ajuda na organização e no rastreamento de erros. Para dar um nome ao seu <code>chunk</code> escreva o nome após a letra <code>r</code>.</p>
 <p>📌 <strong>Exemplo:</strong> Compile o seguinte código no seu <em>template</em>:</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>## CHUNK COM NOME</span>
@@ -1094,8 +1100,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 <span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>```</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>É possível navegar mais facilmente para blocos de código específicos usando o navegador em lista no canto inferior esquerdo do editor do script.</p>
 </section>
-<section id="outras-opções-úteis" class="level3" data-number="5.5.4">
-<h3 data-number="5.5.4" class="anchored" data-anchor-id="outras-opções-úteis"><span class="header-section-number">5.5.4</span> <strong>OUTRAS OPÇÕES ÚTEIS</strong></h3>
+<section id="outras-opções-úteis" class="level3" data-number="6.5.4">
+<h3 data-number="6.5.4" class="anchored" data-anchor-id="outras-opções-úteis"><span class="header-section-number">6.5.4</span> <strong>OUTRAS OPÇÕES ÚTEIS</strong></h3>
 <ul>
 <li><strong>fig.width</strong> e <strong>fig.height</strong> → controlam tamanho de gráficos.<br>
 </li>
@@ -1123,11 +1129,11 @@ São ideais para tópicos que não têm ordem específica.</p>
 <span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>```</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="compartilhamento-de-produtos-quarto" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="compartilhamento-de-produtos-quarto"><span class="header-section-number">5.6</span> <strong>COMPARTILHAMENTO DE PRODUTOS QUARTO</strong></h2>
+<section id="compartilhamento-de-produtos-quarto" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="compartilhamento-de-produtos-quarto"><span class="header-section-number">6.6</span> <strong>COMPARTILHAMENTO DE PRODUTOS QUARTO</strong></h2>
 <p>Depois de criar um relatório no <code>Quarto</code>, muitas vezes precisamos <strong>compartilhá-lo</strong> com colegas, alunos ou com o público. O <code>Quarto</code> oferece diferentes formas de <strong>publicação</strong>, que podem ser <strong>manuais</strong> ou <strong>online</strong>.</p>
-<section id="publicação-manual-arquivo-local" class="level3" data-number="5.6.1">
-<h3 data-number="5.6.1" class="anchored" data-anchor-id="publicação-manual-arquivo-local"><span class="header-section-number">5.6.1</span> <strong>PUBLICAÇÃO MANUAL (ARQUIVO LOCAL)</strong></h3>
+<section id="publicação-manual-arquivo-local" class="level3" data-number="6.6.1">
+<h3 data-number="6.6.1" class="anchored" data-anchor-id="publicação-manual-arquivo-local"><span class="header-section-number">6.6.1</span> <strong>PUBLICAÇÃO MANUAL (ARQUIVO LOCAL)</strong></h3>
 <p>A forma mais simples de compartilhar um relatório é <strong>entregar diretamente o arquivo renderizado</strong>. Dependendo do objetivo, você pode gerar:</p>
 <ul>
 <li><strong>PDF</strong> → ideal para relatórios formais, impressão e arquivamento.</li>
@@ -1135,8 +1141,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 <li><strong>Word (.docx)</strong> → útil quando o texto ainda precisa de edição posterior.</li>
 </ul>
 </section>
-<section id="posit-connect-cloud" class="level3" data-number="5.6.2">
-<h3 data-number="5.6.2" class="anchored" data-anchor-id="posit-connect-cloud"><span class="header-section-number">5.6.2</span> <strong>POSIT CONNECT CLOUD</strong></h3>
+<section id="posit-connect-cloud" class="level3" data-number="6.6.2">
+<h3 data-number="6.6.2" class="anchored" data-anchor-id="posit-connect-cloud"><span class="header-section-number">6.6.2</span> <strong>POSIT CONNECT CLOUD</strong></h3>
 <p>Além do compartilhamento de arquivos, podemos <strong>publicar nossos documentos diretamente na web</strong>, permitindo que outras pessoas tenham acesso ao conteúdo por meio de um link.</p>
 <p>As ferramentas da Posit para esse tipo de publicação evoluíram ao longo do tempo:</p>
 <p><strong>RPubs → Shiny apps → Quarto Pub → Posit Connect Cloud</strong></p>
@@ -1157,8 +1163,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 <li><strong>Aplicações Dash</strong></li>
 </ul>
 <p>Dessa forma, o Posit Connect Cloud vai além da simples hospedagem de documentos, permitindo reunir <strong>relatórios, dashboards e aplicações interativas</strong> em uma mesma plataforma.</p>
-<section id="publicação-pelo-rstudio" class="level4" data-number="5.6.2.1">
-<h4 data-number="5.6.2.1" class="anchored" data-anchor-id="publicação-pelo-rstudio"><span class="header-section-number">5.6.2.1</span> <strong>PUBLICAÇÃO PELO RSTUDIO</strong></h4>
+<section id="publicação-pelo-rstudio" class="level4" data-number="6.6.2.1">
+<h4 data-number="6.6.2.1" class="anchored" data-anchor-id="publicação-pelo-rstudio"><span class="header-section-number">6.6.2.1</span> <strong>PUBLICAÇÃO PELO RSTUDIO</strong></h4>
 <p>Uma das maneiras mais simples de publicar um projeto é utilizando a própria interface do <strong>RStudio</strong>.</p>
 <p>Após abrir e renderizar o documento ou projeto Quarto:</p>
 <ol type="1">
@@ -1172,8 +1178,8 @@ São ideais para tópicos que não têm ordem específica.</p>
 <p>Após alguns instantes, o conteúdo estará disponível no <strong>Posit Connect Cloud</strong>.</p>
 <p>Será criado um <strong>link de acesso</strong>, que poderá ser compartilhado com outras pessoas.</p>
 </section>
-<section id="publicação-pelo-terminal" class="level4" data-number="5.6.2.2">
-<h4 data-number="5.6.2.2" class="anchored" data-anchor-id="publicação-pelo-terminal"><span class="header-section-number">5.6.2.2</span> <strong>PUBLICAÇÃO PELO TERMINAL</strong></h4>
+<section id="publicação-pelo-terminal" class="level4" data-number="6.6.2.2">
+<h4 data-number="6.6.2.2" class="anchored" data-anchor-id="publicação-pelo-terminal"><span class="header-section-number">6.6.2.2</span> <strong>PUBLICAÇÃO PELO TERMINAL</strong></h4>
 <p>Também é possível publicar diretamente pelo <strong>Terminal</strong>.</p>
 <p>Na pasta onde está localizado o projeto Quarto, execute o comando <code>quarto publish posit-connect-cloud</code>.</p>
 <p>Na primeira publicação, o navegador será aberto para realizar a <strong>autenticação na conta Posit</strong>.</p>
@@ -1181,12 +1187,12 @@ São ideais para tópicos que não têm ordem específica.</p>
 <p>Nas próximas atualizações do projeto, o processo de publicação será mais simples, pois a configuração do destino já estará associada ao projeto.</p>
 </section>
 </section>
-<section id="github-pages" class="level3" data-number="5.6.3">
-<h3 data-number="5.6.3" class="anchored" data-anchor-id="github-pages"><span class="header-section-number">5.6.3</span> <strong><code>GitHub Pages</code></strong></h3>
+<section id="github-pages" class="level3" data-number="6.6.3">
+<h3 data-number="6.6.3" class="anchored" data-anchor-id="github-pages"><span class="header-section-number">6.6.3</span> <strong><code>GitHub Pages</code></strong></h3>
 <p>Uma das grandes vantagens de desenvolver projetos em <strong>Quarto</strong> é a possibilidade de <strong>publicar o material diretamente na internet</strong>. Em vez de enviar arquivos PDF ou HTML por e-mail ou por plataformas de armazenamento, podemos disponibilizar o projeto online e gerar <strong>uma página acessível por link</strong>, utilizando o <strong>GitHub Pages</strong>.</p>
 <p>Antes disso, porém, vale entender brevemente o que é o <strong>GitHub</strong>.</p>
-<section id="o-que-é-github" class="level4" data-number="5.6.3.1">
-<h4 data-number="5.6.3.1" class="anchored" data-anchor-id="o-que-é-github"><span class="header-section-number">5.6.3.1</span> <strong>O QUE É <code>GitHub</code>?</strong></h4>
+<section id="o-que-é-github" class="level4" data-number="6.6.3.1">
+<h4 data-number="6.6.3.1" class="anchored" data-anchor-id="o-que-é-github"><span class="header-section-number">6.6.3.1</span> <strong>O QUE É <code>GitHub</code>?</strong></h4>
 <p>O <strong>GitHub</strong> é uma plataforma online voltada para <strong>armazenamento, organização e compartilhamento de projetos</strong>, especialmente projetos que envolvem código, análise de dados ou documentos técnicos.</p>
 <p>Em termos gerais, ele funciona como:</p>
 <ul>
@@ -1200,8 +1206,8 @@ Várias pessoas podem trabalhar no mesmo projeto, sugerir mudanças e contribuir
 Projetos podem ser tornados públicos, permitindo que qualquer pessoa visualize, aprenda com eles ou reutilize partes do trabalho.</p></li>
 </ul>
 </section>
-<section id="o-que-é-o-github-pages" class="level4" data-number="5.6.3.2">
-<h4 data-number="5.6.3.2" class="anchored" data-anchor-id="o-que-é-o-github-pages"><span class="header-section-number">5.6.3.2</span> <strong>O QUE É O <code>GitHub Pages</code>?</strong></h4>
+<section id="o-que-é-o-github-pages" class="level4" data-number="6.6.3.2">
+<h4 data-number="6.6.3.2" class="anchored" data-anchor-id="o-que-é-o-github-pages"><span class="header-section-number">6.6.3.2</span> <strong>O QUE É O <code>GitHub Pages</code>?</strong></h4>
 <p>O <strong>GitHub Pages</strong> é um serviço oferecido dentro do próprio GitHub que permite <strong>transformar um repositório em um site</strong>.</p>
 <p>Ou seja, arquivos HTML gerados por ferramentas como <strong>Quarto</strong> podem ser automaticamente publicados na web.</p>
 <p>Isso traz várias vantagens:</p>
@@ -1219,8 +1225,8 @@ Os projetos passam a existir como páginas públicas na internet, o que é muito
 </ul>
 <p>Seguem os passos para a criação de um link via GitHub Pages:</p>
 </section>
-<section id="passo-1-criando-uma-conta-no-github" class="level4" data-number="5.6.3.3">
-<h4 data-number="5.6.3.3" class="anchored" data-anchor-id="passo-1-criando-uma-conta-no-github"><span class="header-section-number">5.6.3.3</span> <strong>PASSO 1: CRIANDO UMA CONTA NO <code>GitHub</code></strong></h4>
+<section id="passo-1-criando-uma-conta-no-github" class="level4" data-number="6.6.3.3">
+<h4 data-number="6.6.3.3" class="anchored" data-anchor-id="passo-1-criando-uma-conta-no-github"><span class="header-section-number">6.6.3.3</span> <strong>PASSO 1: CRIANDO UMA CONTA NO <code>GitHub</code></strong></h4>
 <ol type="1">
 <li><p>🌐 <strong>Acesse o site do GitHub</strong><br>
 Clique em <a href="https://github.com">github</a></p></li>
@@ -1240,8 +1246,8 @@ Após finalizar o cadastro, verifique sua caixa de entrada e <strong>confirme o 
 </ol>
 <p>Após concluir essas etapas, sua conta estará pronta e você poderá <strong>criar repositórios e publicar seus projetos</strong>.</p>
 </section>
-<section id="passo-2-instalação-do-git" class="level4" data-number="5.6.3.4">
-<h4 data-number="5.6.3.4" class="anchored" data-anchor-id="passo-2-instalação-do-git"><span class="header-section-number">5.6.3.4</span> <strong>PASSO 2: INSTALAÇÃO DO <code>GIT</code></strong></h4>
+<section id="passo-2-instalação-do-git" class="level4" data-number="6.6.3.4">
+<h4 data-number="6.6.3.4" class="anchored" data-anchor-id="passo-2-instalação-do-git"><span class="header-section-number">6.6.3.4</span> <strong>PASSO 2: INSTALAÇÃO DO <code>GIT</code></strong></h4>
 <p>Para que o <strong>RStudio</strong>, o <strong>GitHub</strong> e o <strong>GitHub Pages</strong> funcionem de forma integrada, precisamos instalar o <strong>Git</strong> no computador.</p>
 <p>O <strong>Git</strong> é um sistema de <strong>controle de versões</strong>, ou seja, uma ferramenta que registra todas as alterações feitas em um projeto ao longo do tempo. Ele permite acompanhar mudanças, recuperar versões anteriores e sincronizar arquivos entre o computador e plataformas online.</p>
 <p>No fluxo de trabalho que utilizaremos nesta disciplina, cada ferramenta tem um papel específico:</p>
@@ -1287,8 +1293,8 @@ Permite <strong>publicar os arquivos do projeto como um site</strong>, tornando 
 </ol>
 <p>Após concluir o processo, o <strong>Git estará disponível no sistema</strong> e poderá ser utilizado pelo <strong>RStudio</strong> para conectar seus projetos ao GitHub.</p>
 </section>
-<section id="passo-3-criar-o-repositório-apresentacaoo-no-github" class="level4" data-number="5.6.3.5">
-<h4 data-number="5.6.3.5" class="anchored" data-anchor-id="passo-3-criar-o-repositório-apresentacaoo-no-github"><span class="header-section-number">5.6.3.5</span> <strong>PASSO 3: CRIAR O REPOSITÓRIO <code>ApresentacaoO</code> NO <code>GitHub</code></strong></h4>
+<section id="passo-3-criar-o-repositório-apresentacaoo-no-github" class="level4" data-number="6.6.3.5">
+<h4 data-number="6.6.3.5" class="anchored" data-anchor-id="passo-3-criar-o-repositório-apresentacaoo-no-github"><span class="header-section-number">6.6.3.5</span> <strong>PASSO 3: CRIAR O REPOSITÓRIO <code>ApresentacaoO</code> NO <code>GitHub</code></strong></h4>
 <p>Agora que você já possui uma conta no <strong>GitHub</strong> e instalou o <strong>Git</strong>, o próximo passo é <strong>criar um repositório</strong> onde ficará armazenada a sua apresentação.</p>
 <p>Um <strong>repositório</strong> é basicamente uma <strong>pasta do projeto dentro do GitHub</strong>, onde todos os arquivos (códigos, documentos, imagens e apresentações) serão guardados e versionados.</p>
 <p>Siga os passos abaixo:</p>
@@ -1315,8 +1321,8 @@ Permite <strong>publicar os arquivos do projeto como um site</strong>, tornando 
 <p>Clique no botão <strong>Create repository</strong>.</p>
 <p>Após concluir esses passos, seu repositório estará criado e pronto para <strong>receber os arquivos do projeto</strong> que serão enviados a partir do <strong>RStudio</strong>.</p>
 </section>
-<section id="passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório" class="level4" data-number="5.6.3.6">
-<h4 data-number="5.6.3.6" class="anchored" data-anchor-id="passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório"><span class="header-section-number">5.6.3.6</span> <strong>PASSO 4: CRIAR UM PROJETO NO RStudio E VINCULAR O REPOSITÓRIO</strong></h4>
+<section id="passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório" class="level4" data-number="6.6.3.6">
+<h4 data-number="6.6.3.6" class="anchored" data-anchor-id="passo-4-criar-um-projeto-no-rstudio-e-vincular-o-repositório"><span class="header-section-number">6.6.3.6</span> <strong>PASSO 4: CRIAR UM PROJETO NO RStudio E VINCULAR O REPOSITÓRIO</strong></h4>
 <p>Agora vamos criar um <strong>projeto no RStudio</strong> conectado ao repositório que você criou no <strong>GitHub</strong>. Isso permitirá que os arquivos do seu projeto fiquem <strong>sincronizados entre o computador e o GitHub</strong>.</p>
 <p>A ideia é simples:</p>
 <ul>
@@ -1344,8 +1350,8 @@ Escolha a pasta do seu computador onde deseja salvar o projeto.</p></li>
 </ul>
 <p>O <strong>RStudio irá baixar o conteúdo do repositório e criar automaticamente o projeto no seu computador</strong>.</p>
 </section>
-<section id="passo-5-conectando-sua-conta-github-ao-rstudio" class="level4" data-number="5.6.3.7">
-<h4 data-number="5.6.3.7" class="anchored" data-anchor-id="passo-5-conectando-sua-conta-github-ao-rstudio"><span class="header-section-number">5.6.3.7</span> <strong>PASSO 5: CONECTANDO SUA CONTA <code>GitHub</code> AO <code>RStudio</code></strong></h4>
+<section id="passo-5-conectando-sua-conta-github-ao-rstudio" class="level4" data-number="6.6.3.7">
+<h4 data-number="6.6.3.7" class="anchored" data-anchor-id="passo-5-conectando-sua-conta-github-ao-rstudio"><span class="header-section-number">6.6.3.7</span> <strong>PASSO 5: CONECTANDO SUA CONTA <code>GitHub</code> AO <code>RStudio</code></strong></h4>
 <p>Antes de começar a enviar arquivos para o <strong>GitHub</strong>, precisamos conectar sua conta ao <strong>RStudio</strong>.<br>
 Essa conexão permite que o Git envie alterações do seu computador para o repositório online.</p>
 <p>Essa configuração é feita <strong>apenas uma vez no computador</strong> e depois funcionará para <strong>todos os repositórios que você utilizar</strong>.</p>
@@ -1375,15 +1381,15 @@ No <strong>console do RStudio</strong>, execute o seguinte comando trocando o no
 <div class="sourceCode" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(credentials)</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>credentials<span class="sc">::</span><span class="fu">set_github_pat</span>(<span class="st">"SEU_TOKEN_AQUI"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Substitua <code>"SEU_TOKEN_AQUI"</code> pelo token que você copiou do GitHub.</p>
-<section id="observação-para-usuários-linux" class="level5" data-number="5.6.3.7.1">
-<h5 data-number="5.6.3.7.1" class="anchored" data-anchor-id="observação-para-usuários-linux"><span class="header-section-number">5.6.3.7.1</span> <strong>Observação para usuários Linux</strong></h5>
+<section id="observação-para-usuários-linux" class="level5" data-number="6.6.3.7.1">
+<h5 data-number="6.6.3.7.1" class="anchored" data-anchor-id="observação-para-usuários-linux"><span class="header-section-number">6.6.3.7.1</span> <strong>Observação para usuários Linux</strong></h5>
 <p>Em alguns sistemas Linux, o token pode ser armazenado apenas temporariamente.<br>
 Caso isso ocorra, é possível aumentar o tempo de armazenamento executando:</p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(<span class="at">credential.helper =</span> <span class="st">"cache --timeout=2600000"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="passo-6-algumas-configurações-importantes" class="level4" data-number="5.6.3.8">
-<h4 data-number="5.6.3.8" class="anchored" data-anchor-id="passo-6-algumas-configurações-importantes"><span class="header-section-number">5.6.3.8</span> <strong>PASSO 6: ALGUMAS CONFIGURAÇÕES IMPORTANTES</strong></h4>
+<section id="passo-6-algumas-configurações-importantes" class="level4" data-number="6.6.3.8">
+<h4 data-number="6.6.3.8" class="anchored" data-anchor-id="passo-6-algumas-configurações-importantes"><span class="header-section-number">6.6.3.8</span> <strong>PASSO 6: ALGUMAS CONFIGURAÇÕES IMPORTANTES</strong></h4>
 <p>Copie os seguintes arquivos da nossa pasta pública para o seu projeto criado e vinculado ao <code>GitHub</code>:</p>
 <ul>
 <li><code>_quarto.yml</code>: Configurações globais</li>
@@ -1410,8 +1416,8 @@ Caso isso ocorra, é possível aumentar o tempo de armazenamento executando:</p>
 <li>Isso evita erros comuns de publicação.</li>
 </ul>
 </section>
-<section id="passo-7-compilar-a-apresentação-e-publicar" class="level4" data-number="5.6.3.9">
-<h4 data-number="5.6.3.9" class="anchored" data-anchor-id="passo-7-compilar-a-apresentação-e-publicar"><span class="header-section-number">5.6.3.9</span> <strong>PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR</strong></h4>
+<section id="passo-7-compilar-a-apresentação-e-publicar" class="level4" data-number="6.6.3.9">
+<h4 data-number="6.6.3.9" class="anchored" data-anchor-id="passo-7-compilar-a-apresentação-e-publicar"><span class="header-section-number">6.6.3.9</span> <strong>PASSO 7: COMPILAR A APRESENTAÇÃO E PUBLICAR</strong></h4>
 <p>Para publicar o site no <strong>GitHub Pages</strong>, execute os seguintes comandos no <strong>terminal</strong>.</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>quarto render</span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>git add docs</span>
@@ -1429,8 +1435,8 @@ Registra as alterações no histórico do repositório. A mensagem entre aspas d
 Envia essas alterações do seu computador para o <strong>repositório no GitHub</strong>, permitindo que o <strong>GitHub Pages atualize o site publicado</strong>.</p></li>
 </ul>
 </section>
-<section id="passo-8-configurando-a-publicação" class="level4" data-number="5.6.3.10">
-<h4 data-number="5.6.3.10" class="anchored" data-anchor-id="passo-8-configurando-a-publicação"><span class="header-section-number">5.6.3.10</span> <strong>PASSO 8: CONFIGURANDO A PUBLICAÇÃO</strong></h4>
+<section id="passo-8-configurando-a-publicação" class="level4" data-number="6.6.3.10">
+<h4 data-number="6.6.3.10" class="anchored" data-anchor-id="passo-8-configurando-a-publicação"><span class="header-section-number">6.6.3.10</span> <strong>PASSO 8: CONFIGURANDO A PUBLICAÇÃO</strong></h4>
 <p>Agora precisamos configurar o <strong>GitHub Pages</strong> para publicar o site a partir da pasta <code>docs</code> do repositório.</p>
 <p>Siga os passos:</p>
 <ol type="1">
@@ -1917,13 +1923,13 @@ Envia essas alterações do seu computador para o <strong>repositório no GitHub
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Cap1.html" class="pagination-link" aria-label="**TESTES DE INDEPENDÊNCIA**">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><strong>TESTES DE INDEPENDÊNCIA</strong></span></span>
+      <a href="./Cap2.html" class="pagination-link" aria-label="**TESTES DE HOMOGENEIDADE E ADERÊNCIA**">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>TESTES DE HOMOGENEIDADE E ADERÊNCIA</strong></span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Atividades.html" class="pagination-link" aria-label="**ATIVIDADES AVALIATIVAS**">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
