@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; CONSTRUINDO TABELAS RESUMO COM O gtsummary – PRÁTICA ESTATÍSTICA II</title>
+<title>7&nbsp; CONSTRUINDO TABELAS RESUMO COM O gtsummary – PRÁTICA ESTATÍSTICA II</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,7 +122,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Cap4.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Cap4.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -173,26 +173,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Cap2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>TESTES DE HOMOGENEIDADE E ADERÊNCIA</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Cap3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cap4.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cap5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Atividades.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span></a>
   </div>
 </li>
     </ul>
@@ -205,36 +211,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#pacotes-deste-treinamento" id="toc-pacotes-deste-treinamento" class="nav-link active" data-scroll-target="#pacotes-deste-treinamento"><span class="header-section-number">6.1</span> <strong>PACOTES DESTE TREINAMENTO</strong></a></li>
-  <li><a href="#introdução" id="toc-introdução" class="nav-link" data-scroll-target="#introdução"><span class="header-section-number">6.2</span> <strong>INTRODUÇÃO</strong></a></li>
-  <li><a href="#o-pacote-gtsummary" id="toc-o-pacote-gtsummary" class="nav-link" data-scroll-target="#o-pacote-gtsummary"><span class="header-section-number">6.3</span> <strong>O PACOTE <code>gtsummary</code></strong></a></li>
-  <li><a href="#variáveis-qualitativas" id="toc-variáveis-qualitativas" class="nav-link" data-scroll-target="#variáveis-qualitativas"><span class="header-section-number">6.4</span> <strong>VARIÁVEIS QUALITATIVAS</strong></a>
+  <li><a href="#pacotes-deste-treinamento" id="toc-pacotes-deste-treinamento" class="nav-link active" data-scroll-target="#pacotes-deste-treinamento"><span class="header-section-number">7.1</span> <strong>PACOTES DESTE TREINAMENTO</strong></a></li>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link" data-scroll-target="#introdução"><span class="header-section-number">7.2</span> <strong>INTRODUÇÃO</strong></a></li>
+  <li><a href="#o-pacote-gtsummary" id="toc-o-pacote-gtsummary" class="nav-link" data-scroll-target="#o-pacote-gtsummary"><span class="header-section-number">7.3</span> <strong>O PACOTE <code>gtsummary</code></strong></a></li>
+  <li><a href="#variáveis-qualitativas" id="toc-variáveis-qualitativas" class="nav-link" data-scroll-target="#variáveis-qualitativas"><span class="header-section-number">7.4</span> <strong>VARIÁVEIS QUALITATIVAS</strong></a>
   <ul>
-  <li><a href="#situação-prática-motivadora" id="toc-situação-prática-motivadora" class="nav-link" data-scroll-target="#situação-prática-motivadora"><span class="header-section-number">6.4.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
-  <li><a href="#tabelas-simples" id="toc-tabelas-simples" class="nav-link" data-scroll-target="#tabelas-simples"><span class="header-section-number">6.4.2</span> <strong>TABELAS SIMPLES</strong></a></li>
-  <li><a href="#investigando-associação" id="toc-investigando-associação" class="nav-link" data-scroll-target="#investigando-associação"><span class="header-section-number">6.4.3</span> <strong>INVESTIGANDO ASSOCIAÇÃO</strong></a>
+  <li><a href="#situação-prática-motivadora" id="toc-situação-prática-motivadora" class="nav-link" data-scroll-target="#situação-prática-motivadora"><span class="header-section-number">7.4.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
+  <li><a href="#tabelas-simples" id="toc-tabelas-simples" class="nav-link" data-scroll-target="#tabelas-simples"><span class="header-section-number">7.4.2</span> <strong>TABELAS SIMPLES</strong></a></li>
+  <li><a href="#investigando-associação" id="toc-investigando-associação" class="nav-link" data-scroll-target="#investigando-associação"><span class="header-section-number">7.4.3</span> <strong>INVESTIGANDO ASSOCIAÇÃO</strong></a>
   <ul class="collapse">
-  <li><a href="#teste-qui-quadrado-de-independência" id="toc-teste-qui-quadrado-de-independência" class="nav-link" data-scroll-target="#teste-qui-quadrado-de-independência"><span class="header-section-number">6.4.3.1</span> <strong>TESTE QUI-QUADRADO DE INDEPENDÊNCIA</strong></a></li>
-  <li><a href="#teste-exato-de-fisher" id="toc-teste-exato-de-fisher" class="nav-link" data-scroll-target="#teste-exato-de-fisher"><span class="header-section-number">6.4.3.2</span> <strong>TESTE EXATO DE FISHER</strong></a></li>
-  <li><a href="#coeficiente-de-cramer" id="toc-coeficiente-de-cramer" class="nav-link" data-scroll-target="#coeficiente-de-cramer"><span class="header-section-number">6.4.3.3</span> <strong>COEFICIENTE DE CRAMER</strong></a></li>
+  <li><a href="#teste-qui-quadrado-de-independência" id="toc-teste-qui-quadrado-de-independência" class="nav-link" data-scroll-target="#teste-qui-quadrado-de-independência"><span class="header-section-number">7.4.3.1</span> <strong>TESTE QUI-QUADRADO DE INDEPENDÊNCIA</strong></a></li>
+  <li><a href="#teste-exato-de-fisher" id="toc-teste-exato-de-fisher" class="nav-link" data-scroll-target="#teste-exato-de-fisher"><span class="header-section-number">7.4.3.2</span> <strong>TESTE EXATO DE FISHER</strong></a></li>
+  <li><a href="#coeficiente-de-cramer" id="toc-coeficiente-de-cramer" class="nav-link" data-scroll-target="#coeficiente-de-cramer"><span class="header-section-number">7.4.3.3</span> <strong>COEFICIENTE DE CRAMER</strong></a></li>
   </ul></li>
-  <li><a href="#aplicação-aos-nossos-dados" id="toc-aplicação-aos-nossos-dados" class="nav-link" data-scroll-target="#aplicação-aos-nossos-dados"><span class="header-section-number">6.4.4</span> <strong>APLICAÇÃO AOS NOSSOS DADOS</strong></a>
+  <li><a href="#aplicação-aos-nossos-dados" id="toc-aplicação-aos-nossos-dados" class="nav-link" data-scroll-target="#aplicação-aos-nossos-dados"><span class="header-section-number">7.4.4</span> <strong>APLICAÇÃO AOS NOSSOS DADOS</strong></a>
   <ul class="collapse">
-  <li><a href="#investigando-valores-esperados" id="toc-investigando-valores-esperados" class="nav-link" data-scroll-target="#investigando-valores-esperados"><span class="header-section-number">6.4.4.1</span> <strong>INVESTIGANDO VALORES ESPERADOS</strong></a></li>
-  <li><a href="#investigando-associações-significativas" id="toc-investigando-associações-significativas" class="nav-link" data-scroll-target="#investigando-associações-significativas"><span class="header-section-number">6.4.4.2</span> <strong>INVESTIGANDO ASSOCIAÇÕES SIGNIFICATIVAS</strong></a></li>
-  <li><a href="#investigando-os-resíduos-padronizados" id="toc-investigando-os-resíduos-padronizados" class="nav-link" data-scroll-target="#investigando-os-resíduos-padronizados"><span class="header-section-number">6.4.4.3</span> <strong>INVESTIGANDO OS RESÍDUOS PADRONIZADOS</strong></a></li>
-  <li><a href="#tabela-final" id="toc-tabela-final" class="nav-link" data-scroll-target="#tabela-final"><span class="header-section-number">6.4.4.4</span> <strong>TABELA FINAL</strong></a></li>
-  <li><a href="#interpretações-da-tabela" id="toc-interpretações-da-tabela" class="nav-link" data-scroll-target="#interpretações-da-tabela"><span class="header-section-number">6.4.4.5</span> <strong>INTERPRETAÇÕES DA TABELA</strong></a></li>
+  <li><a href="#investigando-valores-esperados" id="toc-investigando-valores-esperados" class="nav-link" data-scroll-target="#investigando-valores-esperados"><span class="header-section-number">7.4.4.1</span> <strong>INVESTIGANDO VALORES ESPERADOS</strong></a></li>
+  <li><a href="#investigando-associações-significativas" id="toc-investigando-associações-significativas" class="nav-link" data-scroll-target="#investigando-associações-significativas"><span class="header-section-number">7.4.4.2</span> <strong>INVESTIGANDO ASSOCIAÇÕES SIGNIFICATIVAS</strong></a></li>
+  <li><a href="#investigando-os-resíduos-padronizados" id="toc-investigando-os-resíduos-padronizados" class="nav-link" data-scroll-target="#investigando-os-resíduos-padronizados"><span class="header-section-number">7.4.4.3</span> <strong>INVESTIGANDO OS RESÍDUOS PADRONIZADOS</strong></a></li>
+  <li><a href="#tabela-final" id="toc-tabela-final" class="nav-link" data-scroll-target="#tabela-final"><span class="header-section-number">7.4.4.4</span> <strong>TABELA FINAL</strong></a></li>
+  <li><a href="#interpretações-da-tabela" id="toc-interpretações-da-tabela" class="nav-link" data-scroll-target="#interpretações-da-tabela"><span class="header-section-number">7.4.4.5</span> <strong>INTERPRETAÇÕES DA TABELA</strong></a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#variáveis-quantitativas" id="toc-variáveis-quantitativas" class="nav-link" data-scroll-target="#variáveis-quantitativas"><span class="header-section-number">6.5</span> <strong>VARIÁVEIS QUANTITATIVAS</strong></a>
+  <li><a href="#variáveis-quantitativas" id="toc-variáveis-quantitativas" class="nav-link" data-scroll-target="#variáveis-quantitativas"><span class="header-section-number">7.5</span> <strong>VARIÁVEIS QUANTITATIVAS</strong></a>
   <ul>
-  <li><a href="#situação-prática-motivadora-1" id="toc-situação-prática-motivadora-1" class="nav-link" data-scroll-target="#situação-prática-motivadora-1"><span class="header-section-number">6.5.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
-  <li><a href="#tabelas-simples-1" id="toc-tabelas-simples-1" class="nav-link" data-scroll-target="#tabelas-simples-1"><span class="header-section-number">6.5.2</span> <strong>TABELAS SIMPLES</strong></a></li>
-  <li><a href="#investigando-associação-1" id="toc-investigando-associação-1" class="nav-link" data-scroll-target="#investigando-associação-1"><span class="header-section-number">6.5.3</span> <strong>INVESTIGANDO ASSOCIAÇÃO</strong></a>
+  <li><a href="#situação-prática-motivadora-1" id="toc-situação-prática-motivadora-1" class="nav-link" data-scroll-target="#situação-prática-motivadora-1"><span class="header-section-number">7.5.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
+  <li><a href="#tabelas-simples-1" id="toc-tabelas-simples-1" class="nav-link" data-scroll-target="#tabelas-simples-1"><span class="header-section-number">7.5.2</span> <strong>TABELAS SIMPLES</strong></a></li>
+  <li><a href="#investigando-associação-1" id="toc-investigando-associação-1" class="nav-link" data-scroll-target="#investigando-associação-1"><span class="header-section-number">7.5.3</span> <strong>INVESTIGANDO ASSOCIAÇÃO</strong></a>
   <ul class="collapse">
-  <li><a href="#teste-t" id="toc-teste-t" class="nav-link" data-scroll-target="#teste-t"><span class="header-section-number">6.5.3.1</span> <strong>TESTE T</strong></a></li>
-  <li><a href="#anova" id="toc-anova" class="nav-link" data-scroll-target="#anova"><span class="header-section-number">6.5.3.2</span> <strong>ANOVA</strong></a></li>
+  <li><a href="#teste-t" id="toc-teste-t" class="nav-link" data-scroll-target="#teste-t"><span class="header-section-number">7.5.3.1</span> <strong>TESTE T</strong></a></li>
+  <li><a href="#anova" id="toc-anova" class="nav-link" data-scroll-target="#anova"><span class="header-section-number">7.5.3.2</span> <strong>ANOVA</strong></a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -245,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Código</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Mostrar o código</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Esconder o código</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">Ver o código fonte</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Código</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Mostrar o código</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Esconder o código</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">Ver o código fonte</a></li></ul></div></div>
 </div>
 
 
@@ -262,8 +268,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="pacotes-deste-treinamento" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="pacotes-deste-treinamento"><span class="header-section-number">6.1</span> <strong>PACOTES DESTE TREINAMENTO</strong></h2>
+<section id="pacotes-deste-treinamento" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="pacotes-deste-treinamento"><span class="header-section-number">7.1</span> <strong>PACOTES DESTE TREINAMENTO</strong></h2>
 <p>Para este <strong>treinamento</strong>, precisaremos dos seguintes <strong>pacotes</strong>:</p>
 <div class="cell">
 <details class="code-fold">
@@ -279,8 +285,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="introdução" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="introdução"><span class="header-section-number">6.2</span> <strong>INTRODUÇÃO</strong></h2>
+<section id="introdução" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="introdução"><span class="header-section-number">7.2</span> <strong>INTRODUÇÃO</strong></h2>
 <p>Em qualquer <strong>análise de dados</strong>, antes de <strong>avançar para modelos estatísticos complexos</strong>, é fundamental <strong>conhecer os dados</strong>, entender sua <strong>distribuição</strong>, <strong>padrões</strong> e <strong>possíveis inconsistências</strong>.</p>
 <p>Uma das formas mais <strong>eficientes</strong> de fazer isso é por meio de <strong>tabelas de resumo</strong>, que <strong>organizam os dados</strong> em uma estrutura <strong>fácil de interpretar</strong>, mostrando <strong>estatísticas descritivas como médias, medianas, contagens, proporções, desvios padrão, intervalos de confiança e testes de hipóteses básicos</strong>.</p>
 <p>Tradicionalmente, criar <strong>tabelas de resumo pode ser um processo trabalhoso</strong>, especialmente quando lidamos com <strong>grandes bases de dados ou múltiplas variáveis</strong>. É preciso <strong>contar categorias, calcular proporções, organizar resultados e garantir que a formatação esteja adequada para relatórios ou publicações</strong>. Esse trabalho <strong>manual</strong> é não apenas <strong>tedioso</strong>, mas também propenso a <strong>erros</strong>.</p>
@@ -295,8 +301,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Facilitar a <strong>reprodutibilidade</strong>: se os dados mudarem, as tabelas podem ser atualizadas automaticamente sem refazer cálculos manualmente.</li>
 </ul>
 </section>
-<section id="o-pacote-gtsummary" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="o-pacote-gtsummary"><span class="header-section-number">6.3</span> <strong>O PACOTE <code>gtsummary</code></strong></h2>
+<section id="o-pacote-gtsummary" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="o-pacote-gtsummary"><span class="header-section-number">7.3</span> <strong>O PACOTE <code>gtsummary</code></strong></h2>
 <p><img src="images/GT_summary.png" class="img-fluid"></p>
 <p>O pacote <strong><code>gtsummary</code></strong> no <code>R</code> surge exatamente para suprir <strong>essa necessidade</strong>. Ele permite criar <strong>tabelas automáticas com análises descritivas e inferências básicas</strong>, tanto para variáveis <strong>qualitativas quanto quantitativas</strong>, com <strong>poucas linhas de código</strong>, e já fornece recursos para:</p>
 <ul>
@@ -331,12 +337,12 @@ Nesta primeira etapa, vamos aprender a criar tabelas de frequências e proporç�
 </div>
 <p>A <strong>função responsável</strong> por criar tabelas a partir do <code>gtsummary</code> é a função <code>tbl_summary</code>. Essa função tem <strong>muitos argumentos</strong> e, ao longo do treinamento, <strong>veremos os argumentos mais utilizados</strong>.</p>
 </section>
-<section id="variáveis-qualitativas" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="variáveis-qualitativas"><span class="header-section-number">6.4</span> <strong>VARIÁVEIS QUALITATIVAS</strong></h2>
+<section id="variáveis-qualitativas" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="variáveis-qualitativas"><span class="header-section-number">7.4</span> <strong>VARIÁVEIS QUALITATIVAS</strong></h2>
 <p>Começaremos nossa prática com as <strong>variáveis qualitativas</strong>, também chamadas de <strong>categóricas</strong>. Elas representam <strong>grupos, categorias ou classificações</strong>, e não possuem uma escala numérica natural — por exemplo: sexo, estado civil, presença ou ausência de uma doença, nível de escolaridade, região de residência etc.</p>
 <p>Resumir variáveis qualitativas é uma das tarefas mais frequentes em análises de dados, especialmente em estudos clínicos, sociais e empresariais. Normalmente, desejamos saber <strong>quantos indivíduos</strong> pertencem a cada categoria e <strong>qual é a proporção</strong> de cada grupo em relação ao total da amostra e avançar para investigação entre a associação entre as variáveis.</p>
-<section id="situação-prática-motivadora" class="level3" data-number="6.4.1">
-<h3 data-number="6.4.1" class="anchored" data-anchor-id="situação-prática-motivadora"><span class="header-section-number">6.4.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
+<section id="situação-prática-motivadora" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="situação-prática-motivadora"><span class="header-section-number">7.4.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
 <p>Neste tópico, utilizaremos uma base de dados amplamente difundida em plataformas de ciência de dados, especialmente no <code>Kaggle</code>, voltada para o estudo da <strong>satisfação de passageiros de companhias aéreas</strong>.</p>
 <p>A base foi construída com o objetivo de representar um cenário típico de avaliação da experiência de clientes no transporte aéreo.</p>
 <ul>
@@ -521,8 +527,8 @@ Nesta primeira etapa, vamos aprender a criar tabelas de frequências e proporç�
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Para prosseguir com os próximos tópicos eu vou seguir com a variável resposta <code>bagagem</code>.</p>
 </section>
-<section id="tabelas-simples" class="level3" data-number="6.4.2">
-<h3 data-number="6.4.2" class="anchored" data-anchor-id="tabelas-simples"><span class="header-section-number">6.4.2</span> <strong>TABELAS SIMPLES</strong></h3>
+<section id="tabelas-simples" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="tabelas-simples"><span class="header-section-number">7.4.2</span> <strong>TABELAS SIMPLES</strong></h3>
 <p>Antes de criar qualquer tabela, é importante que o(a) pesquisador(a) <strong>já tenha em mente quais variáveis serão incluídas</strong> e <strong>qual tabela será construída</strong>. Ter essa estrutura planejada evita retrabalho e ajuda a produzir tabelas mais claras e objetivas.</p>
 <p>A <strong>ordem das variáveis na tabela</strong> é dada pela <strong>ordem em que as variáveis se encontram na base de dados</strong>. Então, antes de <strong>fazermos a tabela no <code>R</code> com o pacote</strong>, vamos <strong>selecionar as variáveis qualitativas que queremos construir a tabela e já fazer essa seleção na ordem de apresentação</strong>. Para isto, vamos usar o pacote <code>dplyr</code> e a função <code>select</code>:</p>
 <div class="cell">
@@ -2497,11 +2503,11 @@ N = 136<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
 </div>
 </div>
 </section>
-<section id="investigando-associação" class="level3" data-number="6.4.3">
-<h3 data-number="6.4.3" class="anchored" data-anchor-id="investigando-associação"><span class="header-section-number">6.4.3</span> <strong>INVESTIGANDO ASSOCIAÇÃO</strong></h3>
+<section id="investigando-associação" class="level3" data-number="7.4.3">
+<h3 data-number="7.4.3" class="anchored" data-anchor-id="investigando-associação"><span class="header-section-number">7.4.3</span> <strong>INVESTIGANDO ASSOCIAÇÃO</strong></h3>
 <p>Este tópico será destinado ao uso do teste qui-quadrado de Pearson, o teste exato de Fisher e o coeficiente de Cramer na investigação da associação entre duas variáveis categóricas</p>
-<section id="teste-qui-quadrado-de-independência" class="level4" data-number="6.4.3.1">
-<h4 data-number="6.4.3.1" class="anchored" data-anchor-id="teste-qui-quadrado-de-independência"><span class="header-section-number">6.4.3.1</span> <strong>TESTE QUI-QUADRADO DE INDEPENDÊNCIA</strong></h4>
+<section id="teste-qui-quadrado-de-independência" class="level4" data-number="7.4.3.1">
+<h4 data-number="7.4.3.1" class="anchored" data-anchor-id="teste-qui-quadrado-de-independência"><span class="header-section-number">7.4.3.1</span> <strong>TESTE QUI-QUADRADO DE INDEPENDÊNCIA</strong></h4>
 <p>O teste qui-quadrado de independência é feito com a função <code>chisq.test</code> a partir do seguinte comando</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Teste <span class="ot">=</span> <span class="fu">chisq.test</span>(<span class="at">x=</span>VariavelLinha,<span class="at">y=</span>VariavelColuna)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Este objeto armazena o valor da estatística de teste <code>X-squares</code>, os graus de liberdade <code>df</code> e o valor-p <code>p-value</code>.</p>
@@ -2510,25 +2516,25 @@ N = 136<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
 <div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Teste<span class="sc">$</span>stdres</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Estes resíduos são utilizados para detectar as combinações entre as categorias que foram influentes para a significância do teste (quando o teste é significativo)</p>
 </section>
-<section id="teste-exato-de-fisher" class="level4" data-number="6.4.3.2">
-<h4 data-number="6.4.3.2" class="anchored" data-anchor-id="teste-exato-de-fisher"><span class="header-section-number">6.4.3.2</span> <strong>TESTE EXATO DE FISHER</strong></h4>
+<section id="teste-exato-de-fisher" class="level4" data-number="7.4.3.2">
+<h4 data-number="7.4.3.2" class="anchored" data-anchor-id="teste-exato-de-fisher"><span class="header-section-number">7.4.3.2</span> <strong>TESTE EXATO DE FISHER</strong></h4>
 <p>O teste exato de Fisher é feito a partir do seguinte comando</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Tabela <span class="ot">=</span> <span class="fu">table</span>(VariavelLinha,VariavelColuna)</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>Teste <span class="ot">=</span> <span class="fu">fisher.test</span>(Tabela)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>O objeto Teste armazena o valor-p na saída <code>p-value</code>.</p>
 </section>
-<section id="coeficiente-de-cramer" class="level4" data-number="6.4.3.3">
-<h4 data-number="6.4.3.3" class="anchored" data-anchor-id="coeficiente-de-cramer"><span class="header-section-number">6.4.3.3</span> <strong>COEFICIENTE DE CRAMER</strong></h4>
+<section id="coeficiente-de-cramer" class="level4" data-number="7.4.3.3">
+<h4 data-number="7.4.3.3" class="anchored" data-anchor-id="coeficiente-de-cramer"><span class="header-section-number">7.4.3.3</span> <strong>COEFICIENTE DE CRAMER</strong></h4>
 <p>O coeficiente de Cramer pode ser calculado com o pacote <code>rstatix</code> a partir dos seguintes comandos:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>Tabela <span class="ot">=</span> <span class="fu">table</span>(VariavelLinha,VariavelColuna)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cramer_v</span>(Tabela)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>O resultado é exatamente o valor do coeficiente entre 0 e 1.</p>
 </section>
 </section>
-<section id="aplicação-aos-nossos-dados" class="level3" data-number="6.4.4">
-<h3 data-number="6.4.4" class="anchored" data-anchor-id="aplicação-aos-nossos-dados"><span class="header-section-number">6.4.4</span> <strong>APLICAÇÃO AOS NOSSOS DADOS</strong></h3>
-<section id="investigando-valores-esperados" class="level4" data-number="6.4.4.1">
-<h4 data-number="6.4.4.1" class="anchored" data-anchor-id="investigando-valores-esperados"><span class="header-section-number">6.4.4.1</span> <strong>INVESTIGANDO VALORES ESPERADOS</strong></h4>
+<section id="aplicação-aos-nossos-dados" class="level3" data-number="7.4.4">
+<h3 data-number="7.4.4" class="anchored" data-anchor-id="aplicação-aos-nossos-dados"><span class="header-section-number">7.4.4</span> <strong>APLICAÇÃO AOS NOSSOS DADOS</strong></h3>
+<section id="investigando-valores-esperados" class="level4" data-number="7.4.4.1">
+<h4 data-number="7.4.4.1" class="anchored" data-anchor-id="investigando-valores-esperados"><span class="header-section-number">7.4.4.1</span> <strong>INVESTIGANDO VALORES ESPERADOS</strong></h4>
 <p>Inicialmente, vamos investigar os valores esperados sob independência envolvendo cada fator de exposição e a nossa variável de desfecho <code>bagagem</code>:</p>
 <div class="cell">
 <details class="code-fold">
@@ -2617,8 +2623,8 @@ Dados$Atraso_Chegada Insatisfeito    Neutro Satisfeito
 </div>
 <p>Assim, detectamos que as variáveis <code>Cliente</code>, <code>Classe</code> e <code>Distancia</code> possuem pelo menos uma frequência esperada menor que 5 e será utilizado o teste exato de Fisher para elas. Para as demais variáveis será utilizado o teste qui-quadrado de independência.</p>
 </section>
-<section id="investigando-associações-significativas" class="level4" data-number="6.4.4.2">
-<h4 data-number="6.4.4.2" class="anchored" data-anchor-id="investigando-associações-significativas"><span class="header-section-number">6.4.4.2</span> <strong>INVESTIGANDO ASSOCIAÇÕES SIGNIFICATIVAS</strong></h4>
+<section id="investigando-associações-significativas" class="level4" data-number="7.4.4.2">
+<h4 data-number="7.4.4.2" class="anchored" data-anchor-id="investigando-associações-significativas"><span class="header-section-number">7.4.4.2</span> <strong>INVESTIGANDO ASSOCIAÇÕES SIGNIFICATIVAS</strong></h4>
 <p>O pacote <code>gtsummary</code> avalia a suposição do teste qui-quadrado atrelada ao valor esperado e ajusta o teste exato de Fisher, quando necessário. Para avaliar o valor-p do teste de associação utilizado, use a função <code>add_p()</code> e execute o seguinte comando:</p>
 <div class="cell">
 <details class="code-fold">
@@ -3348,8 +3354,8 @@ N = 136<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
 </div>
 <p>A partir dessa tabela, vemos que as variávels <code>Tipo_Viagem</code> e <code>Classe</code> foram significativas a um nível de 5% de significância.</p>
 </section>
-<section id="investigando-os-resíduos-padronizados" class="level4" data-number="6.4.4.3">
-<h4 data-number="6.4.4.3" class="anchored" data-anchor-id="investigando-os-resíduos-padronizados"><span class="header-section-number">6.4.4.3</span> <strong>INVESTIGANDO OS RESÍDUOS PADRONIZADOS</strong></h4>
+<section id="investigando-os-resíduos-padronizados" class="level4" data-number="7.4.4.3">
+<h4 data-number="7.4.4.3" class="anchored" data-anchor-id="investigando-os-resíduos-padronizados"><span class="header-section-number">7.4.4.3</span> <strong>INVESTIGANDO OS RESÍDUOS PADRONIZADOS</strong></h4>
 <p>Seguem os comandos para investigarmos os resíduos padronizados das associações significativas:</p>
 <div class="cell">
 <details class="code-fold">
@@ -3383,8 +3389,8 @@ Dados$Classe     Insatisfeito     Neutro Satisfeito
 <li><code>Satisfeito</code> x <code>Executiva</code></li>
 </ul>
 </section>
-<section id="tabela-final" class="level4" data-number="6.4.4.4">
-<h4 data-number="6.4.4.4" class="anchored" data-anchor-id="tabela-final"><span class="header-section-number">6.4.4.4</span> <strong>TABELA FINAL</strong></h4>
+<section id="tabela-final" class="level4" data-number="7.4.4.4">
+<h4 data-number="7.4.4.4" class="anchored" data-anchor-id="tabela-final"><span class="header-section-number">7.4.4.4</span> <strong>TABELA FINAL</strong></h4>
 <p>Após considerar todas as considerações anteriores, segue o código para a tabela final:</p>
 <div class="cell">
 <details class="code-fold">
@@ -4228,8 +4234,8 @@ Permite interpretar formatação em markdown/HTML na coluna de rótulos (como <c
 Ajusta o tamanho das fontes da tabela, do título e dos cabeçalhos das colunas.</p></li>
 </ul>
 </section>
-<section id="interpretações-da-tabela" class="level4" data-number="6.4.4.5">
-<h4 data-number="6.4.4.5" class="anchored" data-anchor-id="interpretações-da-tabela"><span class="header-section-number">6.4.4.5</span> <strong>INTERPRETAÇÕES DA TABELA</strong></h4>
+<section id="interpretações-da-tabela" class="level4" data-number="7.4.4.5">
+<h4 data-number="7.4.4.5" class="anchored" data-anchor-id="interpretações-da-tabela"><span class="header-section-number">7.4.4.5</span> <strong>INTERPRETAÇÕES DA TABELA</strong></h4>
 <ul>
 <li><p>A análise da satisfação com a bagagem indica que a maioria dos passageiros encontra-se satisfeita (70%), com menores proporções de neutros (18%) e insatisfeitos (12%), estabelecendo um cenário geral positivo.</p></li>
 <li><p>No que diz respeito às associações com as variáveis explicativas, não foram observadas evidências estatisticamente significativas para gênero (p = 0,788; V = 0,049), idade (p = 0,529; V = 0,090), distância do voo (p = 0,685; V = 0,075), atraso na partida (p = 0,221; V = 0,124) e atraso na chegada (p = 0,717; V = 0,058), cujos valores de V de Cramér indicam associações muito fracas, sugerindo que esses fatores não influenciam de forma relevante a satisfação.</p>
@@ -4249,8 +4255,8 @@ Ajusta o tamanho das fontes da tabela, do título e dos cabeçalhos das colunas.
 </section>
 </section>
 </section>
-<section id="variáveis-quantitativas" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="variáveis-quantitativas"><span class="header-section-number">6.5</span> <strong>VARIÁVEIS QUANTITATIVAS</strong></h2>
+<section id="variáveis-quantitativas" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="variáveis-quantitativas"><span class="header-section-number">7.5</span> <strong>VARIÁVEIS QUANTITATIVAS</strong></h2>
 <p>Agora avançaremos para as <strong>variáveis quantitativas</strong>. Diferentemente das qualitativas, essas variáveis representam <strong>valores numéricos mensuráveis</strong>, geralmente associados a alguma <strong>escala</strong> — por exemplo: <strong>idade</strong>, <strong>peso</strong>, <strong>altura</strong>, <strong>renda</strong>, <strong>pressão arterial</strong>, <strong>tempo de espera</strong>, <strong>número de filhos</strong>, entre outros.</p>
 <p>Essas variáveis permitem não apenas identificar valores individuais, mas também <strong>resumir o comportamento geral dos dados por meio de medidas estatísticas (medidas-resumo)</strong>.</p>
 <p>Resumir variáveis quantitativas é fundamental em praticamente qualquer análise de dados. Em vez de contar categorias, nosso objetivo aqui é entender:</p>
@@ -4259,14 +4265,14 @@ Ajusta o tamanho das fontes da tabela, do título e dos cabeçalhos das colunas.
 <li><strong>Quão dispersos eles são</strong> (<strong>desvio padrão</strong>, <strong>intervalo interquartil</strong>, <strong>mínimo</strong> e <strong>máximo</strong>);</li>
 <li>E, muitas vezes, <strong>comparar esses resumos entre grupos</strong>, o que nos leva naturalmente a <strong>investigações inferenciais</strong> (testes de hipóteses).</li>
 </ul>
-<section id="situação-prática-motivadora-1" class="level3" data-number="6.5.1">
-<h3 data-number="6.5.1" class="anchored" data-anchor-id="situação-prática-motivadora-1"><span class="header-section-number">6.5.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
+<section id="situação-prática-motivadora-1" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="situação-prática-motivadora-1"><span class="header-section-number">7.5.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
 <p>Neste tópico, utilizaremos novamente a base de dados de <strong>satisfação de passageiros de companhias aéreas</strong>. Entretanto, agora, as variáveis <code>Idade</code>, <code>Distancia</code>, <code>Atraso_Partida</code> e <code>Atraso_Chegada</code> são quantitativas contínuas.</p>
 <p>A base de dados está armazenada no arquivo <code>DadosAviaoCont.xlsx</code>. Para ler a base de dados, utilize os seguintes comandos:</p>
 <div class="sourceCode" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>Dados <span class="ot">=</span> <span class="fu">read.xlsx</span>(<span class="st">"DadosAviaoCont.xlsx"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="tabelas-simples-1" class="level3" data-number="6.5.2">
-<h3 data-number="6.5.2" class="anchored" data-anchor-id="tabelas-simples-1"><span class="header-section-number">6.5.2</span> <strong>TABELAS SIMPLES</strong></h3>
+<section id="tabelas-simples-1" class="level3" data-number="7.5.2">
+<h3 data-number="7.5.2" class="anchored" data-anchor-id="tabelas-simples-1"><span class="header-section-number">7.5.2</span> <strong>TABELAS SIMPLES</strong></h3>
 <p>Antes de criar qualquer tabela, é importante que o(a) pesquisador(a) <strong>já tenha em mente quais variáveis serão incluídas</strong> e <strong>qual tabela será construída</strong>. Ter essa estrutura planejada evita retrabalho e ajuda a produzir tabelas mais claras e objetivas.</p>
 <p>A <strong>ordem das variáveis na tabela</strong> é dada pela <strong>ordem em que as variáveis se encontram na base de dados</strong>. Então, antes de <strong>fazermos a tabela no <code>R</code> com o pacote</strong>, vamos <strong>selecionar as variáveis quantitativas que queremos construir a tabela e já fazer essa seleção na ordem de apresentação</strong>. Para isto, vamos usar o pacote <code>dplyr</code> e a função <code>select</code>:</p>
 <div class="cell">
@@ -5266,11 +5272,11 @@ Ajusta o tamanho das fontes da tabela, do título e dos cabeçalhos das colunas.
 </div>
 <p>Essa tabela apresenta apenas a <strong>média e desvio padrão</strong> para cada variável individualmente.</p>
 </section>
-<section id="investigando-associação-1" class="level3" data-number="6.5.3">
-<h3 data-number="6.5.3" class="anchored" data-anchor-id="investigando-associação-1"><span class="header-section-number">6.5.3</span> <strong>INVESTIGANDO ASSOCIAÇÃO</strong></h3>
+<section id="investigando-associação-1" class="level3" data-number="7.5.3">
+<h3 data-number="7.5.3" class="anchored" data-anchor-id="investigando-associação-1"><span class="header-section-number">7.5.3</span> <strong>INVESTIGANDO ASSOCIAÇÃO</strong></h3>
 <p>Este <strong>tópico</strong> será destinado ao <strong>uso do teste t para duas populações</strong> e a <strong>ANOVA</strong> com <strong>comparações múltiplas para mais de 2 populações</strong>.</p>
-<section id="teste-t" class="level4" data-number="6.5.3.1">
-<h4 data-number="6.5.3.1" class="anchored" data-anchor-id="teste-t"><span class="header-section-number">6.5.3.1</span> <strong>TESTE T</strong></h4>
+<section id="teste-t" class="level4" data-number="7.5.3.1">
+<h4 data-number="7.5.3.1" class="anchored" data-anchor-id="teste-t"><span class="header-section-number">7.5.3.1</span> <strong>TESTE T</strong></h4>
 <p>Para conduzir este <strong>teste</strong>, vamos acrescentar a <strong>variável de desfecho</strong> <code>Satisfacao</code> aos nossos dados <strong>quantitativos</strong>:</p>
 <div class="cell">
 <details class="code-fold">
@@ -5791,8 +5797,8 @@ N = 67<span class="gt_footnote_marks" style="white-space:nowrap;font-style:itali
 <li><strong>Homogeneidade das variâncias</strong>.</li>
 </ul>
 <p>Os <strong>tamanhos de amostra</strong> de cada grupo são <strong>suficientemente grandes</strong> para valer o <strong>Teorema Central do Limite</strong>. Entretanto, é <strong>sempre prudente</strong> fazer os diagnósticos para avaliar se existem <strong>muitos outliers</strong> que podem, eventualmente, <strong>influenciar no cálculo das médias amostrais</strong>. É importante <strong>investigar se os outliers apresentam um padrão estrutural ou caótico</strong>.</p>
-<section id="normalidade" class="level5" data-number="6.5.3.1.1">
-<h5 data-number="6.5.3.1.1" class="anchored" data-anchor-id="normalidade"><span class="header-section-number">6.5.3.1.1</span> <strong>NORMALIDADE</strong></h5>
+<section id="normalidade" class="level5" data-number="7.5.3.1.1">
+<h5 data-number="7.5.3.1.1" class="anchored" data-anchor-id="normalidade"><span class="header-section-number">7.5.3.1.1</span> <strong>NORMALIDADE</strong></h5>
 <p>Seguem os <strong>diagnósticos de normalidade</strong> para cada variável:</p>
 <p><strong>IDADE:</strong></p>
 <div class="cell">
@@ -6060,8 +6066,8 @@ W = 0.91291, p-value = 0.0001818</code></pre>
 <li>Nota-se que os dados de <code>Atraso_Chegada</code> nas categorias <code>Neutro ou Insatisfeito</code> e <code>Satisfeito</code> <strong>não são normalmente distribuídos conforme os diagnósticos</strong>. Além disso, os desvios observados seguem um <strong>padrão reconhecível proveniente da assimetria da distribuição</strong>.</li>
 </ul>
 </section>
-<section id="homogeneidade-das-variâncias" class="level5" data-number="6.5.3.1.2">
-<h5 data-number="6.5.3.1.2" class="anchored" data-anchor-id="homogeneidade-das-variâncias"><span class="header-section-number">6.5.3.1.2</span> <strong>HOMOGENEIDADE DAS VARIÂNCIAS</strong></h5>
+<section id="homogeneidade-das-variâncias" class="level5" data-number="7.5.3.1.2">
+<h5 data-number="7.5.3.1.2" class="anchored" data-anchor-id="homogeneidade-das-variâncias"><span class="header-section-number">7.5.3.1.2</span> <strong>HOMOGENEIDADE DAS VARIÂNCIAS</strong></h5>
 <p>Como tivemos <strong>problemas de normalidade</strong> em todos os cenários, vamos testar a homogeneidade com o teste de levene:</p>
 <div class="cell">
 <details class="code-fold">
@@ -6115,8 +6121,8 @@ group   1  1.7182 0.1914
 <li>há evidências de <strong>heterogeneidade</strong> das variâncias para as variáveis <code>Idade</code> e <code>Distancia</code>.</li>
 </ul>
 </section>
-<section id="tabela-final-1" class="level5" data-number="6.5.3.1.3">
-<h5 data-number="6.5.3.1.3" class="anchored" data-anchor-id="tabela-final-1"><span class="header-section-number">6.5.3.1.3</span> <strong>TABELA FINAL</strong></h5>
+<section id="tabela-final-1" class="level5" data-number="7.5.3.1.3">
+<h5 data-number="7.5.3.1.3" class="anchored" data-anchor-id="tabela-final-1"><span class="header-section-number">7.5.3.1.3</span> <strong>TABELA FINAL</strong></h5>
 <p>Conforme os <strong>diagnósticos anteriores</strong>, devemos construir o teste t com <strong>variâncias iguais para as variáveis</strong> <code>Idade</code> e <code>Distancia</code>. Já o teste <strong>t de Welch</strong> será utilizado para as variáveis <code>Atraso_Partida</code> e <code>Atraso_Chegada</code></p>
 <blockquote class="blockquote">
 <p>Lembre-se que este teste é feito no R com o comando <code>t.test</code> e, para acusar se as variâncias são iguais ou não, utilizamos o argumento <code>var.equal</code>.</p>
@@ -7186,8 +7192,8 @@ N = 67<span class="gt_footnote_marks" style="white-space:nowrap;font-style:itali
 </div>
 </div>
 </section>
-<section id="interpretação-da-tabela" class="level5" data-number="6.5.3.1.4">
-<h5 data-number="6.5.3.1.4" class="anchored" data-anchor-id="interpretação-da-tabela"><span class="header-section-number">6.5.3.1.4</span> <strong>INTERPRETAÇÃO DA TABELA</strong></h5>
+<section id="interpretação-da-tabela" class="level5" data-number="7.5.3.1.4">
+<h5 data-number="7.5.3.1.4" class="anchored" data-anchor-id="interpretação-da-tabela"><span class="header-section-number">7.5.3.1.4</span> <strong>INTERPRETAÇÃO DA TABELA</strong></h5>
 <p>A análise comparou dois grupos de <strong>Satisfação (Neutro/Insatisfeito vs Satisfeito)</strong> em relação a variáveis quantitativas, utilizando testes t de Student (T) e de Welch (W), conforme indicado na tabela. Para cada variável, tem-se as seguintes conclusões:</p>
 <ul>
 <li><p>Observa-se que o grupo <strong>Satisfeito apresenta maior idade média (45)</strong> em comparação ao grupo Neutro/Insatisfeito (38). O valor-p (<strong>0,002</strong>) indica diferença estatisticamente significativa, sugerindo que indivíduos mais velhos tendem a apresentar maior satisfação.</p></li>
@@ -7197,8 +7203,8 @@ N = 67<span class="gt_footnote_marks" style="white-space:nowrap;font-style:itali
 </ul>
 </section>
 </section>
-<section id="anova" class="level4" data-number="6.5.3.2">
-<h4 data-number="6.5.3.2" class="anchored" data-anchor-id="anova"><span class="header-section-number">6.5.3.2</span> <strong>ANOVA</strong></h4>
+<section id="anova" class="level4" data-number="7.5.3.2">
+<h4 data-number="7.5.3.2" class="anchored" data-anchor-id="anova"><span class="header-section-number">7.5.3.2</span> <strong>ANOVA</strong></h4>
 <p>Para <strong>conduzir este teste</strong>, vamos <strong>acrescentar a variável de desfecho</strong> <code>Servico_Online</code> aos <strong>nossos dados quantitativos</strong>:</p>
 <div class="cell">
 <details class="code-fold">
@@ -7726,8 +7732,8 @@ N = 91<span class="gt_footnote_marks" style="white-space:nowrap;font-style:itali
 <li><strong>Homogeneidade das variâncias</strong>.</li>
 </ul>
 <p>Os <strong>tamanhos de amostra</strong> de cada grupo são <strong>suficientemente grandes para valer o Teorema Central do Limite</strong>. Entretanto, é sempre <strong>prudente fazer os diagnósticos para avaliar se existem muitos outliers que podem, eventualmente, influenciar no cálculo das médias amostrais</strong>. É <strong>importante investigar se os outliers apresentam um padrão estrutural ou caótico</strong>.</p>
-<section id="normalidade-1" class="level5" data-number="6.5.3.2.1">
-<h5 data-number="6.5.3.2.1" class="anchored" data-anchor-id="normalidade-1"><span class="header-section-number">6.5.3.2.1</span> <strong>NORMALIDADE</strong></h5>
+<section id="normalidade-1" class="level5" data-number="7.5.3.2.1">
+<h5 data-number="7.5.3.2.1" class="anchored" data-anchor-id="normalidade-1"><span class="header-section-number">7.5.3.2.1</span> <strong>NORMALIDADE</strong></h5>
 <p>Seguem os <strong>diagnósticos de normalidade para cada variável</strong>:</p>
 <p><strong>IDADE:</strong></p>
 <div class="cell">
@@ -8026,8 +8032,8 @@ W = 0.89815, p-value = 3.006e-06</code></pre>
 <li>Nota-se que os dados de <code>Atraso_Chegada</code> em todas as categorias <strong>não são normalmente distribuídos e os desvios observados são estruturais</strong>.</li>
 </ul>
 </section>
-<section id="homogeneidade-das-variâncias-1" class="level5" data-number="6.5.3.2.2">
-<h5 data-number="6.5.3.2.2" class="anchored" data-anchor-id="homogeneidade-das-variâncias-1"><span class="header-section-number">6.5.3.2.2</span> <strong>HOMOGENEIDADE DAS VARIÂNCIAS</strong></h5>
+<section id="homogeneidade-das-variâncias-1" class="level5" data-number="7.5.3.2.2">
+<h5 data-number="7.5.3.2.2" class="anchored" data-anchor-id="homogeneidade-das-variâncias-1"><span class="header-section-number">7.5.3.2.2</span> <strong>HOMOGENEIDADE DAS VARIÂNCIAS</strong></h5>
 <p>Vamos utilizar o <strong>teste de Bartlet</strong> para a variável <code>Idade</code> (indicativo de normalidade) e o <strong>teste de Levene para as demais variáveis</strong>:</p>
 <div class="cell">
 <details class="code-fold">
@@ -8618,8 +8624,8 @@ N = 91<span class="gt_footnote_marks" style="white-space:nowrap;font-style:itali
 </div>
 </div>
 </section>
-<section id="comparações-múltiplas" class="level5" data-number="6.5.3.2.3">
-<h5 data-number="6.5.3.2.3" class="anchored" data-anchor-id="comparações-múltiplas"><span class="header-section-number">6.5.3.2.3</span> <strong>COMPARAÇÕES MÚLTIPLAS</strong></h5>
+<section id="comparações-múltiplas" class="level5" data-number="7.5.3.2.3">
+<h5 data-number="7.5.3.2.3" class="anchored" data-anchor-id="comparações-múltiplas"><span class="header-section-number">7.5.3.2.3</span> <strong>COMPARAÇÕES MÚLTIPLAS</strong></h5>
 <p>Entretanto, <strong>percebemos que as variáveis <code>Idade</code> e <code>Distancia</code> apresentaram p-valor significativo</strong>. Teremos que <strong>realizar os seguintes testes de comparação múltipla</strong>:</p>
 <ul>
 <li><p><strong>Teste de Tukey</strong> para a variável <code>Idade</code>.</p></li>
@@ -8678,8 +8684,8 @@ Satisfeito-Neutro       7.3438914  1.114257 13.57353 0.0161748</code></pre>
 <p>Para <strong>as variáveis em que a hipótese nula</strong> da ANOVA (usual ou de Welch) não foi rejeitada, todas <strong>as letras são iguais</strong>.</p>
 <p>A ideia é <strong>incluir uma coluna à direita na tabela final trazendo</strong> essas letras que são resultados das <strong>comparações múltiplas</strong>.</p>
 </section>
-<section id="tabela-final-2" class="level5" data-number="6.5.3.2.4">
-<h5 data-number="6.5.3.2.4" class="anchored" data-anchor-id="tabela-final-2"><span class="header-section-number">6.5.3.2.4</span> <strong>TABELA FINAL</strong></h5>
+<section id="tabela-final-2" class="level5" data-number="7.5.3.2.4">
+<h5 data-number="7.5.3.2.4" class="anchored" data-anchor-id="tabela-final-2"><span class="header-section-number">7.5.3.2.4</span> <strong>TABELA FINAL</strong></h5>
 <p>Agora, podemos <strong>construir a nossa tabela final</strong>:</p>
 <div class="cell">
 <details class="code-fold">
@@ -9250,8 +9256,8 @@ Satisfeito-Neutro       7.3438914  1.114257 13.57353 0.0161748</code></pre>
 </div>
 </div>
 </section>
-<section id="interpretação-da-tabela-1" class="level5" data-number="6.5.3.2.5">
-<h5 data-number="6.5.3.2.5" class="anchored" data-anchor-id="interpretação-da-tabela-1"><span class="header-section-number">6.5.3.2.5</span> <strong>INTERPRETAÇÃO DA TABELA</strong></h5>
+<section id="interpretação-da-tabela-1" class="level5" data-number="7.5.3.2.5">
+<h5 data-number="7.5.3.2.5" class="anchored" data-anchor-id="interpretação-da-tabela-1"><span class="header-section-number">7.5.3.2.5</span> <strong>INTERPRETAÇÃO DA TABELA</strong></h5>
 <p>A análise revelou diferenças estatisticamente significativas na <strong>Idade</strong> (ANOVA: p = 0,002) e na <strong>Distância</strong> (Welch: p &lt; 0,001) entre os níveis de satisfação. Os testes post-hoc indicaram que:</p>
 <ul>
 <li><p><strong>Idade</strong>: Clientes satisfeitos são mais velhos que os insatisfeitos e neutros, que não diferem entre si.</p></li>
@@ -9728,12 +9734,12 @@ Satisfeito-Neutro       7.3438914  1.114257 13.57353 0.0161748</code></pre>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Cap3.html" class="pagination-link" aria-label="**CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O `quarto`**">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Cap5.html" class="pagination-link" aria-label="**REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES**">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

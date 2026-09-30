@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES – PRÁTICA ESTATÍSTICA II</title>
+<title>8&nbsp; REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES – PRÁTICA ESTATÍSTICA II</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -147,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Cap5.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Cap5.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -198,26 +198,32 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Cap2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>TESTES DE HOMOGENEIDADE E ADERÊNCIA</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Cap3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO APRESENTAÇÕES EM SLIDES COM O <code>quarto</code></strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cap4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Cap5.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Atividades.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span></a>
   </div>
 </li>
     </ul>
@@ -230,60 +236,60 @@ window.Quarto = {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#pacotes-necessários" id="toc-pacotes-necessários" class="nav-link active" data-scroll-target="#pacotes-necessários"><span class="header-section-number">7.1</span> <strong>PACOTES NECESSÁRIOS</strong></a></li>
-  <li><a href="#introdução" id="toc-introdução" class="nav-link" data-scroll-target="#introdução"><span class="header-section-number">7.2</span> <strong>INTRODUÇÃO</strong></a></li>
-  <li><a href="#diagnósticos-de-normalidade" id="toc-diagnósticos-de-normalidade" class="nav-link" data-scroll-target="#diagnósticos-de-normalidade"><span class="header-section-number">7.3</span> <strong>DIAGNÓSTICOS DE NORMALIDADE</strong></a>
+  <li><a href="#pacotes-necessários" id="toc-pacotes-necessários" class="nav-link active" data-scroll-target="#pacotes-necessários"><span class="header-section-number">8.1</span> <strong>PACOTES NECESSÁRIOS</strong></a></li>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link" data-scroll-target="#introdução"><span class="header-section-number">8.2</span> <strong>INTRODUÇÃO</strong></a></li>
+  <li><a href="#diagnósticos-de-normalidade" id="toc-diagnósticos-de-normalidade" class="nav-link" data-scroll-target="#diagnósticos-de-normalidade"><span class="header-section-number">8.3</span> <strong>DIAGNÓSTICOS DE NORMALIDADE</strong></a>
   <ul>
-  <li><a href="#situação-prática-motivadora" id="toc-situação-prática-motivadora" class="nav-link" data-scroll-target="#situação-prática-motivadora"><span class="header-section-number">7.3.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
-  <li><a href="#gráfico-de-densidade" id="toc-gráfico-de-densidade" class="nav-link" data-scroll-target="#gráfico-de-densidade"><span class="header-section-number">7.3.2</span> <strong>GRÁFICO DE DENSIDADE</strong></a></li>
-  <li><a href="#gráfico-quantil-quantil-q-q-plot" id="toc-gráfico-quantil-quantil-q-q-plot" class="nav-link" data-scroll-target="#gráfico-quantil-quantil-q-q-plot"><span class="header-section-number">7.3.3</span> <strong>GRÁFICO QUANTIL-QUANTIL (Q-Q PLOT)</strong></a></li>
-  <li><a href="#teste-de-shapiro-wilk" id="toc-teste-de-shapiro-wilk" class="nav-link" data-scroll-target="#teste-de-shapiro-wilk"><span class="header-section-number">7.3.4</span> <strong>TESTE DE SHAPIRO WILK</strong></a></li>
+  <li><a href="#situação-prática-motivadora" id="toc-situação-prática-motivadora" class="nav-link" data-scroll-target="#situação-prática-motivadora"><span class="header-section-number">8.3.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
+  <li><a href="#gráfico-de-densidade" id="toc-gráfico-de-densidade" class="nav-link" data-scroll-target="#gráfico-de-densidade"><span class="header-section-number">8.3.2</span> <strong>GRÁFICO DE DENSIDADE</strong></a></li>
+  <li><a href="#gráfico-quantil-quantil-q-q-plot" id="toc-gráfico-quantil-quantil-q-q-plot" class="nav-link" data-scroll-target="#gráfico-quantil-quantil-q-q-plot"><span class="header-section-number">8.3.3</span> <strong>GRÁFICO QUANTIL-QUANTIL (Q-Q PLOT)</strong></a></li>
+  <li><a href="#teste-de-shapiro-wilk" id="toc-teste-de-shapiro-wilk" class="nav-link" data-scroll-target="#teste-de-shapiro-wilk"><span class="header-section-number">8.3.4</span> <strong>TESTE DE SHAPIRO WILK</strong></a></li>
   </ul></li>
-  <li><a href="#caso-1-populações-normais-com-variâncias-conhecidas" id="toc-caso-1-populações-normais-com-variâncias-conhecidas" class="nav-link" data-scroll-target="#caso-1-populações-normais-com-variâncias-conhecidas"><span class="header-section-number">7.4</span> <strong>CASO 1: POPULAÇÕES NORMAIS COM VARIÂNCIAS CONHECIDAS</strong></a></li>
-  <li><a href="#caso-2-proporções" id="toc-caso-2-proporções" class="nav-link" data-scroll-target="#caso-2-proporções"><span class="header-section-number">7.5</span> <strong>CASO 2: PROPORÇÕES</strong></a>
+  <li><a href="#caso-1-populações-normais-com-variâncias-conhecidas" id="toc-caso-1-populações-normais-com-variâncias-conhecidas" class="nav-link" data-scroll-target="#caso-1-populações-normais-com-variâncias-conhecidas"><span class="header-section-number">8.4</span> <strong>CASO 1: POPULAÇÕES NORMAIS COM VARIÂNCIAS CONHECIDAS</strong></a></li>
+  <li><a href="#caso-2-proporções" id="toc-caso-2-proporções" class="nav-link" data-scroll-target="#caso-2-proporções"><span class="header-section-number">8.5</span> <strong>CASO 2: PROPORÇÕES</strong></a>
   <ul>
-  <li><a href="#suposições-necessárias" id="toc-suposições-necessárias" class="nav-link" data-scroll-target="#suposições-necessárias"><span class="header-section-number">7.5.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></a></li>
-  <li><a href="#situação-prática-motivadora-1" id="toc-situação-prática-motivadora-1" class="nav-link" data-scroll-target="#situação-prática-motivadora-1"><span class="header-section-number">7.5.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
+  <li><a href="#suposições-necessárias" id="toc-suposições-necessárias" class="nav-link" data-scroll-target="#suposições-necessárias"><span class="header-section-number">8.5.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></a></li>
+  <li><a href="#situação-prática-motivadora-1" id="toc-situação-prática-motivadora-1" class="nav-link" data-scroll-target="#situação-prática-motivadora-1"><span class="header-section-number">8.5.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
   </ul></li>
-  <li><a href="#caso-3-variâncias-em-populações-normais" id="toc-caso-3-variâncias-em-populações-normais" class="nav-link" data-scroll-target="#caso-3-variâncias-em-populações-normais"><span class="header-section-number">7.6</span> <strong>CASO 3: VARIÂNCIAS EM POPULAÇÕES NORMAIS</strong></a>
+  <li><a href="#caso-3-variâncias-em-populações-normais" id="toc-caso-3-variâncias-em-populações-normais" class="nav-link" data-scroll-target="#caso-3-variâncias-em-populações-normais"><span class="header-section-number">8.6</span> <strong>CASO 3: VARIÂNCIAS EM POPULAÇÕES NORMAIS</strong></a>
   <ul>
-  <li><a href="#suposições-necessárias-1" id="toc-suposições-necessárias-1" class="nav-link" data-scroll-target="#suposições-necessárias-1"><span class="header-section-number">7.6.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></a></li>
-  <li><a href="#situação-prática-motivadora-2" id="toc-situação-prática-motivadora-2" class="nav-link" data-scroll-target="#situação-prática-motivadora-2"><span class="header-section-number">7.6.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
+  <li><a href="#suposições-necessárias-1" id="toc-suposições-necessárias-1" class="nav-link" data-scroll-target="#suposições-necessárias-1"><span class="header-section-number">8.6.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></a></li>
+  <li><a href="#situação-prática-motivadora-2" id="toc-situação-prática-motivadora-2" class="nav-link" data-scroll-target="#situação-prática-motivadora-2"><span class="header-section-number">8.6.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
   </ul></li>
-  <li><a href="#caso-4-populações-normais-com-variâncias-desconhecidas" id="toc-caso-4-populações-normais-com-variâncias-desconhecidas" class="nav-link" data-scroll-target="#caso-4-populações-normais-com-variâncias-desconhecidas"><span class="header-section-number">7.7</span> <strong>CASO 4: POPULAÇÕES NORMAIS COM VARIÂNCIAS DESCONHECIDAS</strong></a>
+  <li><a href="#caso-4-populações-normais-com-variâncias-desconhecidas" id="toc-caso-4-populações-normais-com-variâncias-desconhecidas" class="nav-link" data-scroll-target="#caso-4-populações-normais-com-variâncias-desconhecidas"><span class="header-section-number">8.7</span> <strong>CASO 4: POPULAÇÕES NORMAIS COM VARIÂNCIAS DESCONHECIDAS</strong></a>
   <ul>
-  <li><a href="#suposições-necessárias-2" id="toc-suposições-necessárias-2" class="nav-link" data-scroll-target="#suposições-necessárias-2"><span class="header-section-number">7.7.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></a></li>
-  <li><a href="#situação-prática-motivadora-i" id="toc-situação-prática-motivadora-i" class="nav-link" data-scroll-target="#situação-prática-motivadora-i"><span class="header-section-number">7.7.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA I</strong></a></li>
-  <li><a href="#situação-prática-motivadora-ii" id="toc-situação-prática-motivadora-ii" class="nav-link" data-scroll-target="#situação-prática-motivadora-ii"><span class="header-section-number">7.7.3</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA II</strong></a></li>
+  <li><a href="#suposições-necessárias-2" id="toc-suposições-necessárias-2" class="nav-link" data-scroll-target="#suposições-necessárias-2"><span class="header-section-number">8.7.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></a></li>
+  <li><a href="#situação-prática-motivadora-i" id="toc-situação-prática-motivadora-i" class="nav-link" data-scroll-target="#situação-prática-motivadora-i"><span class="header-section-number">8.7.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA I</strong></a></li>
+  <li><a href="#situação-prática-motivadora-ii" id="toc-situação-prática-motivadora-ii" class="nav-link" data-scroll-target="#situação-prática-motivadora-ii"><span class="header-section-number">8.7.3</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA II</strong></a></li>
   </ul></li>
-  <li><a href="#caso-5-amostras-grandes" id="toc-caso-5-amostras-grandes" class="nav-link" data-scroll-target="#caso-5-amostras-grandes"><span class="header-section-number">7.8</span> <strong>CASO 5: AMOSTRAS GRANDES</strong></a>
+  <li><a href="#caso-5-amostras-grandes" id="toc-caso-5-amostras-grandes" class="nav-link" data-scroll-target="#caso-5-amostras-grandes"><span class="header-section-number">8.8</span> <strong>CASO 5: AMOSTRAS GRANDES</strong></a>
   <ul>
-  <li><a href="#uma-população" id="toc-uma-população" class="nav-link" data-scroll-target="#uma-população"><span class="header-section-number">7.8.1</span> <strong>UMA POPULAÇÃO</strong></a></li>
-  <li><a href="#duas-populações-dependentes" id="toc-duas-populações-dependentes" class="nav-link" data-scroll-target="#duas-populações-dependentes"><span class="header-section-number">7.8.2</span> <strong>DUAS POPULAÇÕES DEPENDENTES</strong></a></li>
-  <li><a href="#duas-populações-independentes" id="toc-duas-populações-independentes" class="nav-link" data-scroll-target="#duas-populações-independentes"><span class="header-section-number">7.8.3</span> <strong>DUAS POPULAÇÕES INDEPENDENTES</strong></a></li>
+  <li><a href="#uma-população" id="toc-uma-população" class="nav-link" data-scroll-target="#uma-população"><span class="header-section-number">8.8.1</span> <strong>UMA POPULAÇÃO</strong></a></li>
+  <li><a href="#duas-populações-dependentes" id="toc-duas-populações-dependentes" class="nav-link" data-scroll-target="#duas-populações-dependentes"><span class="header-section-number">8.8.2</span> <strong>DUAS POPULAÇÕES DEPENDENTES</strong></a></li>
+  <li><a href="#duas-populações-independentes" id="toc-duas-populações-independentes" class="nav-link" data-scroll-target="#duas-populações-independentes"><span class="header-section-number">8.8.3</span> <strong>DUAS POPULAÇÕES INDEPENDENTES</strong></a></li>
   </ul></li>
-  <li><a href="#caso-6-mais-de-2-populações" id="toc-caso-6-mais-de-2-populações" class="nav-link" data-scroll-target="#caso-6-mais-de-2-populações"><span class="header-section-number">7.9</span> <strong>CASO 6: MAIS DE 2 POPULAÇÕES</strong></a>
+  <li><a href="#caso-6-mais-de-2-populações" id="toc-caso-6-mais-de-2-populações" class="nav-link" data-scroll-target="#caso-6-mais-de-2-populações"><span class="header-section-number">8.9</span> <strong>CASO 6: MAIS DE 2 POPULAÇÕES</strong></a>
   <ul>
-  <li><a href="#suposições" id="toc-suposições" class="nav-link" data-scroll-target="#suposições"><span class="header-section-number">7.9.1</span> <strong>SUPOSIÇÕES</strong></a></li>
-  <li><a href="#situação-prática-motivadora-3" id="toc-situação-prática-motivadora-3" class="nav-link" data-scroll-target="#situação-prática-motivadora-3"><span class="header-section-number">7.9.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
-  <li><a href="#normalidade" id="toc-normalidade" class="nav-link" data-scroll-target="#normalidade"><span class="header-section-number">7.9.3</span> <strong>NORMALIDADE</strong></a></li>
-  <li><a href="#homocedasticidade" id="toc-homocedasticidade" class="nav-link" data-scroll-target="#homocedasticidade"><span class="header-section-number">7.9.4</span> <strong>HOMOCEDASTICIDADE</strong></a>
+  <li><a href="#suposições" id="toc-suposições" class="nav-link" data-scroll-target="#suposições"><span class="header-section-number">8.9.1</span> <strong>SUPOSIÇÕES</strong></a></li>
+  <li><a href="#situação-prática-motivadora-3" id="toc-situação-prática-motivadora-3" class="nav-link" data-scroll-target="#situação-prática-motivadora-3"><span class="header-section-number">8.9.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></a></li>
+  <li><a href="#normalidade" id="toc-normalidade" class="nav-link" data-scroll-target="#normalidade"><span class="header-section-number">8.9.3</span> <strong>NORMALIDADE</strong></a></li>
+  <li><a href="#homocedasticidade" id="toc-homocedasticidade" class="nav-link" data-scroll-target="#homocedasticidade"><span class="header-section-number">8.9.4</span> <strong>HOMOCEDASTICIDADE</strong></a>
   <ul class="collapse">
-  <li><a href="#teste-de-bartlett" id="toc-teste-de-bartlett" class="nav-link" data-scroll-target="#teste-de-bartlett"><span class="header-section-number">7.9.4.1</span> <strong>TESTE DE BARTLETT</strong></a></li>
-  <li><a href="#teste-de-levene" id="toc-teste-de-levene" class="nav-link" data-scroll-target="#teste-de-levene"><span class="header-section-number">7.9.4.2</span> <strong>TESTE DE LEVENE</strong></a></li>
+  <li><a href="#teste-de-bartlett" id="toc-teste-de-bartlett" class="nav-link" data-scroll-target="#teste-de-bartlett"><span class="header-section-number">8.9.4.1</span> <strong>TESTE DE BARTLETT</strong></a></li>
+  <li><a href="#teste-de-levene" id="toc-teste-de-levene" class="nav-link" data-scroll-target="#teste-de-levene"><span class="header-section-number">8.9.4.2</span> <strong>TESTE DE LEVENE</strong></a></li>
   </ul></li>
-  <li><a href="#análise-de-variância" id="toc-análise-de-variância" class="nav-link" data-scroll-target="#análise-de-variância"><span class="header-section-number">7.9.5</span> <strong>ANÁLISE DE VARIÂNCIA</strong></a></li>
-  <li><a href="#testes-de-comparação-múltipla" id="toc-testes-de-comparação-múltipla" class="nav-link" data-scroll-target="#testes-de-comparação-múltipla"><span class="header-section-number">7.9.6</span> <strong>TESTES DE COMPARAÇÃO MÚLTIPLA</strong></a>
+  <li><a href="#análise-de-variância" id="toc-análise-de-variância" class="nav-link" data-scroll-target="#análise-de-variância"><span class="header-section-number">8.9.5</span> <strong>ANÁLISE DE VARIÂNCIA</strong></a></li>
+  <li><a href="#testes-de-comparação-múltipla" id="toc-testes-de-comparação-múltipla" class="nav-link" data-scroll-target="#testes-de-comparação-múltipla"><span class="header-section-number">8.9.6</span> <strong>TESTES DE COMPARAÇÃO MÚLTIPLA</strong></a>
   <ul class="collapse">
-  <li><a href="#teste-de-bonferroni" id="toc-teste-de-bonferroni" class="nav-link" data-scroll-target="#teste-de-bonferroni"><span class="header-section-number">7.9.6.1</span> <strong>TESTE DE BONFERRONI</strong></a></li>
-  <li><a href="#teste-de-tukey" id="toc-teste-de-tukey" class="nav-link" data-scroll-target="#teste-de-tukey"><span class="header-section-number">7.9.6.2</span> <strong>TESTE DE TUKEY</strong></a></li>
-  <li><a href="#qual-teste-devo-usar" id="toc-qual-teste-devo-usar" class="nav-link" data-scroll-target="#qual-teste-devo-usar"><span class="header-section-number">7.9.6.3</span> <strong>QUAL TESTE DEVO USAR?</strong></a></li>
+  <li><a href="#teste-de-bonferroni" id="toc-teste-de-bonferroni" class="nav-link" data-scroll-target="#teste-de-bonferroni"><span class="header-section-number">8.9.6.1</span> <strong>TESTE DE BONFERRONI</strong></a></li>
+  <li><a href="#teste-de-tukey" id="toc-teste-de-tukey" class="nav-link" data-scroll-target="#teste-de-tukey"><span class="header-section-number">8.9.6.2</span> <strong>TESTE DE TUKEY</strong></a></li>
+  <li><a href="#qual-teste-devo-usar" id="toc-qual-teste-devo-usar" class="nav-link" data-scroll-target="#qual-teste-devo-usar"><span class="header-section-number">8.9.6.3</span> <strong>QUAL TESTE DEVO USAR?</strong></a></li>
   </ul></li>
-  <li><a href="#extensões-da-anova-tradicional" id="toc-extensões-da-anova-tradicional" class="nav-link" data-scroll-target="#extensões-da-anova-tradicional"><span class="header-section-number">7.9.7</span> <strong>EXTENSÕES DA ANOVA TRADICIONAL</strong></a>
+  <li><a href="#extensões-da-anova-tradicional" id="toc-extensões-da-anova-tradicional" class="nav-link" data-scroll-target="#extensões-da-anova-tradicional"><span class="header-section-number">8.9.7</span> <strong>EXTENSÕES DA ANOVA TRADICIONAL</strong></a>
   <ul class="collapse">
-  <li><a href="#amostras-grandes" id="toc-amostras-grandes" class="nav-link" data-scroll-target="#amostras-grandes"><span class="header-section-number">7.9.7.1</span> <strong>AMOSTRAS GRANDES</strong></a></li>
-  <li><a href="#amostras-dependentes" id="toc-amostras-dependentes" class="nav-link" data-scroll-target="#amostras-dependentes"><span class="header-section-number">7.9.7.2</span> <strong>AMOSTRAS DEPENDENTES</strong></a></li>
-  <li><a href="#heterocedasticidade" id="toc-heterocedasticidade" class="nav-link" data-scroll-target="#heterocedasticidade"><span class="header-section-number">7.9.7.3</span> <strong>HETEROCEDASTICIDADE</strong></a></li>
+  <li><a href="#amostras-grandes" id="toc-amostras-grandes" class="nav-link" data-scroll-target="#amostras-grandes"><span class="header-section-number">8.9.7.1</span> <strong>AMOSTRAS GRANDES</strong></a></li>
+  <li><a href="#amostras-dependentes" id="toc-amostras-dependentes" class="nav-link" data-scroll-target="#amostras-dependentes"><span class="header-section-number">8.9.7.2</span> <strong>AMOSTRAS DEPENDENTES</strong></a></li>
+  <li><a href="#heterocedasticidade" id="toc-heterocedasticidade" class="nav-link" data-scroll-target="#heterocedasticidade"><span class="header-section-number">8.9.7.3</span> <strong>HETEROCEDASTICIDADE</strong></a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -294,7 +300,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Código</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Mostrar o código</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Esconder o código</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">Ver o código fonte</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>REVISÃO DE TESTES DE HIPÓTESES PARA 1, 2 E MAIS DE 2 POPULAÇÕES</strong></span></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Código</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Mostrar o código</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Esconder o código</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">Ver o código fonte</a></li></ul></div></div>
 </div>
 
 
@@ -311,8 +317,8 @@ window.Quarto = {
 </header>
 
 
-<section id="pacotes-necessários" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="pacotes-necessários"><span class="header-section-number">7.1</span> <strong>PACOTES NECESSÁRIOS</strong></h2>
+<section id="pacotes-necessários" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="pacotes-necessários"><span class="header-section-number">8.1</span> <strong>PACOTES NECESSÁRIOS</strong></h2>
 <p>Para este <strong>treinamento</strong>, precisaremos dos seguintes <strong>pacotes</strong>:</p>
 <div class="cell">
 <details class="code-fold">
@@ -323,8 +329,8 @@ window.Quarto = {
 </details>
 </div>
 </section>
-<section id="introdução" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="introdução"><span class="header-section-number">7.2</span> <strong>INTRODUÇÃO</strong></h2>
+<section id="introdução" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="introdução"><span class="header-section-number">8.2</span> <strong>INTRODUÇÃO</strong></h2>
 <p>Nesta prática, iremos revisar um conjunto fundamental de ferramentas da inferência estatística clássica, com foco em situações envolvendo uma, duas ou mais populações.</p>
 <p>O ponto de partida será a <strong>avaliação da suposição de normalidade</strong>, que desempenha papel central na escolha entre métodos paramétricos e não paramétricos. Serão exploradas abordagens gráficas e um teste formal para diagnosticar desvios da normalidade.</p>
 <p>Em seguida, abordaremos os principais <strong>testes paramétricos</strong>, organizados conforme o número de populações envolvidas:</p>
@@ -336,8 +342,8 @@ window.Quarto = {
 <p>Ao longo da prática, será dada ênfase não apenas à aplicação dos testes, mas também à <strong>interpretação dos resultados</strong> e às <strong>condições de validade</strong> de cada método.</p>
 <p>Por fim, esta revisão servirá como base para uma etapa posterior, na qual vocês irão aplicar essas técnicas em <strong>dados reais</strong>, exigindo autonomia na escolha dos métodos, verificação de suposições e interpretação dos achados.</p>
 </section>
-<section id="diagnósticos-de-normalidade" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="diagnósticos-de-normalidade"><span class="header-section-number">7.3</span> <strong>DIAGNÓSTICOS DE NORMALIDADE</strong></h2>
+<section id="diagnósticos-de-normalidade" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="diagnósticos-de-normalidade"><span class="header-section-number">8.3</span> <strong>DIAGNÓSTICOS DE NORMALIDADE</strong></h2>
 <p>Antes de <strong>avançarmos para a aplicação das funções prontas</strong> do <code>R</code> em testes de hipótese, é <strong>importante revisitar um ponto essencial na prática inferencial</strong>: <strong>a verificação da normalidade</strong>. Muitos procedimentos paramétricos — como o teste t, teste pra variância e ANOVA — assumem que a(s) população(ões) <strong>segue(m) uma distribuição aproximadamente normal</strong>.</p>
 <p>Graças ao <strong>Teorema Central do Limite</strong>, a <strong>normalidade da estatística (como a média amostral) tende a emergir naturalmente quando o tamanho amostral é moderado ou grande</strong>, mesmo quando a população original não é normal.</p>
 <blockquote class="blockquote">
@@ -345,8 +351,8 @@ window.Quarto = {
 </blockquote>
 <p><strong>Contudo</strong>, para amostras pequenas ou <strong>situações com forte assimetria</strong>, pode ser útil <strong>avaliar empiricamente se a suposição de normalidade é plausível</strong>.</p>
 <p>Vamos trabalhar com <strong>ferramentas</strong> como o teste de Shapiro-Wilk, além de gráficos como densidades e QQ-plots. Assim, <strong>vocês terão um conjunto completo de instrumentos para analisar a normalidade</strong> antes de aplicar os <strong>testes paramétricos nas próximas seções</strong>.</p>
-<section id="situação-prática-motivadora" class="level3" data-number="7.3.1">
-<h3 data-number="7.3.1" class="anchored" data-anchor-id="situação-prática-motivadora"><span class="header-section-number">7.3.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
+<section id="situação-prática-motivadora" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="situação-prática-motivadora"><span class="header-section-number">8.3.1</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
 <p>Imagine que uma equipe da área de ergonomia está avaliando o <strong>tempo de reação</strong> de trabalhadores que operam um novo painel de controle industrial. O equipamento ainda está em fase piloto e, por isso, apenas <strong>22 trabalhadores</strong> participaram do teste inicial. Os tempos de reação (em milissegundos) são os seguintes:</p>
 <div class="cell">
 <details class="code-fold">
@@ -362,8 +368,8 @@ window.Quarto = {
 </div>
 <p>Nesse contexto, estamos diante de uma situação típica na prática profissional: <strong>uma amostra pequena (n &lt; 30)</strong>. Ou seja, é justamente aquele cenário limite em que decidir se <strong>a normalidade pode ou não ser assumida se torna relevante para a escolha entre métodos paramétricos ou não paramétricos</strong>.</p>
 </section>
-<section id="gráfico-de-densidade" class="level3" data-number="7.3.2">
-<h3 data-number="7.3.2" class="anchored" data-anchor-id="gráfico-de-densidade"><span class="header-section-number">7.3.2</span> <strong>GRÁFICO DE DENSIDADE</strong></h3>
+<section id="gráfico-de-densidade" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="gráfico-de-densidade"><span class="header-section-number">8.3.2</span> <strong>GRÁFICO DE DENSIDADE</strong></h3>
 <p>O primeiro passo para avaliar a forma da distribuição é visualizar seus contornos. O <strong>gráfico de densidade</strong> permite enxergar rapidamente assimetrias, caudas mais pesadas e possíveis desvios sutis da normalidade. Ele é <strong>construído suavizando os dados por meio de uma função kernel</strong>, resultando em uma <strong>curva contínua que aproxima a distribuição dos valores observados</strong>. No <code>R</code> este gráfico é feito com a função <code>geom_density</code> do pacote <code>ggplot2:</code></p>
 <div class="cell">
 <details class="code-fold">
@@ -390,8 +396,8 @@ window.Quarto = {
 <p>Pode acontecer de mesmo quando o gráfico de densidade apresenta <strong>assimetria aparente</strong>, isso não impede que os dados sejam considerados aproximadamente normais. O <strong>QQ-plot</strong> pode <strong>acusar a normalidade dos dados</strong> e testes formais, como o <strong>Shapiro–Wilk</strong>, podem <strong>não rejeitar a normalidade</strong>. Isso ocorre porque pequenas assimetrias visuais nem sempre são suficientes para indicar desvios estatisticamente significativos da distribuição normal.</p>
 </blockquote>
 </section>
-<section id="gráfico-quantil-quantil-q-q-plot" class="level3" data-number="7.3.3">
-<h3 data-number="7.3.3" class="anchored" data-anchor-id="gráfico-quantil-quantil-q-q-plot"><span class="header-section-number">7.3.3</span> <strong>GRÁFICO QUANTIL-QUANTIL (Q-Q PLOT)</strong></h3>
+<section id="gráfico-quantil-quantil-q-q-plot" class="level3" data-number="8.3.3">
+<h3 data-number="8.3.3" class="anchored" data-anchor-id="gráfico-quantil-quantil-q-q-plot"><span class="header-section-number">8.3.3</span> <strong>GRÁFICO QUANTIL-QUANTIL (Q-Q PLOT)</strong></h3>
 <p>O <strong>gráfico quantil-quantil (Q-Q plot)</strong> é uma ferramenta visual que compara a distribuição dos dados com uma distribuição teórica, geralmente a <strong>normal</strong>. Ele faz isso confrontando os <strong>quantis da amostra</strong> com os quantis da distribuição escolhida.</p>
 <ul>
 <li>Se os pontos se alinharem em uma <strong>linha reta</strong>, os dados são <strong>aproximadamente normais</strong>.</li>
@@ -428,8 +434,8 @@ window.Quarto = {
 <p>Note que, como a cauda à direita da distribuição é mais pesada os pontos finais no gráfico q-q plot se encontram fora da banda de confiança, reforçando a não normalidade dos dados.</p>
 </blockquote>
 </section>
-<section id="teste-de-shapiro-wilk" class="level3" data-number="7.3.4">
-<h3 data-number="7.3.4" class="anchored" data-anchor-id="teste-de-shapiro-wilk"><span class="header-section-number">7.3.4</span> <strong>TESTE DE SHAPIRO WILK</strong></h3>
+<section id="teste-de-shapiro-wilk" class="level3" data-number="8.3.4">
+<h3 data-number="8.3.4" class="anchored" data-anchor-id="teste-de-shapiro-wilk"><span class="header-section-number">8.3.4</span> <strong>TESTE DE SHAPIRO WILK</strong></h3>
 <p>O <strong>teste de Shapiro-Wilk</strong> é um dos métodos mais utilizados para avaliar a <strong>normalidade de uma amostra</strong>, especialmente <strong>quando o tamanho amostral é pequeno ou moderado</strong>. Ele costuma ser <strong>mais poderoso que outros testes</strong> — como Kolmogorov-Smirnov — porque é mais <strong>sensível a desvios sutis da normalidade, sem exigir que os parâmetros da distribuição normal sejam conhecidos</strong>.</p>
 <p>As hipóteses do teste são</p>
 <ul>
@@ -473,14 +479,14 @@ W = 0.81249, p-value = 0.0007899</code></pre>
 </blockquote>
 </section>
 </section>
-<section id="caso-1-populações-normais-com-variâncias-conhecidas" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="caso-1-populações-normais-com-variâncias-conhecidas"><span class="header-section-number">7.4</span> <strong>CASO 1: POPULAÇÕES NORMAIS COM VARIÂNCIAS CONHECIDAS</strong></h2>
+<section id="caso-1-populações-normais-com-variâncias-conhecidas" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="caso-1-populações-normais-com-variâncias-conhecidas"><span class="header-section-number">8.4</span> <strong>CASO 1: POPULAÇÕES NORMAIS COM VARIÂNCIAS CONHECIDAS</strong></h2>
 <p>Este é o caso mais simples do ponto de vista teórico: quando a(s) população(ões) é(são) normal(is) <strong>e a(s) variância(s) é(são) conhecida(s)</strong>, a estatística de teste e os intervalos de confiança utilizam a <strong>distribuição Normal padrão (Z)</strong>. Esse cenário aparece com frequência nos livros-texto porque <strong>permite introduzir conceitos fundamentais de forma algebricamente limpa</strong>.</p>
 <p>Além disso, esse caso é <strong>excelente para fins didáticos</strong>, especialmente para <strong>simulações computacionais</strong>. Por ser um contexto totalmente controlado (normalidade perfeita e variância fixa), ele é ideal para <strong>observar empiricamente como a distribuição da média, dos estimadores e das estatísticas de teste se comporta</strong>.</p>
 <p>Na prática aplicada, porém, <strong>populações com variância conhecida quase nunca existem</strong>. Mesmo com grande quantidade de dados históricos, a variabilidade real da população continua sendo <strong>estimada</strong>, e não conhecida. Por isso, esse caso é essencialmente <strong>teórico</strong> e tem <strong>utilidade limitada na análise estatística real</strong>. Assim, na prática, tratá-lo separadamente não <strong>acrescenta ganhos concretos para a análise de dados aplicada</strong>. Por esses motivos, <strong>NÃO ABORDAREMOS ESTE CASO AQUI</strong>.</p>
 </section>
-<section id="caso-2-proporções" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="caso-2-proporções"><span class="header-section-number">7.5</span> <strong>CASO 2: PROPORÇÕES</strong></h2>
+<section id="caso-2-proporções" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="caso-2-proporções"><span class="header-section-number">8.5</span> <strong>CASO 2: PROPORÇÕES</strong></h2>
 <p>As situações em que <strong>trabalhamos</strong> com <strong>proporções</strong> são extremamente <strong>comuns</strong> na prática estatística: <strong>porcentagem de indivíduos vacinados, proporção de peças defeituosas, taxa de aprovação, prevalência de uma doença, entre muitas outras</strong>. Em todos esses casos, cada observação pode ser representada como um <strong>sucesso</strong> (1) ou <strong>fracasso</strong> (0), isto é, como uma variável Bernoulli.</p>
 <p>A partir deste ponto, organizaremos o estudo em duas partes fundamentais:</p>
 <ul>
@@ -516,8 +522,8 @@ W = 0.81249, p-value = 0.0007899</code></pre>
 <li><code>alternative</code>: <strong>hipótese alternativa</strong>.</li>
 </ul>
 <p>Para <strong>retornar o intervalo de confiança</strong> somente, basta fazer <code>prop.test(…)$conf.int</code>.</p>
-<section id="suposições-necessárias" class="level3" data-number="7.5.1">
-<h3 data-number="7.5.1" class="anchored" data-anchor-id="suposições-necessárias"><span class="header-section-number">7.5.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></h3>
+<section id="suposições-necessárias" class="level3" data-number="8.5.1">
+<h3 data-number="8.5.1" class="anchored" data-anchor-id="suposições-necessárias"><span class="header-section-number">8.5.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></h3>
 <p>Para utilizar a aproximação Normal e aplicar os intervalos e testes clássicos para uma proporção, assumimos que:</p>
 <ol type="1">
 <li><strong>As observações são independentes.</strong><br>
@@ -544,8 +550,8 @@ W = 0.81249, p-value = 0.0007899</code></pre>
 <p>Uma “regra de bolso” muito utilizada é verificar se <span class="math inline">\(n_1\hat{p_1}\geq10\)</span>, <span class="math inline">\(n_1(1-\hat{p_1})\geq10\)</span>, <span class="math inline">\(n_2\hat{p_2}\geq10\)</span> e <span class="math inline">\(n_2(1-\hat{p_2})\geq10\)</span></p>
 </blockquote>
 </section>
-<section id="situação-prática-motivadora-1" class="level3" data-number="7.5.2">
-<h3 data-number="7.5.2" class="anchored" data-anchor-id="situação-prática-motivadora-1"><span class="header-section-number">7.5.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
+<section id="situação-prática-motivadora-1" class="level3" data-number="8.5.2">
+<h3 data-number="8.5.2" class="anchored" data-anchor-id="situação-prática-motivadora-1"><span class="header-section-number">8.5.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
 <p>Imagine que uma equipe de saúde ocupacional está conduzindo um estudo sobre <strong>uso correto de equipamentos de proteção individual (EPIs)</strong> em dois setores de manutenção industrial: <strong>Setor A</strong> e <strong>Setor B</strong>. O objetivo é comparar a <strong>proporção de trabalhadores que utilizam corretamente o capacete de segurança</strong> em cada setor.</p>
 <p>Foram observados <strong>40 trabalhadores do Setor A</strong> e <strong>50 trabalhadores do Setor B</strong>, registrando para cada trabalhador:</p>
 <ul>
@@ -612,8 +618,8 @@ prop 1 prop 2
 <p>Com um <strong>p-valor de 0,7491</strong> há evidências de que as duas proporções <strong>populacionais são equivalentes</strong>. Tal resultado é corroborado pelo intervalo de confiança, que inclui o 0.</p>
 </section>
 </section>
-<section id="caso-3-variâncias-em-populações-normais" class="level2" data-number="7.6">
-<h2 data-number="7.6" class="anchored" data-anchor-id="caso-3-variâncias-em-populações-normais"><span class="header-section-number">7.6</span> <strong>CASO 3: VARIÂNCIAS EM POPULAÇÕES NORMAIS</strong></h2>
+<section id="caso-3-variâncias-em-populações-normais" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="caso-3-variâncias-em-populações-normais"><span class="header-section-number">8.6</span> <strong>CASO 3: VARIÂNCIAS EM POPULAÇÕES NORMAIS</strong></h2>
 <p>Na prática estatística, muitas vezes precisamos avaliar <strong>a variabilidade de uma população</strong> ou comparar a variabilidade entre duas populações. Estamos interessados no parâmetro <span class="math inline">\(\sigma^2\)</span>, a <strong>variância populacional</strong>, que mede o grau de dispersão dos dados em torno da média.</p>
 <p>Podemos considerar dois cenários principais:</p>
 <ol type="1">
@@ -648,8 +654,8 @@ prop 1 prop 2
 <li><code>alternative</code>: <strong>hipótese alternativa</strong>.</li>
 </ul>
 <p>Para retornar <strong>somente o intervalo de confiança</strong>, basta fazer <code>VarTest(...)$conf.level</code>.</p>
-<section id="suposições-necessárias-1" class="level3" data-number="7.6.1">
-<h3 data-number="7.6.1" class="anchored" data-anchor-id="suposições-necessárias-1"><span class="header-section-number">7.6.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></h3>
+<section id="suposições-necessárias-1" class="level3" data-number="8.6.1">
+<h3 data-number="8.6.1" class="anchored" data-anchor-id="suposições-necessárias-1"><span class="header-section-number">8.6.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></h3>
 <p>Para aplicar intervalos de confiança e testes clássicos para a variância, assumimos que:</p>
 <ol type="1">
 <li><strong>As observações são independentes.</strong><br>
@@ -667,8 +673,8 @@ prop 1 prop 2
 <li><strong>As amostras representam corretamente suas populações.</strong></li>
 </ol>
 </section>
-<section id="situação-prática-motivadora-2" class="level3" data-number="7.6.2">
-<h3 data-number="7.6.2" class="anchored" data-anchor-id="situação-prática-motivadora-2"><span class="header-section-number">7.6.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
+<section id="situação-prática-motivadora-2" class="level3" data-number="8.6.2">
+<h3 data-number="8.6.2" class="anchored" data-anchor-id="situação-prática-motivadora-2"><span class="header-section-number">8.6.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
 <p>Imagine que uma fábrica deseja avaliar a <strong>consistência da produção</strong> em <strong>duas máquinas diferentes</strong>: <strong>Máquina A</strong> e <strong>Máquina B</strong>. O objetivo é comparar a <strong>variabilidade no diâmetro das peças</strong> produzidas por cada máquina.</p>
 <p>Foram coletadas <strong>15 peças da Máquina A</strong> e <strong>18 peças da Máquina B</strong>, medindo o diâmetro em milímetros:</p>
 <div class="cell">
@@ -817,8 +823,8 @@ ratio of variances
 <p>Com um valor-p de 0,3908, não há evidências de que a variabilidade da fábrica A é menor que a variabilidade da fábrica B. Veja que o intervalo de confiança pra razão inclui o valor 1.</p>
 </section>
 </section>
-<section id="caso-4-populações-normais-com-variâncias-desconhecidas" class="level2" data-number="7.7">
-<h2 data-number="7.7" class="anchored" data-anchor-id="caso-4-populações-normais-com-variâncias-desconhecidas"><span class="header-section-number">7.7</span> <strong>CASO 4: POPULAÇÕES NORMAIS COM VARIÂNCIAS DESCONHECIDAS</strong></h2>
+<section id="caso-4-populações-normais-com-variâncias-desconhecidas" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="caso-4-populações-normais-com-variâncias-desconhecidas"><span class="header-section-number">8.7</span> <strong>CASO 4: POPULAÇÕES NORMAIS COM VARIÂNCIAS DESCONHECIDAS</strong></h2>
 <p>Na prática estatística, muitas vezes precisamos <strong>comparar médias de populações normais</strong> quando <strong>as variâncias são desconhecidas</strong>. Nesse contexto, o parâmetro de interesse é <span class="math inline">\(\mu\)</span>, a <strong>média populacional</strong>, enquanto a variabilidade é estimada a partir dos dados amostrais.</p>
 <p>A análise de médias com variâncias desconhecidas é especialmente relevante quando:</p>
 <ol type="1">
@@ -864,8 +870,8 @@ ratio of variances
 <li><code>data.name</code>: nome dos objetos analisados.</li>
 </ul>
 <p>Para retornar o intervalo de confiança somente, basta usar <code>t.test(...)$conf.int</code>.</p>
-<section id="suposições-necessárias-2" class="level3" data-number="7.7.1">
-<h3 data-number="7.7.1" class="anchored" data-anchor-id="suposições-necessárias-2"><span class="header-section-number">7.7.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></h3>
+<section id="suposições-necessárias-2" class="level3" data-number="8.7.1">
+<h3 data-number="8.7.1" class="anchored" data-anchor-id="suposições-necessárias-2"><span class="header-section-number">8.7.1</span> <strong>SUPOSIÇÕES NECESSÁRIAS</strong></h3>
 <p>Para aplicar intervalos de confiança e testes t para a média, assumimos que:</p>
 <ol type="1">
 <li><strong>As observações são independentes.</strong><br>
@@ -899,8 +905,8 @@ ratio of variances
 </ul></li>
 </ol>
 </section>
-<section id="situação-prática-motivadora-i" class="level3" data-number="7.7.2">
-<h3 data-number="7.7.2" class="anchored" data-anchor-id="situação-prática-motivadora-i"><span class="header-section-number">7.7.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA I</strong></h3>
+<section id="situação-prática-motivadora-i" class="level3" data-number="8.7.2">
+<h3 data-number="8.7.2" class="anchored" data-anchor-id="situação-prática-motivadora-i"><span class="header-section-number">8.7.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA I</strong></h3>
 <p>Um fisioterapeuta esportivo deseja avaliar se um <strong>programa de fortalecimento muscular de 6 semanas</strong> melhora o <strong>tempo de reação</strong> de atletas amadores. O tempo de reação foi medido em milissegundos (ms) usando o mesmo equipamento, <strong>antes</strong> e <strong>depois</strong> do programa de treinamento. Como cada atleta é avaliado duas vezes, trata-se de um caso de <strong>amostras pareadas</strong>.</p>
 <p>Abaixo estão os dados coletados de 12 atletas:</p>
 <div class="cell">
@@ -991,8 +997,8 @@ mean difference
 </div>
 <p>Com um valor-p próximo de 0 há evidências de que o treinamento foi eficiente, reduzindo o tempo médio de reação.</p>
 </section>
-<section id="situação-prática-motivadora-ii" class="level3" data-number="7.7.3">
-<h3 data-number="7.7.3" class="anchored" data-anchor-id="situação-prática-motivadora-ii"><span class="header-section-number">7.7.3</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA II</strong></h3>
+<section id="situação-prática-motivadora-ii" class="level3" data-number="8.7.3">
+<h3 data-number="8.7.3" class="anchored" data-anchor-id="situação-prática-motivadora-ii"><span class="header-section-number">8.7.3</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA II</strong></h3>
 <p>Um pesquisador deseja avaliar se um <strong>novo suplemento nutricional</strong> melhora o desempenho de atletas em um teste de força máxima.<br>
 Dois grupos independentes foram avaliados:</p>
 <ul>
@@ -1158,14 +1164,14 @@ mean of x mean of y
 <p>Portanto, com um valor-p de 0.89, há evidências de que as médias de força são iguais.</p>
 </section>
 </section>
-<section id="caso-5-amostras-grandes" class="level2" data-number="7.8">
-<h2 data-number="7.8" class="anchored" data-anchor-id="caso-5-amostras-grandes"><span class="header-section-number">7.8</span> <strong>CASO 5: AMOSTRAS GRANDES</strong></h2>
+<section id="caso-5-amostras-grandes" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="caso-5-amostras-grandes"><span class="header-section-number">8.8</span> <strong>CASO 5: AMOSTRAS GRANDES</strong></h2>
 <p>Quando trabalhamos com amostras pequenas, a aplicação do teste <em>t</em> exige atenção especial à normalidade e, no caso de duas populações independentes, à igualdade de variâncias.<br>
 Agora, entrando no cenário de <strong>amostras grandes</strong>, algumas dessas exigências tornam-se menos rígidas, especialmente por causa do Teorema Central do Limite. Ainda assim, existem verificações importantes que devem ser feitas <strong>antes</strong> de aplicar o teste <em>t</em>.</p>
 <p>Em todos os cenários analisados — uma população, duas populações dependentes e duas independentes (com ou sem variâncias iguais) — a função recomendada no R continua sendo <code>t.test</code>. Isso ocorre porque, com amostras grandes, a distribuição t se aproxima da distribuição normal padrão, de modo que o teste t e o teste z tornam-se praticamente equivalentes. Por isso, não há necessidade de usar um teste z separado: o próprio <code>t.test</code> já é totalmente adequado e robusto para esses casos.</p>
 <p>A seguir, detalhamos os cuidados necessários nos contextos clássicos.</p>
-<section id="uma-população" class="level3" data-number="7.8.1">
-<h3 data-number="7.8.1" class="anchored" data-anchor-id="uma-população"><span class="header-section-number">7.8.1</span> <strong>UMA POPULAÇÃO</strong></h3>
+<section id="uma-população" class="level3" data-number="8.8.1">
+<h3 data-number="8.8.1" class="anchored" data-anchor-id="uma-população"><span class="header-section-number">8.8.1</span> <strong>UMA POPULAÇÃO</strong></h3>
 <p>O que verificar antes do teste:</p>
 <ul>
 <li><strong>Normalidade não é mais exigida</strong> para a média amostral.</li>
@@ -1174,8 +1180,8 @@ Agora, entrando no cenário de <strong>amostras grandes</strong>, algumas dessas
 <li><strong>Garantir independência das observações</strong>; essa condição não pode ser violada.</li>
 </ul>
 </section>
-<section id="duas-populações-dependentes" class="level3" data-number="7.8.2">
-<h3 data-number="7.8.2" class="anchored" data-anchor-id="duas-populações-dependentes"><span class="header-section-number">7.8.2</span> <strong>DUAS POPULAÇÕES DEPENDENTES</strong></h3>
+<section id="duas-populações-dependentes" class="level3" data-number="8.8.2">
+<h3 data-number="8.8.2" class="anchored" data-anchor-id="duas-populações-dependentes"><span class="header-section-number">8.8.2</span> <strong>DUAS POPULAÇÕES DEPENDENTES</strong></h3>
 <p>O que verificar antes do teste:</p>
 <ul>
 <li><strong>O teste é aplicado às diferenças</strong>, então verifique a presença de outliers nessas diferenças.</li>
@@ -1184,8 +1190,8 @@ Agora, entrando no cenário de <strong>amostras grandes</strong>, algumas dessas
 <li><strong>Verificar independência entre os pares</strong>, mesmo que haja dependência dentro de cada par.</li>
 </ul>
 </section>
-<section id="duas-populações-independentes" class="level3" data-number="7.8.3">
-<h3 data-number="7.8.3" class="anchored" data-anchor-id="duas-populações-independentes"><span class="header-section-number">7.8.3</span> <strong>DUAS POPULAÇÕES INDEPENDENTES</strong></h3>
+<section id="duas-populações-independentes" class="level3" data-number="8.8.3">
+<h3 data-number="8.8.3" class="anchored" data-anchor-id="duas-populações-independentes"><span class="header-section-number">8.8.3</span> <strong>DUAS POPULAÇÕES INDEPENDENTES</strong></h3>
 <p>O que verificar antes do teste:</p>
 <ul>
 <li><strong>Independência entre as amostras</strong> — condição essencial.</li>
@@ -1204,11 +1210,11 @@ Agora, entrando no cenário de <strong>amostras grandes</strong>, algumas dessas
 </ul>
 </section>
 </section>
-<section id="caso-6-mais-de-2-populações" class="level2" data-number="7.9">
-<h2 data-number="7.9" class="anchored" data-anchor-id="caso-6-mais-de-2-populações"><span class="header-section-number">7.9</span> <strong>CASO 6: MAIS DE 2 POPULAÇÕES</strong></h2>
+<section id="caso-6-mais-de-2-populações" class="level2" data-number="8.9">
+<h2 data-number="8.9" class="anchored" data-anchor-id="caso-6-mais-de-2-populações"><span class="header-section-number">8.9</span> <strong>CASO 6: MAIS DE 2 POPULAÇÕES</strong></h2>
 <p>A <strong>Análise de Variância</strong> (ANOVA) é uma técnica estatística usada para <strong>verificar se há diferenças significativas</strong> entre as <strong>médias de três ou mais populações</strong>.</p>
-<section id="suposições" class="level3" data-number="7.9.1">
-<h3 data-number="7.9.1" class="anchored" data-anchor-id="suposições"><span class="header-section-number">7.9.1</span> <strong>SUPOSIÇÕES</strong></h3>
+<section id="suposições" class="level3" data-number="8.9.1">
+<h3 data-number="8.9.1" class="anchored" data-anchor-id="suposições"><span class="header-section-number">8.9.1</span> <strong>SUPOSIÇÕES</strong></h3>
 <p>Para que a ANOVA seja válida, as seguintes suposições devem ser satisfeitas:</p>
 <ol type="1">
 <li><strong>Independência</strong> entre as observações.</li>
@@ -1216,8 +1222,8 @@ Agora, entrando no cenário de <strong>amostras grandes</strong>, algumas dessas
 <li><strong>Homogeneidade de variâncias</strong>: <span class="math inline">\(\sigma_1^2 = \sigma_2^2 = \dots = \sigma_k^2=\sigma^2\)</span></li>
 </ol>
 </section>
-<section id="situação-prática-motivadora-3" class="level3" data-number="7.9.2">
-<h3 data-number="7.9.2" class="anchored" data-anchor-id="situação-prática-motivadora-3"><span class="header-section-number">7.9.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
+<section id="situação-prática-motivadora-3" class="level3" data-number="8.9.2">
+<h3 data-number="8.9.2" class="anchored" data-anchor-id="situação-prática-motivadora-3"><span class="header-section-number">8.9.2</span> <strong>SITUAÇÃO PRÁTICA MOTIVADORA</strong></h3>
 <p>A base de dados <strong><code>PlantGrowth</code></strong> é um <strong>conjunto clássico disponível</strong> no <code>R</code> que <strong>registra o peso de plantas submetidas a três diferentes tratamentos</strong>.</p>
 <ul>
 <li><strong>Variável resposta:</strong>
@@ -1275,8 +1281,8 @@ Agora, entrando no cenário de <strong>amostras grandes</strong>, algumas dessas
 </div>
 </div>
 </section>
-<section id="normalidade" class="level3" data-number="7.9.3">
-<h3 data-number="7.9.3" class="anchored" data-anchor-id="normalidade"><span class="header-section-number">7.9.3</span> <strong>NORMALIDADE</strong></h3>
+<section id="normalidade" class="level3" data-number="8.9.3">
+<h3 data-number="8.9.3" class="anchored" data-anchor-id="normalidade"><span class="header-section-number">8.9.3</span> <strong>NORMALIDADE</strong></h3>
 <p>Para aplicar a <strong>ANOVA</strong>, é fundamental que os <strong>dados sejam normalmente distribuídos</strong>, ou tenha um <strong>tamanho suficiente para que seja utilizado o teorema central do limite</strong>. Vamos <strong>checar se os grupos de plantas possuem um peso normalmente distribuído:</strong> com os diagnósticos de normalidade que aprendemos:</p>
 <div class="cell">
 <details class="code-fold">
@@ -1346,8 +1352,8 @@ W = 0.94101, p-value = 0.5643</code></pre>
 </div>
 <p>Dessa forma, há <strong>evidências (com um nível de significância de 5%) de que os dados em cada grupo são normalmente distribuídos</strong>. Há uma ressalva que houve um desvio no <strong>qqplot</strong> para o grupo <code>trt1</code>, mas a <strong>ANOVA é robusta a pequenos desvios de normalidade</strong>, especialmente se <strong>as variâncias forem parecidas e o <code>n</code> dos grupos não é desigual</strong>.</p>
 </section>
-<section id="homocedasticidade" class="level3" data-number="7.9.4">
-<h3 data-number="7.9.4" class="anchored" data-anchor-id="homocedasticidade"><span class="header-section-number">7.9.4</span> <strong>HOMOCEDASTICIDADE</strong></h3>
+<section id="homocedasticidade" class="level3" data-number="8.9.4">
+<h3 data-number="8.9.4" class="anchored" data-anchor-id="homocedasticidade"><span class="header-section-number">8.9.4</span> <strong>HOMOCEDASTICIDADE</strong></h3>
 <p>Uma outra <strong>suposição fundamental</strong> é a <strong>homocedasticidade</strong>, ou seja, a igualdade das variâncias entre os grupos. A <strong>violação dessa suposição pode comprometer a validade dos resultados da ANOVA</strong>. Dois <strong>testes estatísticos amplamente utilizados para verificar essa suposição são</strong>:</p>
 <ul>
 <li><strong>Teste de Bartlett</strong></li>
@@ -1358,8 +1364,8 @@ W = 0.94101, p-value = 0.5643</code></pre>
 <li>( H_0 ): As variâncias populacionais são iguais.</li>
 <li>( H_1 ): Pelo menos uma das variâncias é diferente.</li>
 </ul>
-<section id="teste-de-bartlett" class="level4" data-number="7.9.4.1">
-<h4 data-number="7.9.4.1" class="anchored" data-anchor-id="teste-de-bartlett"><span class="header-section-number">7.9.4.1</span> <strong>TESTE DE BARTLETT</strong></h4>
+<section id="teste-de-bartlett" class="level4" data-number="8.9.4.1">
+<h4 data-number="8.9.4.1" class="anchored" data-anchor-id="teste-de-bartlett"><span class="header-section-number">8.9.4.1</span> <strong>TESTE DE BARTLETT</strong></h4>
 <p>O <strong>teste de Bartlett</strong> é sensível à <strong>suposição de normalidade</strong>. Ele é <strong>mais poderoso quando os dados seguem uma distribuição normal</strong>.</p>
 <p>Este teste deve ser usado</p>
 <ul>
@@ -1388,8 +1394,8 @@ Bartlett's K-squared = 2.8786, df = 2, p-value = 0.2371</code></pre>
 </div>
 <p>De acordo com o <strong>teste de Bartlett</strong>, há evidencias (ao nível de 5%) de que <strong>a suposição de homocedasticidade é atendida</strong>.</p>
 </section>
-<section id="teste-de-levene" class="level4" data-number="7.9.4.2">
-<h4 data-number="7.9.4.2" class="anchored" data-anchor-id="teste-de-levene"><span class="header-section-number">7.9.4.2</span> <strong>TESTE DE LEVENE</strong></h4>
+<section id="teste-de-levene" class="level4" data-number="8.9.4.2">
+<h4 data-number="8.9.4.2" class="anchored" data-anchor-id="teste-de-levene"><span class="header-section-number">8.9.4.2</span> <strong>TESTE DE LEVENE</strong></h4>
 <p>O <strong>teste de Levene é uma alternativa robusta ao teste de Bartlett</strong>. Ele é <strong>menos sensível a desvios da normalidade</strong>.</p>
 <p>Assim, para este teste, considere</p>
 <ul>
@@ -1419,8 +1425,8 @@ group  2  1.1192 0.3412
 <p>Como <strong>não ficamos tão seguros da suposição de normalidade dos dados, o teste de Levene é mais adequado aqui</strong>.</p>
 </section>
 </section>
-<section id="análise-de-variância" class="level3" data-number="7.9.5">
-<h3 data-number="7.9.5" class="anchored" data-anchor-id="análise-de-variância"><span class="header-section-number">7.9.5</span> <strong>ANÁLISE DE VARIÂNCIA</strong></h3>
+<section id="análise-de-variância" class="level3" data-number="8.9.5">
+<h3 data-number="8.9.5" class="anchored" data-anchor-id="análise-de-variância"><span class="header-section-number">8.9.5</span> <strong>ANÁLISE DE VARIÂNCIA</strong></h3>
 <p>Com as <strong>suposições verificadas</strong>, podemos <strong>aplicar a ANOVA</strong>. No <code>R</code>, <strong>isso é feito com a função <code>aov</code>, que possui a seguinte sintaxe</strong>:</p>
 <p><code>aov(formula, data)</code></p>
 <ul>
@@ -1452,8 +1458,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </ul>
 <p>Assim, <strong>rejeitamos a hipótese nula</strong> de igualdade das <strong>médias para os três grupos</strong>. Isto é, há evidências (ao nível de 5%) de que exista <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span>, tal que <span class="math inline">\(i\neq j\)</span> e <span class="math inline">\(\mu_i\neq \mu_j\)</span>.</p>
 </section>
-<section id="testes-de-comparação-múltipla" class="level3" data-number="7.9.6">
-<h3 data-number="7.9.6" class="anchored" data-anchor-id="testes-de-comparação-múltipla"><span class="header-section-number">7.9.6</span> <strong>TESTES DE COMPARAÇÃO MÚLTIPLA</strong></h3>
+<section id="testes-de-comparação-múltipla" class="level3" data-number="8.9.6">
+<h3 data-number="8.9.6" class="anchored" data-anchor-id="testes-de-comparação-múltipla"><span class="header-section-number">8.9.6</span> <strong>TESTES DE COMPARAÇÃO MÚLTIPLA</strong></h3>
 <p>Após uma <strong>ANOVA rejeitar a hipótese nula</strong>, usamos testes de <strong>comparação múltipla</strong> para descobrir quais <strong>pares de grupos diferem</strong>. Existem <strong>diversos testes de comparação múltipla disponíveis na literatura</strong>. Aqui, usaremos os testes:</p>
 <ul>
 <li><strong>Bonferroni</strong></li>
@@ -1470,8 +1476,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <p>Ou seja, <strong>as médias dos grupos <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span> são diferentes</strong>.</p></li>
 </ul>
 <p>Estas hipóteses são testadas para todos os pares <span class="math inline">\((i,j)\)</span> possíveis entre os <span class="math inline">\(k\)</span> grupos, e deve-se atentar à uma correção do nível <span class="math inline">\(\alpha\)</span> para que o erro do tipo I não seja inflacionado.</p>
-<section id="teste-de-bonferroni" class="level4" data-number="7.9.6.1">
-<h4 data-number="7.9.6.1" class="anchored" data-anchor-id="teste-de-bonferroni"><span class="header-section-number">7.9.6.1</span> <strong>TESTE DE BONFERRONI</strong></h4>
+<section id="teste-de-bonferroni" class="level4" data-number="8.9.6.1">
+<h4 data-number="8.9.6.1" class="anchored" data-anchor-id="teste-de-bonferroni"><span class="header-section-number">8.9.6.1</span> <strong>TESTE DE BONFERRONI</strong></h4>
 <p>O <strong>teste de Bonferroni</strong> é um método de <strong>comparações múltiplas</strong> usado após uma ANOVA quando se rejeita a hipótese nula de igualdade entre as médias de três ou mais grupos.</p>
 <p>Sua principal função é <strong>controlar o erro do tipo I</strong>. Ele faz isso ajustando o nível de significância <span class="math inline">\(\alpha\)</span> dividido pelo número de comparações. É um método <strong>conservador</strong>, ou seja, reduz bastante a chance de falsos positivos, mas com menor poder estatístico.</p>
 <p>No <code>R</code>, o teste de Bonferroni pode ser realizado com a função <code>pairwise.t.test()</code>, que tem a seguinte sintaxe:</p>
@@ -1505,8 +1511,8 @@ P value adjustment method: bonferroni </code></pre>
 </div>
 <p>Assim, de acordo com o teste de Bonferroni, os grupos <code>trt1</code> e <code>trt2</code> possuem médias diferentes (a um nível de 5% de significância)</p>
 </section>
-<section id="teste-de-tukey" class="level4" data-number="7.9.6.2">
-<h4 data-number="7.9.6.2" class="anchored" data-anchor-id="teste-de-tukey"><span class="header-section-number">7.9.6.2</span> <strong>TESTE DE TUKEY</strong></h4>
+<section id="teste-de-tukey" class="level4" data-number="8.9.6.2">
+<h4 data-number="8.9.6.2" class="anchored" data-anchor-id="teste-de-tukey"><span class="header-section-number">8.9.6.2</span> <strong>TESTE DE TUKEY</strong></h4>
 <p>O <strong>teste de Tukey</strong>, também chamado de <strong>Tukey HSD (Honest Significant Difference)</strong>, é utilizado após uma ANOVA quando encontramos evidência de que pelo menos um grupo difere dos demais.</p>
 <p>Ele serve para realizar <strong>comparações múltiplas entre todas as médias 2 a 2</strong>, controlando o <strong>erro do tipo I</strong> no conjunto das comparações.</p>
 <p>O teste de Tukey pode ser aplicado diretamente a um modelo ajustado com <code>aov()</code> utilizando a função <code>TukeyHSD()</code>.</p>
@@ -1532,8 +1538,8 @@ trt2-trt1  0.865  0.1737839 1.5562161 0.0120064</code></pre>
 </div>
 <p>Assim, também de acordo com o teste de Tukey, foi detectada uma diferença (ao nível de 5%) nas médias dos grupos <code>trt1</code> e <code>trt2</code>.</p>
 </section>
-<section id="qual-teste-devo-usar" class="level4" data-number="7.9.6.3">
-<h4 data-number="7.9.6.3" class="anchored" data-anchor-id="qual-teste-devo-usar"><span class="header-section-number">7.9.6.3</span> <strong>QUAL TESTE DEVO USAR?</strong></h4>
+<section id="qual-teste-devo-usar" class="level4" data-number="8.9.6.3">
+<h4 data-number="8.9.6.3" class="anchored" data-anchor-id="qual-teste-devo-usar"><span class="header-section-number">8.9.6.3</span> <strong>QUAL TESTE DEVO USAR?</strong></h4>
 <p>A escolha do teste depende do objetivo da análise, do número de comparações, do equilíbrio e tamanho das amostras, e das suposições dos dados:</p>
 <ul>
 <li><p>Se o foco é comparar <strong>todos os pares de médias</strong> e as amostras são relativamente balanceadas, o <strong>teste de Tukey</strong> costuma ser a melhor escolha por equilibrar controle de erro e poder.</p></li>
@@ -1541,8 +1547,8 @@ trt2-trt1  0.865  0.1737839 1.5562161 0.0120064</code></pre>
 </ul>
 </section>
 </section>
-<section id="extensões-da-anova-tradicional" class="level3" data-number="7.9.7">
-<h3 data-number="7.9.7" class="anchored" data-anchor-id="extensões-da-anova-tradicional"><span class="header-section-number">7.9.7</span> <strong>EXTENSÕES DA ANOVA TRADICIONAL</strong></h3>
+<section id="extensões-da-anova-tradicional" class="level3" data-number="8.9.7">
+<h3 data-number="8.9.7" class="anchored" data-anchor-id="extensões-da-anova-tradicional"><span class="header-section-number">8.9.7</span> <strong>EXTENSÕES DA ANOVA TRADICIONAL</strong></h3>
 <p>A ANOVA clássica depende de três suposições principais:</p>
 <ol type="1">
 <li>Normalidade</li>
@@ -1551,17 +1557,17 @@ trt2-trt1  0.865  0.1737839 1.5562161 0.0120064</code></pre>
 <li>Homocedasticidade (variâncias iguais)</li>
 </ol>
 <p>Quando alguma dessas condições muda, ou quando o desenho experimental é diferente, usamos <strong>extensões da ANOVA</strong>. A seguir, mostramos como proceder no <strong>R</strong> em cada situação.</p>
-<section id="amostras-grandes" class="level4" data-number="7.9.7.1">
-<h4 data-number="7.9.7.1" class="anchored" data-anchor-id="amostras-grandes"><span class="header-section-number">7.9.7.1</span> <strong>AMOSTRAS GRANDES</strong></h4>
+<section id="amostras-grandes" class="level4" data-number="8.9.7.1">
+<h4 data-number="8.9.7.1" class="anchored" data-anchor-id="amostras-grandes"><span class="header-section-number">8.9.7.1</span> <strong>AMOSTRAS GRANDES</strong></h4>
 <p>Quando os tamanhos amostrais são grandes, o Teorema Central do Limite garante que a distribuição da média é aproximadamente normal. Por isso, a ANOVA clássica tende a ser robusta mesmo com desvios de normalidade.</p>
 <p>Ainda assim, recomenda-se verificar a homocedasticidade com o teste de Bartlet (dados normais) ou levene (dados não normais).</p>
 </section>
-<section id="amostras-dependentes" class="level4" data-number="7.9.7.2">
-<h4 data-number="7.9.7.2" class="anchored" data-anchor-id="amostras-dependentes"><span class="header-section-number">7.9.7.2</span> <strong>AMOSTRAS DEPENDENTES</strong></h4>
+<section id="amostras-dependentes" class="level4" data-number="8.9.7.2">
+<h4 data-number="8.9.7.2" class="anchored" data-anchor-id="amostras-dependentes"><span class="header-section-number">8.9.7.2</span> <strong>AMOSTRAS DEPENDENTES</strong></h4>
 <p>Quando os mesmos indivíduos são medidos em mais de um momento/condição, as observações <strong>não são independentes</strong>. Nesse caso, NÃO se usa a ANOVA tradicional, mas sim a <strong>ANOVA para medidas repetidas</strong></p>
 </section>
-<section id="heterocedasticidade" class="level4" data-number="7.9.7.3">
-<h4 data-number="7.9.7.3" class="anchored" data-anchor-id="heterocedasticidade"><span class="header-section-number">7.9.7.3</span> <strong>HETEROCEDASTICIDADE</strong></h4>
+<section id="heterocedasticidade" class="level4" data-number="8.9.7.3">
+<h4 data-number="8.9.7.3" class="anchored" data-anchor-id="heterocedasticidade"><span class="header-section-number">8.9.7.3</span> <strong>HETEROCEDASTICIDADE</strong></h4>
 <p>Quando as variâncias entre os grupos NÃO são iguais, a ANOVA clássica NÃO deve ser usada. A extensão correta é <strong>ANOVA de Welch</strong> (não assume variâncias iguais).</p>
 
 
@@ -2032,12 +2038,12 @@ trt2-trt1  0.865  0.1737839 1.5562161 0.0120064</code></pre>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Cap4.html" class="pagination-link" aria-label="**CONSTRUINDO TABELAS RESUMO COM O `gtsummary`**">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>CONSTRUINDO TABELAS RESUMO COM O <code>gtsummary</code></strong></span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Atividades.html" class="pagination-link" aria-label="**ATIVIDADES AVALIATIVAS**">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><strong>ATIVIDADES AVALIATIVAS</strong></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
